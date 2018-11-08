@@ -5,7 +5,7 @@ Library  SeleniumLibrary
 ${LOGIN_EMAIL_FIELD} =  xpath=//*[@id="Email"]
 ${LOGIN_PASSWORD_FIELD} =  xpath=//*[@id="Password"]
 ${CUSTOMER_EMAIL_ADDRESS} =  ggjeroski@melontech.com
-${CUSTOMER_PASSWORD} =  test1234!
+${CUSTOMER_PASSWORD} =  test1234
 
 *** Keywords ***
 Focus and populate the "Email Address" field
