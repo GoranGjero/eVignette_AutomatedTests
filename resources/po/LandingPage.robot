@@ -10,7 +10,7 @@ ${LANDING_FAQ_SECTION} =  xpath=/html/body/main/section[2]/div/div[1]/h2
 
 ${LANDING_WHOLE_FOOTER} =  xpath=/html/body/main/footer
 
-${LANDING_LOGIN_BUTTON} =  xpath=//*[@id="navBar"]/ul[2]/li[2]/a
+${LANDING_LOGIN_BUTTON} =  xpath=//*[@id="navBar"]/ul/li[2]/a
 
 *** Keywords ***
 ### "Vehicle Category" options

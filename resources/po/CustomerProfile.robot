@@ -2,7 +2,7 @@
 Library  SeleniumLibrary
 
 *** Variables ***
-${CUSTOMER_PROFILE} =  xpath=//*[@id="navBar"]/a
+${CUSTOMER_PROFILE} =  xpath=//*[@id="profile-dropdown-invoker-2"]
 ${SHOPPING_CART} =  id=shopping-cart
 
 *** Keywords ***
