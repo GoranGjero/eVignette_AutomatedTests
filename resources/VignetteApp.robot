@@ -38,3 +38,12 @@ Click the "Log in" button
 
 Verify that the user is redirected to their profile
     CustomerProfile.Validate the customer profile
+
+Populate the "Email Address" field with incorrect address
+    LoginPage.Focus and populate the "Email Address" field with incorrect email address
+
+Populate the "Password" field with incorrect password
+    LoginPage.Focus and populate the "Password" field with incorrect password
+
+Verify unsuccessful login
+    LoginPage.Detect and verify the error notification
