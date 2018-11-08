@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.4 (Python 3.7.0 on win32)" generated="20181107 16:38:58.869">
+<suite id="s1" name="Tests" source="D:\projects\eVignette\Robot Project\tests">
+<suite id="s1-s1" name="General Tests" source="D:\projects\eVignette\Robot Project\tests\General_Tests.robot">
+<test id="s1-s1-t1" name="The landing page loads fully">
+<kw name="Begin test" library="CommonMethods" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20181107 16:38:59.011" level="INFO">Opening browser 'ie' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20181107 16:38:58.995" endtime="20181107 16:39:00.180"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20181107 16:39:00.180" endtime="20181107 16:39:00.196"></status>
+</kw>
+<status status="PASS" starttime="20181107 16:38:58.995" endtime="20181107 16:39:00.196"></status>
+</kw>
+<kw name="Navigate to the home page" library="VignetteApp">
+<kw name="Navigate to" library="LandingPage">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>${INITIAL_URL}</arg>
+</arguments>
+<msg timestamp="20181107 16:39:00.196" level="INFO">Opening url 'http://vinetki.melontech.com/'</msg>
+<status status="PASS" starttime="20181107 16:39:00.196" endtime="20181107 16:39:00.645"></status>
+</kw>
+<status status="PASS" starttime="20181107 16:39:00.196" endtime="20181107 16:39:00.645"></status>
+</kw>
+<status status="PASS" starttime="20181107 16:39:00.196" endtime="20181107 16:39:00.645"></status>
+</kw>
+<kw name="Verify that the &quot;Vehicle Category&quot; options are present" library="VignetteApp">
+<kw name="Validate the &quot;Car&quot; option" library="LandingPage">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${LANDING_CAR_OPTION}</arg>
+</arguments>
+<status status="PASS" starttime="20181107 16:39:00.645" endtime="20181107 16:39:00.793"></status>
+</kw>
+<status status="PASS" starttime="20181107 16:39:00.645" endtime="20181107 16:39:00.793"></status>
+</kw>
+<kw name="Validate the &quot;Trailer&quot; option" library="LandingPage">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${LANDING_TRAILER_OPTION}</arg>
+</arguments>
+<status status="PASS" starttime="20181107 16:39:00.793" endtime="20181107 16:39:00.893"></status>
+</kw>
+<status status="PASS" starttime="20181107 16:39:00.793" endtime="20181107 16:39:00.893"></status>
+</kw>
+<kw name="Validate &quot;HGV&quot; option" library="LandingPage">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${LANDING_HGV_OPTION}</arg>
+</arguments>
+<status status="PASS" starttime="20181107 16:39:00.893" endtime="20181107 16:39:00.963"></status>
+</kw>
+<status status="PASS" starttime="20181107 16:39:00.893" endtime="20181107 16:39:00.963"></status>
+</kw>
+<status status="PASS" starttime="20181107 16:39:00.645" endtime="20181107 16:39:00.963"></status>
+</kw>
+<kw name="Verify that the &quot;FAQ&quot; section is present" library="VignetteApp">
+<kw name="Validate the &quot;FAQ&quot; section of the page" library="LandingPage">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${LANDING_FAQ_SECTION}</arg>
+</arguments>
+<status status="PASS" starttime="20181107 16:39:00.964" endtime="20181107 16:39:01.019"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${LANDING_FAQ_SECTION}</arg>
+</arguments>
+<assign>
+<var>${faq_text}</var>
+</assign>
+<msg timestamp="20181107 16:39:01.146" level="INFO">${faq_text} = HAVE SOME PROBLEMS?</msg>
+<status status="PASS" starttime="20181107 16:39:01.019" endtime="20181107 16:39:01.146"></status>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${faq_text}</arg>
+<arg>HAVE SOME PROBLEMS?</arg>
+<arg>ignore_case=true</arg>
+</arguments>
+<status status="PASS" starttime="20181107 16:39:01.146" endtime="20181107 16:39:01.147"></status>
+</kw>
+<status status="PASS" starttime="20181107 16:39:00.964" endtime="20181107 16:39:01.147"></status>
+</kw>
+<status status="PASS" starttime="20181107 16:39:00.963" endtime="20181107 16:39:01.147"></status>
+</kw>
+<kw name="Verify that the footer is present" library="VignetteApp">
+<kw name="Validate the whole footer of the page" library="LandingPage">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${LANDING_WHOLE_FOOTER}</arg>
+</arguments>
+<status status="PASS" starttime="20181107 16:39:01.148" endtime="20181107 16:39:01.196"></status>
+</kw>
+<status status="PASS" starttime="20181107 16:39:01.148" endtime="20181107 16:39:01.196"></status>
+</kw>
+<kw name="Validate the &quot;eVignette purchase&quot; section" library="LandingPage">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>Покупка на еВинетка</arg>
+</arguments>
+<status status="PASS" starttime="20181107 16:39:01.196" endtime="20181107 16:39:01.276"></status>
+</kw>
+<status status="PASS" starttime="20181107 16:39:01.196" endtime="20181107 16:39:01.276"></status>
+</kw>
+<kw name="Validate the &quot;vinetki.bg&quot; section" library="LandingPage">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>vinetki.bg</arg>
+</arguments>
+<status status="PASS" starttime="20181107 16:39:01.276" endtime="20181107 16:39:01.346"></status>
+</kw>
+<status status="PASS" starttime="20181107 16:39:01.276" endtime="20181107 16:39:01.346"></status>
+</kw>
+<kw name="Validate the &quot;contact us&quot; section" library="LandingPage">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>Връзка с нас</arg>
+</arguments>
+<status status="PASS" starttime="20181107 16:39:01.346" endtime="20181107 16:39:01.411"></status>
+</kw>
+<status status="PASS" starttime="20181107 16:39:01.346" endtime="20181107 16:39:01.411"></status>
+</kw>
+<status status="PASS" starttime="20181107 16:39:01.148" endtime="20181107 16:39:01.411"></status>
+</kw>
+<kw name="End test" library="CommonMethods" type="teardown">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20181107 16:39:01.411" endtime="20181107 16:39:04.461"></status>
+</kw>
+<status status="PASS" starttime="20181107 16:39:01.411" endtime="20181107 16:39:04.461"></status>
+</kw>
+<doc>The test is supposed to verify that the landing page opens fully, and all its elements are loaded</doc>
+<tags>
+<tag>GeneralTest</tag>
+</tags>
+<status status="PASS" starttime="20181107 16:38:58.995" endtime="20181107 16:39:04.461" critical="yes"></status>
+</test>
+<test id="s1-s1-t2" name="Customer - Login existing user">
+<kw name="Begin test" library="CommonMethods" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20181107 16:39:04.461" level="INFO">Opening browser 'ie' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20181107 16:39:04.461" endtime="20181107 16:39:05.617"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20181107 16:39:05.617" endtime="20181107 16:39:05.633"></status>
+</kw>
+<status status="PASS" starttime="20181107 16:39:04.461" endtime="20181107 16:39:05.633"></status>
+</kw>
+<kw name="Navigate to the home page" library="VignetteApp">
+<kw name="Navigate to" library="LandingPage">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>${INITIAL_URL}</arg>
+</arguments>
+<msg timestamp="20181107 16:39:05.633" level="INFO">Opening url 'http://vinetki.melontech.com/'</msg>
+<status status="PASS" starttime="20181107 16:39:05.633" endtime="20181107 16:39:06.080"></status>
+</kw>
+<status status="PASS" starttime="20181107 16:39:05.633" endtime="20181107 16:39:06.080"></status>
+</kw>
+<status status="PASS" starttime="20181107 16:39:05.633" endtime="20181107 16:39:06.080"></status>
+</kw>
+<kw name="Navigate to the &quot;Log in&quot; page" library="VignetteApp">
+<kw name="Click the &quot;Log in&quot; button" library="LandingPage">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>${LANDING_LOGIN_BUTTON}</arg>
+</arguments>
+<msg timestamp="20181107 16:39:06.080" level="INFO">Clicking link 'xpath=//*[@id="navBar"]/ul[2]/li[2]/a'.</msg>
+<status status="PASS" starttime="20181107 16:39:06.080" endtime="20181107 16:39:06.995"></status>
+</kw>
+<status status="PASS" starttime="20181107 16:39:06.080" endtime="20181107 16:39:06.995"></status>
+</kw>
+<status status="PASS" starttime="20181107 16:39:06.080" endtime="20181107 16:39:06.995"></status>
+</kw>
+<kw name="Populate the &quot;Email Address&quot; field" library="VignetteApp">
+<kw name="Focus and populate the &quot;Email Address&quot; field" library="LoginPage">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${LOGIN_EMAIL_FIELD}</arg>
+</arguments>
+<status status="PASS" starttime="20181107 16:39:06.995" endtime="20181107 16:39:07.057"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${LOGIN_EMAIL_FIELD}</arg>
+<arg>${CUSTOMER_EMAIL_ADDRESS}</arg>
+</arguments>
+<msg timestamp="20181107 16:39:07.057" level="INFO">Typing text 'ggjeroski@melontech.com' into text field 'xpath=//*[@id="Email"]'.</msg>
+<status status="PASS" starttime="20181107 16:39:07.057" endtime="20181107 16:39:07.673"></status>
+</kw>
+<status status="PASS" starttime="20181107 16:39:06.995" endtime="20181107 16:39:07.673"></status>
+</kw>
+<status status="PASS" starttime="20181107 16:39:06.995" endtime="20181107 16:39:07.673"></status>
+</kw>
+<kw name="Populate the &quot;Password&quot; field" library="VignetteApp">
+<kw name="Focus and populate the &quot;Password&quot; field" library="LoginPage">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${LOGIN_PASSWORD_FIELD}</arg>
+</arguments>
+<status status="PASS" starttime="20181107 16:39:07.673" endtime="20181107 16:39:07.720"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${LOGIN_PASSWORD_FIELD}</arg>
+<arg>${CUSTOMER_PASSWORD}</arg>
+</arguments>
+<msg timestamp="20181107 16:39:07.720" level="INFO">Typing text 'test1234!' into text field 'xpath=//*[@id="Password"]'.</msg>
+<status status="PASS" starttime="20181107 16:39:07.720" endtime="20181107 16:39:08.179"></status>
+</kw>
+<status status="PASS" starttime="20181107 16:39:07.673" endtime="20181107 16:39:08.179"></status>
+</kw>
+<status status="PASS" starttime="20181107 16:39:07.673" endtime="20181107 16:39:08.179"></status>
+</kw>
+<kw name="Click the &quot;Log in&quot; button" library="VignetteApp">
+<kw name="Find and click the &quot;Log in&quot; button" library="LoginPage">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>Log in</arg>
+</arguments>
+<msg timestamp="20181107 16:39:08.179" level="INFO">Clicking button 'Log in'.</msg>
+<status status="PASS" starttime="20181107 16:39:08.179" endtime="20181107 16:39:09.380"></status>
+</kw>
+<status status="PASS" starttime="20181107 16:39:08.179" endtime="20181107 16:39:09.380"></status>
+</kw>
+<status status="PASS" starttime="20181107 16:39:08.179" endtime="20181107 16:39:09.380"></status>
+</kw>
+<kw name="Verify that the user is redirected to their profile" library="VignetteApp">
+<kw name="Validate the customer profile" library="CustomerProfile">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${CUSTOMER_PROFILE}</arg>
+</arguments>
+<status status="PASS" starttime="20181107 16:39:09.380" endtime="20181107 16:39:09.443"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${SHOPPING_CART}</arg>
+</arguments>
+<status status="PASS" starttime="20181107 16:39:09.443" endtime="20181107 16:39:09.512"></status>
+</kw>
+<status status="PASS" starttime="20181107 16:39:09.380" endtime="20181107 16:39:09.512"></status>
+</kw>
+<status status="PASS" starttime="20181107 16:39:09.380" endtime="20181107 16:39:09.512"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20181107 16:39:12.524" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20181107 16:39:09.512" endtime="20181107 16:39:12.524"></status>
+</kw>
+<kw name="End test" library="CommonMethods" type="teardown">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20181107 16:39:12.524" endtime="20181107 16:39:15.550"></status>
+</kw>
+<status status="PASS" starttime="20181107 16:39:12.524" endtime="20181107 16:39:15.550"></status>
+</kw>
+<doc>The test is supposed to verify that a registered user can login successfully</doc>
+<tags>
+<tag>current</tag>
+</tags>
+<status status="PASS" starttime="20181107 16:39:04.461" endtime="20181107 16:39:15.550" critical="yes"></status>
+</test>
+<doc>The suite contains the general tests</doc>
+<status status="PASS" starttime="20181107 16:38:58.884" endtime="20181107 16:39:15.550"></status>
+</suite>
+<status status="PASS" starttime="20181107 16:38:58.869" endtime="20181107 16:39:15.550"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0">Critical Tests</stat>
+<stat pass="2" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0">current</stat>
+<stat pass="1" fail="0">GeneralTest</stat>
+</tag>
+<suite>
+<stat pass="2" fail="0" id="s1" name="Tests">Tests</stat>
+<stat pass="2" fail="0" id="s1-s1" name="General Tests">Tests.General Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
