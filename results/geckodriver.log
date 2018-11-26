@@ -1,0 +1,1690 @@
+1541687784891	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GGJERO~1\\AppData\\Local\\Temp\\rust_mozprofile.Ib14ykg3oxnF"
+1541687785246	Marionette	DEBUG	Received observer notification profile-after-change
+1541687785307	Marionette	DEBUG	Received observer notification toplevel-window-ready
+1541687785333	Marionette	DEBUG	Received observer notification command-line-startup
+1541687785333	Marionette	DEBUG	Received observer notification nsPref:changed
+1541687785333	Marionette	DEBUG	Init aborted (running=false, enabled=true, finalUIStartup=false)
+1541687785497	Marionette	DEBUG	Received observer notification toplevel-window-ready
+1541687786188	Marionette	DEBUG	Received observer notification sessionstore-windows-restored
+1541687786188	Marionette	DEBUG	Waiting for delayed startup...
+1541687786257	Marionette	DEBUG	Setting recommended pref security.turn_off_all_security_so_that_viruses_can_take_over_this_computer to true
+1541687786257	Marionette	DEBUG	Setting recommended pref apz.content_response_timeout to 60000
+1541687786258	Marionette	DEBUG	Setting recommended pref browser.download.panel.shown to true
+1541687786258	Marionette	DEBUG	Setting recommended pref browser.pagethumbnails.capturing_disabled to true
+1541687786259	Marionette	DEBUG	Setting recommended pref toolkit.cosmeticAnimations.enabled to false
+1541687786259	Marionette	DEBUG	Setting recommended pref browser.tabs.disableBackgroundZombification to false
+1541687786259	Marionette	DEBUG	Setting recommended pref browser.tabs.warnOnCloseOtherTabs to false
+1541687786259	Marionette	DEBUG	Setting recommended pref browser.urlbar.suggest.searches to false
+1541687786260	Marionette	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1541687786260	Marionette	DEBUG	Setting recommended pref dom.disable_beforeunload to true
+1541687786260	Marionette	DEBUG	Setting recommended pref dom.file.createInChild to true
+1541687786260	Marionette	DEBUG	Setting recommended pref extensions.getAddons.cache.enabled to false
+1541687786260	Marionette	DEBUG	Setting recommended pref extensions.webservice.discoverURL to http://%(server)s/dummy/discoveryURL
+1541687786260	Marionette	DEBUG	Setting recommended pref network.http.prompt-temp-redirect to false
+1541687786260	Marionette	DEBUG	Setting recommended pref network.http.speculative-parallel-limit to 0
+1541687786261	Marionette	DEBUG	Setting recommended pref security.notification_enable_delay to 0
+1541687786261	Marionette	DEBUG	Setting recommended pref signon.autofillForms to false
+1541687786294	Marionette	INFO	Listening on port 51697
+1541687786295	Marionette	DEBUG	Remote service is active
+1541687786501	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:51709
+1541687786509	Marionette	TRACE	0 -> [0,1,"WebDriver:NewSession",{"acceptInsecureCerts":true,"browserName":"firefox"}]
+1541687786509	Marionette	WARN	TLS certificate errors will be ignored for this session
+1541687786546	Marionette	DEBUG	[6442450945] Frame script loaded
+1541687786547	Marionette	DEBUG	[6442450945] Frame script registered
+1541687786550	Marionette	TRACE	0 <- [1,1,null,{"sessionId":"cf2bb47c-13c6-4eaf-8d8a-6e0ec371bb5f","capabilities":{"browserName":"firefox","browserVersion":"63.0. ... AppData\\Local\\Temp\\rust_mozprofile.Ib14ykg3oxnF","moz:useNonSpecCompliantPointerOrigin":false,"moz:webdriverClick":true}}]
+1541687786568	Marionette	TRACE	0 -> [0,2,"WebDriver:SetTimeouts",{"script":5000}]
+1541687786569	Marionette	TRACE	0 <- [1,2,null,{"value":null}]
+1541687786572	Marionette	TRACE	0 -> [0,3,"WebDriver:SetTimeouts",{"implicit":0}]
+1541687786573	Marionette	TRACE	0 <- [1,3,null,{"value":null}]
+1541687786576	Marionette	TRACE	0 -> [0,4,"WebDriver:Navigate",{"url":"about:blank"}]
+1541687786582	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for about:blank
+1541687786585	Marionette	DEBUG	[6442450945] Received DOM event pagehide for about:blank
+1541687786587	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for about:blank
+1541687786596	Marionette	DEBUG	[6442450945] Received DOM event pageshow for about:blank
+1541687786597	Marionette	TRACE	0 <- [1,4,null,{"value":null}]
+1541687786600	Marionette	TRACE	0 -> [0,5,"WebDriver:MaximizeWindow",{}]
+1541687786603	Marionette	TRACE	0 <- [1,5,null,{"x":-8,"y":-8,"width":1936,"height":1056,"state":"maximized"}]
+1541687786623	Marionette	TRACE	0 -> [0,6,"WebDriver:Navigate",{"url":"http://vinetki.melontech.com/"}]
+1541687786626	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for about:blank
+1541687786663	Marionette	DEBUG	[6442450945] Received DOM event pagehide for about:blank
+1541687787436	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for http://vinetki.melontech.com/
+1541687787856	Marionette	DEBUG	[6442450945] Received DOM event pageshow for http://vinetki.melontech.com/
+1541687787857	Marionette	TRACE	0 <- [1,6,null,{"value":null}]
+1541687787861	Marionette	TRACE	0 -> [0,7,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"navBar\"]/ul/li[2]/a"}]
+1541687787864	Marionette	TRACE	0 <- [1,7,null,[{"element-6066-11e4-a52e-4f735466cecf":"d093de8c-0ffd-44ea-be85-36116d26a265"}]]
+1541687787868	Marionette	TRACE	0 -> [0,8,"WebDriver:GetElementTagName",{"id":"d093de8c-0ffd-44ea-be85-36116d26a265"}]
+1541687787870	Marionette	TRACE	0 <- [1,8,null,{"value":"a"}]
+1541687787871	Marionette	TRACE	0 -> [0,9,"WebDriver:ElementClick",{"id":"d093de8c-0ffd-44ea-be85-36116d26a265"}]
+1541687787891	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for http://vinetki.melontech.com/
+1541687787919	Marionette	DEBUG	[6442450945] Received DOM event pagehide for http://vinetki.melontech.com/
+1541687787922	Marionette	DEBUG	[6442450945] Received DOM event unload for http://vinetki.melontech.com/
+1541687788108	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for http://vinetki.melontech.com/Account/Login
+1541687788119	Marionette	DEBUG	[6442450945] Received DOM event pageshow for http://vinetki.melontech.com/Account/Login
+1541687788119	Marionette	TRACE	0 <- [1,9,null,{"value":null}]
+1541687788124	Marionette	TRACE	0 -> [0,10,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1541687788133	Marionette	TRACE	0 <- [1,10,null,[{"element-6066-11e4-a52e-4f735466cecf":"80cb88d7-b812-4123-94f4-7d8f10bb673f"}]]
+1541687788137	Marionette	TRACE	0 -> [0,11,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1541687788150	Marionette	TRACE	0 <- [1,11,null,[{"element-6066-11e4-a52e-4f735466cecf":"80cb88d7-b812-4123-94f4-7d8f10bb673f"}]]
+1541687788152	Marionette	TRACE	0 -> [0,12,"WebDriver:ElementClear",{"id":"80cb88d7-b812-4123-94f4-7d8f10bb673f"}]
+1541687788154	Marionette	TRACE	0 <- [1,12,null,{"value":null}]
+1541687788156	Marionette	TRACE	0 -> [0,13,"WebDriver:ElementSendKeys",{"id":"80cb88d7-b812-4123-94f4-7d8f10bb673f","text":"ggjeroski@melontech.com","value":["g","g","j","e","r","o","s","k","i","@","m","e","l","o","n","t","e","c","h",".","c","o","m"]}]
+1541687788237	Marionette	TRACE	0 <- [1,13,null,{"value":null}]
+1541687788241	Marionette	TRACE	0 -> [0,14,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Password\"]"}]
+1541687788243	Marionette	TRACE	0 <- [1,14,null,[{"element-6066-11e4-a52e-4f735466cecf":"848bce1d-bd4f-47b8-aa94-fa4f28b7740b"}]]
+1541687788246	Marionette	TRACE	0 -> [0,15,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Password\"]"}]
+1541687788248	Marionette	TRACE	0 <- [1,15,null,[{"element-6066-11e4-a52e-4f735466cecf":"848bce1d-bd4f-47b8-aa94-fa4f28b7740b"}]]
+1541687788250	Marionette	TRACE	0 -> [0,16,"WebDriver:ElementClear",{"id":"848bce1d-bd4f-47b8-aa94-fa4f28b7740b"}]
+1541687788252	Marionette	TRACE	0 <- [1,16,null,{"value":null}]
+1541687788254	Marionette	TRACE	0 -> [0,17,"WebDriver:ElementSendKeys",{"id":"848bce1d-bd4f-47b8-aa94-fa4f28b7740b","text":"testPassword","value":["t","e","s","t","P","a","s","s","w","o","r","d"]}]
+1541687788290	Marionette	TRACE	0 <- [1,17,null,{"value":null}]
+1541687788295	Marionette	TRACE	0 -> [0,18,"WebDriver:GetCurrentURL",{}]
+1541687788295	Marionette	TRACE	0 <- [1,18,null,{"value":"http://vinetki.melontech.com/Account/Login"}]
+1541687788297	Marionette	TRACE	0 -> [0,19,"WebDriver:FindElements",{"using":"xpath","value":"//input[(@id='Log in' or @name='Log in' or @value='Log in' or @src='Log in' or @src='http://vinetki.melontech.com/Account/Log in')]"}]
+1541687788299	Marionette	TRACE	0 <- [1,19,null,[]]
+1541687788301	Marionette	TRACE	0 -> [0,20,"WebDriver:FindElements",{"using":"xpath","value":"//button[(@id='Log in' or @name='Log in' or @value='Log in' or normalize-space(descendant-or-self::text())='Log in')]"}]
+1541687788302	Marionette	TRACE	0 <- [1,20,null,[{"element-6066-11e4-a52e-4f735466cecf":"8ae157ac-4d48-4762-9edb-60c8849b865f"}]]
+1541687788304	Marionette	TRACE	0 -> [0,21,"WebDriver:ElementClick",{"id":"8ae157ac-4d48-4762-9edb-60c8849b865f"}]
+1541687788333	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for http://vinetki.melontech.com/Account/Login
+1541687788414	Marionette	DEBUG	[6442450945] Received DOM event pagehide for http://vinetki.melontech.com/Account/Login
+1541687788416	Marionette	DEBUG	[6442450945] Received DOM event unload for http://vinetki.melontech.com/Account/Login
+1541687788593	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for http://vinetki.melontech.com/Account/Login
+1541687788603	Marionette	DEBUG	[6442450945] Received DOM event pageshow for http://vinetki.melontech.com/Account/Login
+1541687788603	Marionette	TRACE	0 <- [1,21,null,{"value":null}]
+1541687791609	Marionette	TRACE	0 -> [0,22,"WebDriver:FindElements",{"using":"xpath","value":"/html/body/main/section/div/div/div/div/form/div[4]"}]
+1541687791611	Marionette	TRACE	0 <- [1,22,null,[{"element-6066-11e4-a52e-4f735466cecf":"e79e6887-8fc0-49e7-afce-29e7248b2163"}]]
+1541687791614	Marionette	TRACE	0 -> [0,23,"Marionette:Quit",{"flags":["eForceQuit"]}]
+1541687791614	Marionette	INFO	Stopped listening on port 51697
+1541687791658	Marionette	TRACE	0 <- [1,23,null,{"cause":"shutdown"}]
+1541687791683	Marionette	TRACE	0 -> [0,24,"Marionette:Quit",{"flags":["eForceQuit"]}]
+1541687791683	Marionette	TRACE	0 <- [1,24,{"error":"invalid session id","message":"Tried to run command without establishing a connection","stacktrace":"WebDrive ... et@chrome://marionette/content/server.js:245:8\n_onJSONObjectReady/<@chrome://marionette/content/transport.js:490:9\n"},null]
+[Child 7188, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 7188, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 3461541687791694	Marionette	DEBUG	Closed connection 0
+1541687791870	Marionette	DEBUG	Received observer notification xpcom-will-shutdown
+1541687791870	Marionette	DEBUG	Resetting recommended pref security.turn_off_all_security_so_that_viruses_can_take_over_this_computer
+1541687791870	Marionette	DEBUG	Resetting recommended pref apz.content_response_timeout
+1541687791870	Marionette	DEBUG	Resetting recommended pref browser.download.panel.shown
+1541687791870	Marionette	DEBUG	Resetting recommended pref browser.pagethumbnails.capturing_disabled
+1541687791870	Marionette	DEBUG	Resetting recommended pref toolkit.cosmeticAnimations.enabled
+1541687791871	Marionette	DEBUG	Resetting recommended pref browser.tabs.disableBackgroundZombification
+1541687791871	Marionette	DEBUG	Resetting recommended pref browser.tabs.warnOnCloseOtherTabs
+1541687791871	Marionette	DEBUG	Resetting recommended pref browser.urlbar.suggest.searches
+1541687791871	Marionette	DEBUG	Resetting recommended pref datareporting.policy.dataSubmissionPolicyAccepted
+1541687791871	Marionette	DEBUG	Resetting recommended pref dom.disable_beforeunload
+1541687791871	Marionette	DEBUG	Resetting recommended pref dom.file.createInChild
+1541687791871	Marionette	DEBUG	Resetting recommended pref extensions.getAddons.cache.enabled
+1541687791871	Marionette	DEBUG	Resetting recommended pref extensions.webservice.discoverURL
+1541687791872	Marionette	DEBUG	Resetting recommended pref network.http.prompt-temp-redirect
+1541687791872	Marionette	DEBUG	Resetting recommended pref network.http.speculative-parallel-limit
+1541687791872	Marionette	DEBUG	Resetting recommended pref security.notification_enable_delay
+1541687791872	Marionette	DEBUG	Resetting recommended pref signon.autofillForms
+1541687791872	Marionette	DEBUG	Remote service is inactive
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 8420
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1541687795352	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GGJERO~1\\AppData\\Local\\Temp\\rust_mozprofile.CP4OgO3GShpd"
+1541687795696	Marionette	DEBUG	Received observer notification profile-after-change
+1541687795757	Marionette	DEBUG	Received observer notification toplevel-window-ready
+1541687795783	Marionette	DEBUG	Received observer notification command-line-startup
+1541687795783	Marionette	DEBUG	Received observer notification nsPref:changed
+1541687795783	Marionette	DEBUG	Init aborted (running=false, enabled=true, finalUIStartup=false)
+1541687795931	Marionette	DEBUG	Received observer notification toplevel-window-ready
+1541687796586	Marionette	DEBUG	Received observer notification sessionstore-windows-restored
+1541687796587	Marionette	DEBUG	Waiting for delayed startup...
+1541687796644	Marionette	DEBUG	Setting recommended pref security.turn_off_all_security_so_that_viruses_can_take_over_this_computer to true
+1541687796644	Marionette	DEBUG	Setting recommended pref apz.content_response_timeout to 60000
+1541687796645	Marionette	DEBUG	Setting recommended pref browser.download.panel.shown to true
+1541687796645	Marionette	DEBUG	Setting recommended pref browser.pagethumbnails.capturing_disabled to true
+1541687796646	Marionette	DEBUG	Setting recommended pref toolkit.cosmeticAnimations.enabled to false
+1541687796646	Marionette	DEBUG	Setting recommended pref browser.tabs.disableBackgroundZombification to false
+1541687796646	Marionette	DEBUG	Setting recommended pref browser.tabs.warnOnCloseOtherTabs to false
+1541687796646	Marionette	DEBUG	Setting recommended pref browser.urlbar.suggest.searches to false
+1541687796646	Marionette	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1541687796646	Marionette	DEBUG	Setting recommended pref dom.disable_beforeunload to true
+1541687796647	Marionette	DEBUG	Setting recommended pref dom.file.createInChild to true
+1541687796647	Marionette	DEBUG	Setting recommended pref extensions.getAddons.cache.enabled to false
+1541687796647	Marionette	DEBUG	Setting recommended pref extensions.webservice.discoverURL to http://%(server)s/dummy/discoveryURL
+1541687796647	Marionette	DEBUG	Setting recommended pref network.http.prompt-temp-redirect to false
+1541687796647	Marionette	DEBUG	Setting recommended pref network.http.speculative-parallel-limit to 0
+1541687796647	Marionette	DEBUG	Setting recommended pref security.notification_enable_delay to 0
+1541687796647	Marionette	DEBUG	Setting recommended pref signon.autofillForms to false
+1541687796681	Marionette	INFO	Listening on port 51748
+1541687796681	Marionette	DEBUG	Remote service is active
+1541687796964	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:51760
+1541687796965	Marionette	TRACE	0 -> [0,1,"WebDriver:NewSession",{"acceptInsecureCerts":true,"browserName":"firefox"}]
+1541687796965	Marionette	WARN	TLS certificate errors will be ignored for this session
+1541687796997	Marionette	DEBUG	[6442450945] Frame script loaded
+1541687796999	Marionette	DEBUG	[6442450945] Frame script registered
+1541687797001	Marionette	TRACE	0 <- [1,1,null,{"sessionId":"6dce7a8d-f85c-49fa-af2a-bd5a15c59686","capabilities":{"browserName":"firefox","browserVersion":"63.0. ... AppData\\Local\\Temp\\rust_mozprofile.CP4OgO3GShpd","moz:useNonSpecCompliantPointerOrigin":false,"moz:webdriverClick":true}}]
+1541687797014	Marionette	TRACE	0 -> [0,2,"WebDriver:SetTimeouts",{"script":5000}]
+1541687797015	Marionette	TRACE	0 <- [1,2,null,{"value":null}]
+1541687797018	Marionette	TRACE	0 -> [0,3,"WebDriver:SetTimeouts",{"implicit":0}]
+1541687797018	Marionette	TRACE	0 <- [1,3,null,{"value":null}]
+1541687797024	Marionette	TRACE	0 -> [0,4,"WebDriver:Navigate",{"url":"about:blank"}]
+1541687797030	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for about:blank
+1541687797032	Marionette	DEBUG	[6442450945] Received DOM event pagehide for about:blank
+1541687797036	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for about:blank
+1541687797045	Marionette	DEBUG	[6442450945] Received DOM event pageshow for about:blank
+1541687797046	Marionette	TRACE	0 <- [1,4,null,{"value":null}]
+1541687797050	Marionette	TRACE	0 -> [0,5,"WebDriver:MaximizeWindow",{}]
+1541687797054	Marionette	TRACE	0 <- [1,5,null,{"x":-8,"y":-8,"width":1936,"height":1056,"state":"maximized"}]
+1541687797102	Marionette	TRACE	0 -> [0,6,"WebDriver:Navigate",{"url":"http://vinetki.melontech.com/"}]
+1541687797104	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for about:blank
+1541687797139	Marionette	DEBUG	[6442450945] Received DOM event pagehide for about:blank
+1541687797986	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for http://vinetki.melontech.com/
+1541687798380	Marionette	DEBUG	[6442450945] Received DOM event pageshow for http://vinetki.melontech.com/
+1541687798381	Marionette	TRACE	0 <- [1,6,null,{"value":null}]
+1541687798386	Marionette	TRACE	0 -> [0,7,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"navBar\"]/ul/li[2]/a"}]
+1541687798389	Marionette	TRACE	0 <- [1,7,null,[{"element-6066-11e4-a52e-4f735466cecf":"a4259a54-4775-4bb7-b4f7-2498e7521109"}]]
+1541687798391	Marionette	TRACE	0 -> [0,8,"WebDriver:GetElementTagName",{"id":"a4259a54-4775-4bb7-b4f7-2498e7521109"}]
+1541687798392	Marionette	TRACE	0 <- [1,8,null,{"value":"a"}]
+1541687798394	Marionette	TRACE	0 -> [0,9,"WebDriver:ElementClick",{"id":"a4259a54-4775-4bb7-b4f7-2498e7521109"}]
+1541687798413	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for http://vinetki.melontech.com/
+1541687798437	Marionette	DEBUG	[6442450945] Received DOM event pagehide for http://vinetki.melontech.com/
+1541687798440	Marionette	DEBUG	[6442450945] Received DOM event unload for http://vinetki.melontech.com/
+1541687798637	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for http://vinetki.melontech.com/Account/Login
+1541687798644	Marionette	DEBUG	[6442450945] Received DOM event pageshow for http://vinetki.melontech.com/Account/Login
+1541687798644	Marionette	TRACE	0 <- [1,9,null,{"value":null}]
+1541687798649	Marionette	TRACE	0 -> [0,10,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1541687798659	Marionette	TRACE	0 <- [1,10,null,[{"element-6066-11e4-a52e-4f735466cecf":"72ba39b7-f47d-4033-be42-7304c27f3a1a"}]]
+1541687798663	Marionette	TRACE	0 -> [0,11,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1541687798672	Marionette	TRACE	0 <- [1,11,null,[{"element-6066-11e4-a52e-4f735466cecf":"72ba39b7-f47d-4033-be42-7304c27f3a1a"}]]
+1541687798674	Marionette	TRACE	0 -> [0,12,"WebDriver:ElementClear",{"id":"72ba39b7-f47d-4033-be42-7304c27f3a1a"}]
+1541687798677	Marionette	TRACE	0 <- [1,12,null,{"value":null}]
+1541687798680	Marionette	TRACE	0 -> [0,13,"WebDriver:ElementSendKeys",{"id":"72ba39b7-f47d-4033-be42-7304c27f3a1a","text":"test@test.com","value":["t","e","s","t","@","t","e","s","t",".","c","o","m"]}]
+1541687798734	Marionette	TRACE	0 <- [1,13,null,{"value":null}]
+1541687798739	Marionette	TRACE	0 -> [0,14,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Password\"]"}]
+1541687798741	Marionette	TRACE	0 <- [1,14,null,[{"element-6066-11e4-a52e-4f735466cecf":"c0ad310b-c64e-4eb9-8262-ad02cdb532fe"}]]
+1541687798744	Marionette	TRACE	0 -> [0,15,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Password\"]"}]
+1541687798746	Marionette	TRACE	0 <- [1,15,null,[{"element-6066-11e4-a52e-4f735466cecf":"c0ad310b-c64e-4eb9-8262-ad02cdb532fe"}]]
+1541687798748	Marionette	TRACE	0 -> [0,16,"WebDriver:ElementClear",{"id":"c0ad310b-c64e-4eb9-8262-ad02cdb532fe"}]
+1541687798750	Marionette	TRACE	0 <- [1,16,null,{"value":null}]
+1541687798752	Marionette	TRACE	0 -> [0,17,"WebDriver:ElementSendKeys",{"id":"c0ad310b-c64e-4eb9-8262-ad02cdb532fe","text":"test1234!","value":["t","e","s","t","1","2","3","4","!"]}]
+1541687798782	Marionette	TRACE	0 <- [1,17,null,{"value":null}]
+1541687798786	Marionette	TRACE	0 -> [0,18,"WebDriver:GetCurrentURL",{}]
+1541687798786	Marionette	TRACE	0 <- [1,18,null,{"value":"http://vinetki.melontech.com/Account/Login"}]
+1541687798788	Marionette	TRACE	0 -> [0,19,"WebDriver:FindElements",{"using":"xpath","value":"//input[(@id='Log in' or @name='Log in' or @value='Log in' or @src='Log in' or @src='http://vinetki.melontech.com/Account/Log in')]"}]
+1541687798790	Marionette	TRACE	0 <- [1,19,null,[]]
+1541687798791	Marionette	TRACE	0 -> [0,20,"WebDriver:FindElements",{"using":"xpath","value":"//button[(@id='Log in' or @name='Log in' or @value='Log in' or normalize-space(descendant-or-self::text())='Log in')]"}]
+1541687798793	Marionette	TRACE	0 <- [1,20,null,[{"element-6066-11e4-a52e-4f735466cecf":"0327063b-6797-42df-a4d0-183736303593"}]]
+1541687798795	Marionette	TRACE	0 -> [0,21,"WebDriver:ElementClick",{"id":"0327063b-6797-42df-a4d0-183736303593"}]
+1541687798824	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for http://vinetki.melontech.com/Account/Login
+1541687798854	Marionette	DEBUG	[6442450945] Received DOM event pagehide for http://vinetki.melontech.com/Account/Login
+1541687798857	Marionette	DEBUG	[6442450945] Received DOM event unload for http://vinetki.melontech.com/Account/Login
+1541687799027	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for http://vinetki.melontech.com/Account/Login
+1541687799035	Marionette	DEBUG	[6442450945] Received DOM event pageshow for http://vinetki.melontech.com/Account/Login
+1541687799036	Marionette	TRACE	0 <- [1,21,null,{"value":null}]
+1541687802041	Marionette	TRACE	0 -> [0,22,"WebDriver:FindElements",{"using":"xpath","value":"/html/body/main/section/div/div/div/div/form/div[4]"}]
+1541687802043	Marionette	TRACE	0 <- [1,22,null,[{"element-6066-11e4-a52e-4f735466cecf":"234426d5-29c9-4fde-a7c6-2e308921a080"}]]
+1541687802047	Marionette	TRACE	0 -> [0,23,"Marionette:Quit",{"flags":["eForceQuit"]}]
+1541687802047	Marionette	INFO	Stopped listening on port 51748
+1541687802090	Marionette	TRACE	0 <- [1,23,null,{"cause":"shutdown"}]
+1541687802112	Marionette	TRACE	0 -> [0,24,"Marionette:Quit",{"flags":["eForceQuit"]}]
+1541687802113	Marionette	TRACE	0 <- [1,24,{"error":"invalid session id","message":"Tried to run command without establishing a connection","stacktrace":"WebDrive ... et@chrome://marionette/content/server.js:245:8\n_onJSONObjectReady/<@chrome://marionette/content/transport.js:490:9\n"},null]
+1541687802124	Marionette	DEBUG	Closed connection 0
+[Child 14612, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 14612, Chrome_Ch1541687802297	Marionette	DEBUG	Received observer notification xpcom-will-shutdown
+1541687802297	Marionette	DEBUG	Resetting recommended pref security.turn_off_all_security_so_that_viruses_can_take_over_this_computer
+1541687802298	Marionette	DEBUG	Resetting recommended pref apz.content_response_timeout
+1541687802298	Marionette	DEBUG	Resetting recommended pref browser.download.panel.shown
+1541687802298	Marionette	DEBUG	Resetting recommended pref browser.pagethumbnails.capturing_disabled
+1541687802298	Marionette	DEBUG	Resetting recommended pref toolkit.cosmeticAnimations.enabled
+1541687802298	Marionette	DEBUG	Resetting recommended pref browser.tabs.disableBackgroundZombification
+1541687802298	Marionette	DEBUG	Resetting recommended pref browser.tabs.warnOnCloseOtherTabs
+1541687802298	Marionette	DEBUG	Resetting recommended pref browser.urlbar.suggest.searches
+1541687802299	Marionette	DEBUG	Resetting recommended pref datareporting.policy.dataSubmissionPolicyAccepted
+1541687802299	Marionette	DEBUG	Resetting recommended pref dom.disable_beforeunload
+1541687802299	Marionette	DEBUG	Resetting recommended pref dom.file.createInChild
+1541687802299	Marionette	DEBUG	Resetting recommended pref extensions.getAddons.cache.enabled
+1541687802299	Marionette	DEBUG	Resetting recommended pref extensions.webservice.discoverURL
+1541687802299	Marionette	DEBUG	Resetting recommended pref network.http.prompt-temp-redirect
+1541687802299	Marionette	DEBUG	Resetting recommended pref network.http.speculative-parallel-limit
+1541687802299	Marionette	DEBUG	Resetting recommended pref security.notification_enable_delay
+1541687802299	Marionette	DEBUG	Resetting recommended pref signon.autofillForms
+1541687802299	Marionette	DEBUG	Remote service is inactive
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 606
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1541687817587	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GGJERO~1\\AppData\\Local\\Temp\\rust_mozprofile.eHtl3To7YVBf"
+1541687817936	Marionette	DEBUG	Received observer notification profile-after-change
+1541687817994	Marionette	DEBUG	Received observer notification toplevel-window-ready
+1541687818021	Marionette	DEBUG	Received observer notification command-line-startup
+1541687818021	Marionette	DEBUG	Received observer notification nsPref:changed
+1541687818021	Marionette	DEBUG	Init aborted (running=false, enabled=true, finalUIStartup=false)
+1541687818171	Marionette	DEBUG	Received observer notification toplevel-window-ready
+1541687818835	Marionette	DEBUG	Received observer notification sessionstore-windows-restored
+1541687818835	Marionette	DEBUG	Waiting for delayed startup...
+1541687818888	Marionette	DEBUG	Setting recommended pref security.turn_off_all_security_so_that_viruses_can_take_over_this_computer to true
+1541687818889	Marionette	DEBUG	Setting recommended pref apz.content_response_timeout to 60000
+1541687818889	Marionette	DEBUG	Setting recommended pref browser.download.panel.shown to true
+1541687818889	Marionette	DEBUG	Setting recommended pref browser.pagethumbnails.capturing_disabled to true
+1541687818890	Marionette	DEBUG	Setting recommended pref toolkit.cosmeticAnimations.enabled to false
+1541687818890	Marionette	DEBUG	Setting recommended pref browser.tabs.disableBackgroundZombification to false
+1541687818890	Marionette	DEBUG	Setting recommended pref browser.tabs.warnOnCloseOtherTabs to false
+1541687818890	Marionette	DEBUG	Setting recommended pref browser.urlbar.suggest.searches to false
+1541687818891	Marionette	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1541687818891	Marionette	DEBUG	Setting recommended pref dom.disable_beforeunload to true
+1541687818891	Marionette	DEBUG	Setting recommended pref dom.file.createInChild to true
+1541687818891	Marionette	DEBUG	Setting recommended pref extensions.getAddons.cache.enabled to false
+1541687818891	Marionette	DEBUG	Setting recommended pref extensions.webservice.discoverURL to http://%(server)s/dummy/discoveryURL
+1541687818892	Marionette	DEBUG	Setting recommended pref network.http.prompt-temp-redirect to false
+1541687818892	Marionette	DEBUG	Setting recommended pref network.http.speculative-parallel-limit to 0
+1541687818892	Marionette	DEBUG	Setting recommended pref security.notification_enable_delay to 0
+1541687818892	Marionette	DEBUG	Setting recommended pref signon.autofillForms to false
+1541687818924	Marionette	INFO	Listening on port 51815
+1541687818925	Marionette	DEBUG	Remote service is active
+1541687819197	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:51827
+1541687819199	Marionette	TRACE	0 -> [0,1,"WebDriver:NewSession",{"acceptInsecureCerts":true,"browserName":"firefox"}]
+1541687819199	Marionette	WARN	TLS certificate errors will be ignored for this session
+1541687819234	Marionette	DEBUG	[6442450945] Frame script loaded
+1541687819235	Marionette	DEBUG	[6442450945] Frame script registered
+1541687819237	Marionette	TRACE	0 <- [1,1,null,{"sessionId":"379be064-1650-4143-9ca9-e11b6702fcfb","capabilities":{"browserName":"firefox","browserVersion":"63.0. ... AppData\\Local\\Temp\\rust_mozprofile.eHtl3To7YVBf","moz:useNonSpecCompliantPointerOrigin":false,"moz:webdriverClick":true}}]
+1541687819252	Marionette	TRACE	0 -> [0,2,"WebDriver:SetTimeouts",{"script":5000}]
+1541687819252	Marionette	TRACE	0 <- [1,2,null,{"value":null}]
+1541687819258	Marionette	TRACE	0 -> [0,3,"WebDriver:SetTimeouts",{"implicit":0}]
+1541687819258	Marionette	TRACE	0 <- [1,3,null,{"value":null}]
+1541687819261	Marionette	TRACE	0 -> [0,4,"WebDriver:Navigate",{"url":"about:blank"}]
+1541687819268	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for about:blank
+1541687819270	Marionette	DEBUG	[6442450945] Received DOM event pagehide for about:blank
+1541687819273	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for about:blank
+1541687819283	Marionette	DEBUG	[6442450945] Received DOM event pageshow for about:blank
+1541687819285	Marionette	TRACE	0 <- [1,4,null,{"value":null}]
+1541687819288	Marionette	TRACE	0 -> [0,5,"WebDriver:MaximizeWindow",{}]
+1541687819292	Marionette	TRACE	0 <- [1,5,null,{"x":-8,"y":-8,"width":1936,"height":1056,"state":"maximized"}]
+1541687819334	Marionette	TRACE	0 -> [0,6,"WebDriver:Navigate",{"url":"http://vinetki.melontech.com/"}]
+1541687819340	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for about:blank
+1541687819374	Marionette	DEBUG	[6442450945] Received DOM event pagehide for about:blank
+1541687820099	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for http://vinetki.melontech.com/
+1541687820551	Marionette	DEBUG	[6442450945] Received DOM event pageshow for http://vinetki.melontech.com/
+1541687820552	Marionette	TRACE	0 <- [1,6,null,{"value":null}]
+1541687820556	Marionette	TRACE	0 -> [0,7,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"navBar\"]/ul/li[2]/a"}]
+1541687820558	Marionette	TRACE	0 <- [1,7,null,[{"element-6066-11e4-a52e-4f735466cecf":"e79d05b2-c29c-45c2-96fb-48794e9a434b"}]]
+1541687820560	Marionette	TRACE	0 -> [0,8,"WebDriver:GetElementTagName",{"id":"e79d05b2-c29c-45c2-96fb-48794e9a434b"}]
+1541687820561	Marionette	TRACE	0 <- [1,8,null,{"value":"a"}]
+1541687820564	Marionette	TRACE	0 -> [0,9,"WebDriver:ElementClick",{"id":"e79d05b2-c29c-45c2-96fb-48794e9a434b"}]
+1541687820585	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for http://vinetki.melontech.com/
+1541687820608	Marionette	DEBUG	[6442450945] Received DOM event pagehide for http://vinetki.melontech.com/
+1541687820611	Marionette	DEBUG	[6442450945] Received DOM event unload for http://vinetki.melontech.com/
+1541687820804	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for http://vinetki.melontech.com/Account/Login
+1541687820813	Marionette	DEBUG	[6442450945] Received DOM event pageshow for http://vinetki.melontech.com/Account/Login
+1541687820814	Marionette	TRACE	0 <- [1,9,null,{"value":null}]
+1541687820823	Marionette	TRACE	0 -> [0,10,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1541687820838	Marionette	TRACE	0 <- [1,10,null,[{"element-6066-11e4-a52e-4f735466cecf":"501f1b0a-71b1-4d86-aff5-b7d383f2a0a8"}]]
+1541687820842	Marionette	TRACE	0 -> [0,11,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1541687820846	Marionette	TRACE	0 <- [1,11,null,[{"element-6066-11e4-a52e-4f735466cecf":"501f1b0a-71b1-4d86-aff5-b7d383f2a0a8"}]]
+1541687820848	Marionette	TRACE	0 -> [0,12,"WebDriver:ElementClear",{"id":"501f1b0a-71b1-4d86-aff5-b7d383f2a0a8"}]
+1541687820851	Marionette	TRACE	0 <- [1,12,null,{"value":null}]
+1541687820853	Marionette	TRACE	0 -> [0,13,"WebDriver:ElementSendKeys",{"id":"501f1b0a-71b1-4d86-aff5-b7d383f2a0a8","text":"ggjeroski@melontech.com","value":["g","g","j","e","r","o","s","k","i","@","m","e","l","o","n","t","e","c","h",".","c","o","m"]}]
+1541687820929	Marionette	TRACE	0 <- [1,13,null,{"value":null}]
+1541687820935	Marionette	TRACE	0 -> [0,14,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Password\"]"}]
+1541687820937	Marionette	TRACE	0 <- [1,14,null,[{"element-6066-11e4-a52e-4f735466cecf":"f383909c-aaad-4e5e-806e-7f9986e621d2"}]]
+1541687820940	Marionette	TRACE	0 -> [0,15,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Password\"]"}]
+1541687820942	Marionette	TRACE	0 <- [1,15,null,[{"element-6066-11e4-a52e-4f735466cecf":"f383909c-aaad-4e5e-806e-7f9986e621d2"}]]
+1541687820944	Marionette	TRACE	0 -> [0,16,"WebDriver:ElementClear",{"id":"f383909c-aaad-4e5e-806e-7f9986e621d2"}]
+1541687820946	Marionette	TRACE	0 <- [1,16,null,{"value":null}]
+1541687820948	Marionette	TRACE	0 -> [0,17,"WebDriver:ElementSendKeys",{"id":"f383909c-aaad-4e5e-806e-7f9986e621d2","text":"testPassword","value":["t","e","s","t","P","a","s","s","w","o","r","d"]}]
+1541687820984	Marionette	TRACE	0 <- [1,17,null,{"value":null}]
+1541687820987	Marionette	TRACE	0 -> [0,18,"WebDriver:GetCurrentURL",{}]
+1541687820988	Marionette	TRACE	0 <- [1,18,null,{"value":"http://vinetki.melontech.com/Account/Login"}]
+1541687820990	Marionette	TRACE	0 -> [0,19,"WebDriver:FindElements",{"using":"xpath","value":"//input[(@id='Log in' or @name='Log in' or @value='Log in' or @src='Log in' or @src='http://vinetki.melontech.com/Account/Log in')]"}]
+1541687820991	Marionette	TRACE	0 <- [1,19,null,[]]
+1541687820993	Marionette	TRACE	0 -> [0,20,"WebDriver:FindElements",{"using":"xpath","value":"//button[(@id='Log in' or @name='Log in' or @value='Log in' or normalize-space(descendant-or-self::text())='Log in')]"}]
+1541687820994	Marionette	TRACE	0 <- [1,20,null,[{"element-6066-11e4-a52e-4f735466cecf":"ad8ad5a3-a145-47a7-bc68-adc629baabd2"}]]
+1541687820996	Marionette	TRACE	0 -> [0,21,"WebDriver:ElementClick",{"id":"ad8ad5a3-a145-47a7-bc68-adc629baabd2"}]
+1541687821025	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for http://vinetki.melontech.com/Account/Login
+1541687821075	Marionette	DEBUG	[6442450945] Received DOM event pagehide for http://vinetki.melontech.com/Account/Login
+1541687821077	Marionette	DEBUG	[6442450945] Received DOM event unload for http://vinetki.melontech.com/Account/Login
+1541687821248	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for http://vinetki.melontech.com/Account/Login
+1541687821257	Marionette	DEBUG	[6442450945] Received DOM event pageshow for http://vinetki.melontech.com/Account/Login
+1541687821257	Marionette	TRACE	0 <- [1,21,null,{"value":null}]
+1541687824263	Marionette	TRACE	0 -> [0,22,"WebDriver:FindElements",{"using":"xpath","value":"/html/body/main/section/div/div/div/div/form/div[4]"}]
+1541687824265	Marionette	TRACE	0 <- [1,22,null,[{"element-6066-11e4-a52e-4f735466cecf":"e9e9c3bb-e77c-4f1d-9928-83e06d570a9e"}]]
+1541687824268	Marionette	TRACE	0 -> [0,23,"Marionette:Quit",{"flags":["eForceQuit"]}]
+1541687824268	Marionette	INFO	Stopped listening on port 51815
+1541687824312	Marionette	TRACE	0 <- [1,23,null,{"cause":"shutdown"}]
+1541687824338	Marionette	TRACE	0 -> [0,24,"Marionette:Quit",{"flags":["eForceQuit"]}]
+1541687824339	Marionette	TRACE	0 <- [1,24,{"error":"invalid session id","message":"Tried to run command without establishing a connection","stacktrace":"WebDrive ... et@chrome://marionette/content/server.js:245:8\n_onJSONObjectReady/<@chrome://marionette/content/transport.js:490:9\n"},null]
+[Child 23800, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 23800, Chrome_ChildThread] WARNING: pi1541687824349	Marionette	DEBUG	Closed connection 0
+1541687824515	Marionette	DEBUG	Received observer notification xpcom-will-shutdown
+1541687824515	Marionette	DEBUG	Resetting recommended pref security.turn_off_all_security_so_that_viruses_can_take_over_this_computer
+1541687824515	Marionette	DEBUG	Resetting recommended pref apz.content_response_timeout
+1541687824515	Marionette	DEBUG	Resetting recommended pref browser.download.panel.shown
+1541687824515	Marionette	DEBUG	Resetting recommended pref browser.pagethumbnails.capturing_disabled
+1541687824515	Marionette	DEBUG	Resetting recommended pref toolkit.cosmeticAnimations.enabled
+1541687824516	Marionette	DEBUG	Resetting recommended pref browser.tabs.disableBackgroundZombification
+1541687824516	Marionette	DEBUG	Resetting recommended pref browser.tabs.warnOnCloseOtherTabs
+1541687824516	Marionette	DEBUG	Resetting recommended pref browser.urlbar.suggest.searches
+1541687824516	Marionette	DEBUG	Resetting recommended pref datareporting.policy.dataSubmissionPolicyAccepted
+1541687824516	Marionette	DEBUG	Resetting recommended pref dom.disable_beforeunload
+1541687824516	Marionette	DEBUG	Resetting recommended pref dom.file.createInChild
+1541687824516	Marionette	DEBUG	Resetting recommended pref extensions.getAddons.cache.enabled
+1541687824516	Marionette	DEBUG	Resetting recommended pref extensions.webservice.discoverURL
+1541687824516	Marionette	DEBUG	Resetting recommended pref network.http.prompt-temp-redirect
+1541687824516	Marionette	DEBUG	Resetting recommended pref network.http.speculative-parallel-limit
+1541687824517	Marionette	DEBUG	Resetting recommended pref security.notification_enable_delay
+1541687824517	Marionette	DEBUG	Resetting recommended pref signon.autofillForms
+1541687824517	Marionette	DEBUG	Remote service is inactive
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 8600, Chrome_Ch
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1541687828025	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GGJERO~1\\AppData\\Local\\Temp\\rust_mozprofile.3V5SE7T50qex"
+1541687828381	Marionette	DEBUG	Received observer notification profile-after-change
+1541687828442	Marionette	DEBUG	Received observer notification toplevel-window-ready
+1541687828468	Marionette	DEBUG	Received observer notification command-line-startup
+1541687828469	Marionette	DEBUG	Received observer notification nsPref:changed
+1541687828469	Marionette	DEBUG	Init aborted (running=false, enabled=true, finalUIStartup=false)
+1541687828624	Marionette	DEBUG	Received observer notification toplevel-window-ready
+1541687829274	Marionette	DEBUG	Received observer notification sessionstore-windows-restored
+1541687829274	Marionette	DEBUG	Waiting for delayed startup...
+1541687829337	Marionette	DEBUG	Setting recommended pref security.turn_off_all_security_so_that_viruses_can_take_over_this_computer to true
+1541687829337	Marionette	DEBUG	Setting recommended pref apz.content_response_timeout to 60000
+1541687829337	Marionette	DEBUG	Setting recommended pref browser.download.panel.shown to true
+1541687829338	Marionette	DEBUG	Setting recommended pref browser.pagethumbnails.capturing_disabled to true
+1541687829338	Marionette	DEBUG	Setting recommended pref toolkit.cosmeticAnimations.enabled to false
+1541687829338	Marionette	DEBUG	Setting recommended pref browser.tabs.disableBackgroundZombification to false
+1541687829339	Marionette	DEBUG	Setting recommended pref browser.tabs.warnOnCloseOtherTabs to false
+1541687829339	Marionette	DEBUG	Setting recommended pref browser.urlbar.suggest.searches to false
+1541687829339	Marionette	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1541687829339	Marionette	DEBUG	Setting recommended pref dom.disable_beforeunload to true
+1541687829339	Marionette	DEBUG	Setting recommended pref dom.file.createInChild to true
+1541687829340	Marionette	DEBUG	Setting recommended pref extensions.getAddons.cache.enabled to false
+1541687829340	Marionette	DEBUG	Setting recommended pref extensions.webservice.discoverURL to http://%(server)s/dummy/discoveryURL
+1541687829340	Marionette	DEBUG	Setting recommended pref network.http.prompt-temp-redirect to false
+1541687829340	Marionette	DEBUG	Setting recommended pref network.http.speculative-parallel-limit to 0
+1541687829340	Marionette	DEBUG	Setting recommended pref security.notification_enable_delay to 0
+1541687829340	Marionette	DEBUG	Setting recommended pref signon.autofillForms to false
+1541687829375	Marionette	INFO	Listening on port 51863
+1541687829375	Marionette	DEBUG	Remote service is active
+1541687829636	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:51873
+1541687829637	Marionette	TRACE	0 -> [0,1,"WebDriver:NewSession",{"acceptInsecureCerts":true,"browserName":"firefox"}]
+1541687829638	Marionette	WARN	TLS certificate errors will be ignored for this session
+1541687829671	Marionette	DEBUG	[6442450945] Frame script loaded
+1541687829672	Marionette	DEBUG	[6442450945] Frame script registered
+1541687829673	Marionette	TRACE	0 <- [1,1,null,{"sessionId":"1ff58feb-e305-4a3d-a0e8-f3249431a5e1","capabilities":{"browserName":"firefox","browserVersion":"63.0. ... AppData\\Local\\Temp\\rust_mozprofile.3V5SE7T50qex","moz:useNonSpecCompliantPointerOrigin":false,"moz:webdriverClick":true}}]
+1541687829691	Marionette	TRACE	0 -> [0,2,"WebDriver:SetTimeouts",{"script":5000}]
+1541687829692	Marionette	TRACE	0 <- [1,2,null,{"value":null}]
+1541687829694	Marionette	TRACE	0 -> [0,3,"WebDriver:SetTimeouts",{"implicit":0}]
+1541687829695	Marionette	TRACE	0 <- [1,3,null,{"value":null}]
+1541687829698	Marionette	TRACE	0 -> [0,4,"WebDriver:Navigate",{"url":"about:blank"}]
+1541687829704	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for about:blank
+1541687829706	Marionette	DEBUG	[6442450945] Received DOM event pagehide for about:blank
+1541687829709	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for about:blank
+1541687829718	Marionette	DEBUG	[6442450945] Received DOM event pageshow for about:blank
+1541687829719	Marionette	TRACE	0 <- [1,4,null,{"value":null}]
+1541687829722	Marionette	TRACE	0 -> [0,5,"WebDriver:MaximizeWindow",{}]
+1541687829726	Marionette	TRACE	0 <- [1,5,null,{"x":-8,"y":-8,"width":1936,"height":1056,"state":"maximized"}]
+1541687829772	Marionette	TRACE	0 -> [0,6,"WebDriver:Navigate",{"url":"http://vinetki.melontech.com/"}]
+1541687829775	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for about:blank
+1541687829812	Marionette	DEBUG	[6442450945] Received DOM event pagehide for about:blank
+1541687830698	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for http://vinetki.melontech.com/
+1541687830707	Marionette	DEBUG	[6442450945] Received DOM event pageshow for http://vinetki.melontech.com/
+1541687830708	Marionette	TRACE	0 <- [1,6,null,{"value":null}]
+1541687830713	Marionette	TRACE	0 -> [0,7,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"navBar\"]/ul/li[2]/a"}]
+1541687830722	Marionette	TRACE	0 <- [1,7,null,[{"element-6066-11e4-a52e-4f735466cecf":"592af064-14b9-4566-ba3d-bfb21fa37d29"}]]
+1541687830724	Marionette	TRACE	0 -> [0,8,"WebDriver:GetElementTagName",{"id":"592af064-14b9-4566-ba3d-bfb21fa37d29"}]
+1541687830731	Marionette	TRACE	0 <- [1,8,null,{"value":"a"}]
+1541687830733	Marionette	TRACE	0 -> [0,9,"WebDriver:ElementClick",{"id":"592af064-14b9-4566-ba3d-bfb21fa37d29"}]
+1541687830758	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for http://vinetki.melontech.com/
+1541687830782	Marionette	DEBUG	[6442450945] Received DOM event pagehide for http://vinetki.melontech.com/
+1541687830785	Marionette	DEBUG	[6442450945] Received DOM event unload for http://vinetki.melontech.com/
+1541687830961	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for http://vinetki.melontech.com/Account/Login
+1541687830970	Marionette	DEBUG	[6442450945] Received DOM event pageshow for http://vinetki.melontech.com/Account/Login
+1541687830970	Marionette	TRACE	0 <- [1,9,null,{"value":null}]
+1541687830974	Marionette	TRACE	0 -> [0,10,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1541687830984	Marionette	TRACE	0 <- [1,10,null,[{"element-6066-11e4-a52e-4f735466cecf":"5ef5a1be-1637-485a-8446-3596718264ae"}]]
+1541687830988	Marionette	TRACE	0 -> [0,11,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1541687831001	Marionette	TRACE	0 <- [1,11,null,[{"element-6066-11e4-a52e-4f735466cecf":"5ef5a1be-1637-485a-8446-3596718264ae"}]]
+1541687831003	Marionette	TRACE	0 -> [0,12,"WebDriver:ElementClear",{"id":"5ef5a1be-1637-485a-8446-3596718264ae"}]
+1541687831005	Marionette	TRACE	0 <- [1,12,null,{"value":null}]
+1541687831007	Marionette	TRACE	0 -> [0,13,"WebDriver:ElementSendKeys",{"id":"5ef5a1be-1637-485a-8446-3596718264ae","text":"test@test.com","value":["t","e","s","t","@","t","e","s","t",".","c","o","m"]}]
+1541687831062	Marionette	TRACE	0 <- [1,13,null,{"value":null}]
+1541687831067	Marionette	TRACE	0 -> [0,14,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Password\"]"}]
+1541687831069	Marionette	TRACE	0 <- [1,14,null,[{"element-6066-11e4-a52e-4f735466cecf":"1b146d1c-45ef-4920-b1b5-012aafcc1ac1"}]]
+1541687831071	Marionette	TRACE	0 -> [0,15,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Password\"]"}]
+1541687831074	Marionette	TRACE	0 <- [1,15,null,[{"element-6066-11e4-a52e-4f735466cecf":"1b146d1c-45ef-4920-b1b5-012aafcc1ac1"}]]
+1541687831076	Marionette	TRACE	0 -> [0,16,"WebDriver:ElementClear",{"id":"1b146d1c-45ef-4920-b1b5-012aafcc1ac1"}]
+1541687831077	Marionette	TRACE	0 <- [1,16,null,{"value":null}]
+1541687831079	Marionette	TRACE	0 -> [0,17,"WebDriver:ElementSendKeys",{"id":"1b146d1c-45ef-4920-b1b5-012aafcc1ac1","text":"test1234!","value":["t","e","s","t","1","2","3","4","!"]}]
+1541687831111	Marionette	TRACE	0 <- [1,17,null,{"value":null}]
+1541687831116	Marionette	TRACE	0 -> [0,18,"WebDriver:GetCurrentURL",{}]
+1541687831117	Marionette	TRACE	0 <- [1,18,null,{"value":"http://vinetki.melontech.com/Account/Login"}]
+1541687831119	Marionette	TRACE	0 -> [0,19,"WebDriver:FindElements",{"using":"xpath","value":"//input[(@id='Log in' or @name='Log in' or @value='Log in' or @src='Log in' or @src='http://vinetki.melontech.com/Account/Log in')]"}]
+1541687831120	Marionette	TRACE	0 <- [1,19,null,[]]
+1541687831123	Marionette	TRACE	0 -> [0,20,"WebDriver:FindElements",{"using":"xpath","value":"//button[(@id='Log in' or @name='Log in' or @value='Log in' or normalize-space(descendant-or-self::text())='Log in')]"}]
+1541687831125	Marionette	TRACE	0 <- [1,20,null,[{"element-6066-11e4-a52e-4f735466cecf":"99000625-5f98-4886-95b0-0068eca7071e"}]]
+1541687831127	Marionette	TRACE	0 -> [0,21,"WebDriver:ElementClick",{"id":"99000625-5f98-4886-95b0-0068eca7071e"}]
+1541687831153	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for http://vinetki.melontech.com/Account/Login
+1541687831180	Marionette	DEBUG	[6442450945] Received DOM event pagehide for http://vinetki.melontech.com/Account/Login
+1541687831184	Marionette	DEBUG	[6442450945] Received DOM event unload for http://vinetki.melontech.com/Account/Login
+1541687831354	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for http://vinetki.melontech.com/Account/Login
+1541687831362	Marionette	DEBUG	[6442450945] Received DOM event pageshow for http://vinetki.melontech.com/Account/Login
+1541687831363	Marionette	TRACE	0 <- [1,21,null,{"value":null}]
+1541687834368	Marionette	TRACE	0 -> [0,22,"WebDriver:FindElements",{"using":"xpath","value":"/html/body/main/section/div/div/div/div/form/div[4]"}]
+1541687834370	Marionette	TRACE	0 <- [1,22,null,[{"element-6066-11e4-a52e-4f735466cecf":"90ce6396-5fd2-4457-bf3b-96e01ec63e4f"}]]
+1541687834374	Marionette	TRACE	0 -> [0,23,"Marionette:Quit",{"flags":["eForceQuit"]}]
+1541687834374	Marionette	INFO	Stopped listening on port 51863
+1541687834413	Marionette	TRACE	0 <- [1,23,null,{"cause":"shutdown"}]
+1541687834451	Marionette	TRACE	0 -> [0,24,"Marionette:Quit",{"flags":["eForceQuit"]}]
+1541687834451	Marionette	TRACE	0 <- [1,24,{"error":"invalid session id","message":"Tried to run command without establishing a connection","stacktrace":"WebDrive ... et@chrome://marionette/content/server.js:245:8\n_onJSONObjectReady/<@chrome://marionette/content/transport.js:490:9\n"},null]
+1541687834458	Marionette	DEBUG	Closed connection 0
+1541687834627	Marionette	DEBUG	Received observer notification xpcom-will-shutdown
+1541687834627	Marionette	DEBUG	Resetting recommended pref security.turn_off_all_security_so_that_viruses_can_take_over_this_computer
+1541687834628	Marionette	DEBUG	Resetting recommended pref apz.content_response_timeout
+1541687834628	Marionette	DEBUG	Resetting recommended pref browser.download.panel.shown
+1541687834628	Marionette	DEBUG	Resetting recommended pref browser.pagethumbnails.capturing_disabled
+1541687834628	Marionette	DEBUG	Resetting recommended pref toolkit.cosmeticAnimations.enabled
+1541687834628	Marionette	DEBUG	Resetting recommended pref browser.tabs.disableBackgroundZombification
+1541687834628	Marionette	DEBUG	Resetting recommended pref browser.tabs.warnOnCloseOtherTabs
+1541687834628	Marionette	DEBUG	Resetting recommended pref browser.urlbar.suggest.searches
+1541687834629	Marionette	DEBUG	Resetting recommended pref datareporting.policy.dataSubmissionPolicyAccepted
+1541687834629	Marionette	DEBUG	Resetting recommended pref dom.disable_beforeunload
+1541687834629	Marionette	DEBUG	Resetting recommended pref dom.file.createInChild
+1541687834629	Marionette	DEBUG	Resetting recommended pref extensions.getAddons.cache.enabled
+1541687834629	Marionette	DEBUG	Resetting recommended pref extensions.webservice.discoverURL
+1541687834629	Marionette	DEBUG	Resetting recommended pref network.http.prompt-temp-redirect
+1541687834629	Marionette	DEBUG	Resetting recommended pref network.http.speculative-parallel-limit
+1541687834629	Marionette	DEBUG	Resetting recommended pref security.notification_enable_delay
+1541687834629	Marionette	DEBUG	Resetting recommended pref signon.autofillForms
+1541687834629	Marionette	DEBUG	Remote service is inactive
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 12956, 
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1542284236497	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GGJERO~1\\AppData\\Local\\Temp\\rust_mozprofile.xOguFg3ygMwP"
+1542284237497	Marionette	DEBUG	Received observer notification profile-after-change
+1542284237608	Marionette	DEBUG	Received observer notification toplevel-window-ready
+1542284237647	Marionette	DEBUG	Received observer notification command-line-startup
+1542284237648	Marionette	DEBUG	Received observer notification nsPref:changed
+1542284237648	Marionette	DEBUG	Init aborted (running=false, enabled=true, finalUIStartup=false)
+1542284237882	Marionette	DEBUG	Received observer notification toplevel-window-ready
+1542284238875	Marionette	DEBUG	Received observer notification sessionstore-windows-restored
+1542284238875	Marionette	DEBUG	Waiting for delayed startup...
+1542284238966	Marionette	DEBUG	Setting recommended pref security.turn_off_all_security_so_that_viruses_can_take_over_this_computer to true
+1542284238966	Marionette	DEBUG	Setting recommended pref apz.content_response_timeout to 60000
+1542284238966	Marionette	DEBUG	Setting recommended pref browser.download.panel.shown to true
+1542284238966	Marionette	DEBUG	Setting recommended pref browser.pagethumbnails.capturing_disabled to true
+1542284238967	Marionette	DEBUG	Setting recommended pref toolkit.cosmeticAnimations.enabled to false
+1542284238967	Marionette	DEBUG	Setting recommended pref browser.tabs.disableBackgroundZombification to false
+1542284238967	Marionette	DEBUG	Setting recommended pref browser.tabs.warnOnCloseOtherTabs to false
+1542284238967	Marionette	DEBUG	Setting recommended pref browser.urlbar.suggest.searches to false
+1542284238967	Marionette	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1542284238967	Marionette	DEBUG	Setting recommended pref dom.disable_beforeunload to true
+1542284238968	Marionette	DEBUG	Setting recommended pref dom.file.createInChild to true
+1542284238968	Marionette	DEBUG	Setting recommended pref extensions.getAddons.cache.enabled to false
+1542284238968	Marionette	DEBUG	Setting recommended pref extensions.webservice.discoverURL to http://%(server)s/dummy/discoveryURL
+1542284238968	Marionette	DEBUG	Setting recommended pref network.http.prompt-temp-redirect to false
+1542284238968	Marionette	DEBUG	Setting recommended pref network.http.speculative-parallel-limit to 0
+1542284238969	Marionette	DEBUG	Setting recommended pref security.notification_enable_delay to 0
+1542284238969	Marionette	DEBUG	Setting recommended pref signon.autofillForms to false
+1542284239029	Marionette	INFO	Listening on port 4738
+1542284239029	Marionette	DEBUG	Remote service is active
+1542284239256	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:4749
+1542284239258	Marionette	TRACE	0 -> [0,1,"WebDriver:NewSession",{"acceptInsecureCerts":true,"browserName":"firefox"}]
+1542284239258	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542284239292	Marionette	DEBUG	[6442450945] Frame script loaded
+1542284239293	Marionette	DEBUG	[6442450945] Frame script registered
+1542284239295	Marionette	TRACE	0 <- [1,1,null,{"sessionId":"ddabdc06-59b4-40d1-9fcb-590f359ab7c6","capabilities":{"browserName":"firefox","browserVersion":"63.0. ... AppData\\Local\\Temp\\rust_mozprofile.xOguFg3ygMwP","moz:useNonSpecCompliantPointerOrigin":false,"moz:webdriverClick":true}}]
+1542284239307	Marionette	TRACE	0 -> [0,2,"WebDriver:SetTimeouts",{"script":5000}]
+1542284239307	Marionette	TRACE	0 <- [1,2,null,{"value":null}]
+1542284239312	Marionette	TRACE	0 -> [0,3,"WebDriver:SetTimeouts",{"implicit":0}]
+1542284239312	Marionette	TRACE	0 <- [1,3,null,{"value":null}]
+1542284239315	Marionette	TRACE	0 -> [0,4,"WebDriver:Navigate",{"url":"about:blank"}]
+1542284239320	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for about:blank
+1542284239323	Marionette	DEBUG	[6442450945] Received DOM event pagehide for about:blank
+1542284239328	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for about:blank
+1542284239337	Marionette	DEBUG	[6442450945] Received DOM event pageshow for about:blank
+1542284239338	Marionette	TRACE	0 <- [1,4,null,{"value":null}]
+1542284239340	Marionette	TRACE	0 -> [0,5,"WebDriver:MaximizeWindow",{}]
+1542284239344	Marionette	TRACE	0 <- [1,5,null,{"x":-8,"y":-8,"width":1936,"height":1056,"state":"maximized"}]
+1542284239385	Marionette	TRACE	0 -> [0,6,"WebDriver:Navigate",{"url":"http://vinetki.melontech.com/"}]
+1542284239389	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for about:blank
+1542284239463	Marionette	DEBUG	[6442450945] Received DOM event pagehide for about:blank
+1542284240631	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for http://vinetki.melontech.com/
+1542284240816	Marionette	DEBUG	[6442450945] Received DOM event pageshow for http://vinetki.melontech.com/
+1542284240816	Marionette	TRACE	0 <- [1,6,null,{"value":null}]
+1542284240824	Marionette	TRACE	0 -> [0,7,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"projects-section\"]/div[2]/div[1]/div/a"}]
+1542284240831	Marionette	TRACE	0 <- [1,7,null,[{"element-6066-11e4-a52e-4f735466cecf":"b48bf441-48a9-45d7-9347-422497af9d5e"}]]
+1542284240834	Marionette	TRACE	0 -> [0,8,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"projects-section\"]/div[2]/div[2]/div/a"}]
+1542284240836	Marionette	TRACE	0 <- [1,8,null,[{"element-6066-11e4-a52e-4f735466cecf":"2003adbc-8589-4a40-bc54-8add762490c4"}]]
+1542284240839	Marionette	TRACE	0 -> [0,9,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"projects-section\"]/div[2]/div[3]/div/a"}]
+1542284240842	Marionette	TRACE	0 <- [1,9,null,[{"element-6066-11e4-a52e-4f735466cecf":"babc05e4-702d-48b2-b07a-f507c66d3604"}]]
+1542284240854	Marionette	TRACE	0 -> [0,10,"WebDriver:FindElements",{"using":"xpath","value":"/html/body/main/section[2]/div/div[1]/h2"}]
+1542284240856	Marionette	TRACE	0 <- [1,10,null,[]]
+1542284241060	Marionette	TRACE	0 -> [0,11,"WebDriver:FindElements",{"using":"xpath","value":"/html/body/main/section[2]/div/div[1]/h2"}]
+1542284241062	Marionette	TRACE	0 <- [1,11,null,[]]
+1542284241264	Marionette	TRACE	0 -> [0,12,"WebDriver:FindElements",{"using":"xpath","value":"/html/body/main/section[2]/div/div[1]/h2"}]
+1542284241266	Marionette	TRACE	0 <- [1,12,null,[]]
+1542284241468	Marionette	TRACE	0 -> [0,13,"WebDriver:FindElements",{"using":"xpath","value":"/html/body/main/section[2]/div/div[1]/h2"}]
+1542284241470	Marionette	TRACE	0 <- [1,13,null,[]]
+1542284241671	Marionette	TRACE	0 -> [0,14,"WebDriver:FindElements",{"using":"xpath","value":"/html/body/main/section[2]/div/div[1]/h2"}]
+1542284241672	Marionette	TRACE	0 <- [1,14,null,[]]
+1542284241874	Marionette	TRACE	0 -> [0,15,"WebDriver:FindElements",{"using":"xpath","value":"/html/body/main/section[2]/div/div[1]/h2"}]
+1542284241875	Marionette	TRACE	0 <- [1,15,null,[]]
+1542284242077	Marionette	TRACE	0 -> [0,16,"WebDriver:FindElements",{"using":"xpath","value":"/html/body/main/section[2]/div/div[1]/h2"}]
+1542284242078	Marionette	TRACE	0 <- [1,16,null,[]]
+1542284242279	Marionette	TRACE	0 -> [0,17,"WebDriver:FindElements",{"using":"xpath","value":"/html/body/main/section[2]/div/div[1]/h2"}]
+1542284242281	Marionette	TRACE	0 <- [1,17,null,[]]
+1542284242482	Marionette	TRACE	0 -> [0,18,"WebDriver:FindElements",{"using":"xpath","value":"/html/body/main/section[2]/div/div[1]/h2"}]
+1542284242484	Marionette	TRACE	0 <- [1,18,null,[]]
+1542284242685	Marionette	TRACE	0 -> [0,19,"WebDriver:FindElements",{"using":"xpath","value":"/html/body/main/section[2]/div/div[1]/h2"}]
+1542284242686	Marionette	TRACE	0 <- [1,19,null,[]]
+1542284242887	Marionette	TRACE	0 -> [0,20,"WebDriver:FindElements",{"using":"xpath","value":"/html/body/main/section[2]/div/div[1]/h2"}]
+1542284242888	Marionette	TRACE	0 <- [1,20,null,[]]
+1542284243089	Marionette	TRACE	0 -> [0,21,"WebDriver:FindElements",{"using":"xpath","value":"/html/body/main/section[2]/div/div[1]/h2"}]
+1542284243090	Marionette	TRACE	0 <- [1,21,null,[]]
+1542284243292	Marionette	TRACE	0 -> [0,22,"WebDriver:FindElements",{"using":"xpath","value":"/html/body/main/section[2]/div/div[1]/h2"}]
+1542284243293	Marionette	TRACE	0 <- [1,22,null,[]]
+1542284243495	Marionette	TRACE	0 -> [0,23,"WebDriver:FindElements",{"using":"xpath","value":"/html/body/main/section[2]/div/div[1]/h2"}]
+1542284243496	Marionette	TRACE	0 <- [1,23,null,[]]
+1542284243696	Marionette	TRACE	0 -> [0,24,"WebDriver:FindElements",{"using":"xpath","value":"/html/body/main/section[2]/div/div[1]/h2"}]
+1542284243698	Marionette	TRACE	0 <- [1,24,null,[]]
+1542284243899	Marionette	TRACE	0 -> [0,25,"WebDriver:FindElements",{"using":"xpath","value":"/html/body/main/section[2]/div/div[1]/h2"}]
+1542284243900	Marionette	TRACE	0 <- [1,25,null,[]]
+1542284244101	Marionette	TRACE	0 -> [0,26,"WebDriver:FindElements",{"using":"xpath","value":"/html/body/main/section[2]/div/div[1]/h2"}]
+1542284244102	Marionette	TRACE	0 <- [1,26,null,[]]
+1542284244303	Marionette	TRACE	0 -> [0,27,"WebDriver:FindElements",{"using":"xpath","value":"/html/body/main/section[2]/div/div[1]/h2"}]
+1542284244304	Marionette	TRACE	0 <- [1,27,null,[]]
+1542284244505	Marionette	TRACE	0 -> [0,28,"WebDriver:FindElements",{"using":"xpath","value":"/html/body/main/section[2]/div/div[1]/h2"}]
+1542284244506	Marionette	TRACE	0 <- [1,28,null,[]]
+1542284244708	Marionette	TRACE	0 -> [0,29,"WebDriver:FindElements",{"using":"xpath","value":"/html/body/main/section[2]/div/div[1]/h2"}]
+1542284244710	Marionette	TRACE	0 <- [1,29,null,[]]
+1542284244911	Marionette	TRACE	0 -> [0,30,"WebDriver:FindElements",{"using":"xpath","value":"/html/body/main/section[2]/div/div[1]/h2"}]
+1542284244912	Marionette	TRACE	0 <- [1,30,null,[]]
+1542284245121	Marionette	TRACE	0 -> [0,31,"WebDriver:FindElements",{"using":"xpath","value":"/html/body/main/section[2]/div/div[1]/h2"}]
+1542284245122	Marionette	TRACE	0 <- [1,31,null,[]]
+1542284245321	Marionette	TRACE	0 -> [0,32,"WebDriver:FindElements",{"using":"xpath","value":"/html/body/main/section[2]/div/div[1]/h2"}]
+1542284245323	Marionette	TRACE	0 <- [1,32,null,[]]
+1542284245525	Marionette	TRACE	0 -> [0,33,"WebDriver:FindElements",{"using":"xpath","value":"/html/body/main/section[2]/div/div[1]/h2"}]
+1542284245526	Marionette	TRACE	0 <- [1,33,null,[]]
+1542284245738	Marionette	TRACE	0 -> [0,34,"WebDriver:FindElements",{"using":"xpath","value":"/html/body/main/section[2]/div/div[1]/h2"}]
+1542284245739	Marionette	TRACE	0 <- [1,34,null,[]]
+1542284245942	Marionette	TRACE	0 -> [0,35,"WebDriver:TakeScreenshot",{"full":false,"highlights":[],"id":null}]
+1542284246014	Marionette	TRACE	0 <- [1,35,null,{"value":"iVBORw0KGgoAAAANSUhEUgAAB28AAAPGCAYAAADEBdFYAAAgAElEQVR4nOzde1hd9Z3vcTqTHvXU9rQd7TittZ6nziTj2Gls40xnqj1J ... beAgAAcPcQbwEAAAAAAAAKQLwFAAAAAAAAKADxFgAAAAAAAKAAxFsAAAAAAACAAhBvAQAAAAAAAApAvAUAAAAAAAAogP8PQg0yfKejDTQAAAAASUVORK5CYII="}]
+1542284246043	Marionette	TRACE	0 -> [0,36,"Marionette:Quit",{"flags":["eForceQuit"]}]
+1542284246044	Marionette	INFO	Stopped listening on port 4738
+1542284246097	Marionette	TRACE	0 <- [1,36,null,{"cause":"shutdown"}]
+1542284246121	Marionette	TRACE	0 -> [0,37,"Marionette:Quit",{"flags":["eForceQuit"]}]
+1542284246121	Marionette	TRACE	0 <- [1,37,{"error":"invalid session id","message":"Tried to run command without establishing a connection","stacktrace":"WebDrive ... et@chrome://marionette/content/server.js:245:8\n_onJSONObjectReady/<@chrome://marionette/content/transport.js:490:9\n"},null]
+1542284246139	Marionette	DEBUG	Closed connection 0
+[Parent 10680, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1542284246313	Marionette	DEBUG	Received observer notification xpcom-will-shutdown
+1542284246313	Marionette	DEBUG	Resetting recommended pref security.turn_off_all_security_so_that_viruses_can_take_over_this_computer
+1542284246314	Marionette	DEBUG	Resetting recommended pref apz.content_response_timeout
+1542284246314	Marionette	DEBUG	Resetting recommended pref browser.download.panel.shown
+1542284246314	Marionette	DEBUG	Resetting recommended pref browser.pagethumbnails.capturing_disabled
+1542284246314	Marionette	DEBUG	Resetting recommended pref toolkit.cosmeticAnimations.enabled
+1542284246314	Marionette	DEBUG	Resetting recommended pref browser.tabs.disableBackgroundZombification
+1542284246314	Marionette	DEBUG	Resetting recommended pref browser.tabs.warnOnCloseOtherTabs
+1542284246315	Marionette	DEBUG	Resetting recommended pref browser.urlbar.suggest.searches
+1542284246315	Marionette	DEBUG	Resetting recommended pref datareporting.policy.dataSubmissionPolicyAccepted
+1542284246315	Marionette	DEBUG	Resetting recommended pref dom.disable_beforeunload
+1542284246315	Marionette	DEBUG	Resetting recommended pref dom.file.createInChild
+1542284246315	Marionette	DEBUG	Resetting recommended pref extensions.getAddons.cache.enabled
+1542284246315	Marionette	DEBUG	Resetting recommended pref extensions.webservice.discoverURL
+1542284246315	Marionette	DEBUG	Resetting recommended pref network.http.prompt-temp-redirect
+1542284246315	Marionette	DEBUG	Resetting recommended pref network.http.speculative-parallel-limit
+1542284246315	Marionette	DEBUG	Resetting recommended pref security.notification_enable_delay
+1542284246316	Marionette	DEBUG	Resetting recommended pref signon.autofillForms
+1542284246316	Marionette	DEBUG	Remote service is inactive
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 134
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1542284249899	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GGJERO~1\\AppData\\Local\\Temp\\rust_mozprofile.lHqIwKyrv1hn"
+1542284250404	Marionette	DEBUG	Received observer notification profile-after-change
+1542284250466	Marionette	DEBUG	Received observer notification toplevel-window-ready
+1542284250488	Marionette	DEBUG	Received observer notification command-line-startup
+1542284250488	Marionette	DEBUG	Received observer notification nsPref:changed
+1542284250488	Marionette	DEBUG	Init aborted (running=false, enabled=true, finalUIStartup=false)
+1542284250649	Marionette	DEBUG	Received observer notification toplevel-window-ready
+1542284251268	Marionette	DEBUG	Received observer notification sessionstore-windows-restored
+1542284251268	Marionette	DEBUG	Waiting for delayed startup...
+1542284251322	Marionette	DEBUG	Setting recommended pref security.turn_off_all_security_so_that_viruses_can_take_over_this_computer to true
+1542284251322	Marionette	DEBUG	Setting recommended pref apz.content_response_timeout to 60000
+1542284251323	Marionette	DEBUG	Setting recommended pref browser.download.panel.shown to true
+1542284251323	Marionette	DEBUG	Setting recommended pref browser.pagethumbnails.capturing_disabled to true
+1542284251323	Marionette	DEBUG	Setting recommended pref toolkit.cosmeticAnimations.enabled to false
+1542284251323	Marionette	DEBUG	Setting recommended pref browser.tabs.disableBackgroundZombification to false
+1542284251324	Marionette	DEBUG	Setting recommended pref browser.tabs.warnOnCloseOtherTabs to false
+1542284251324	Marionette	DEBUG	Setting recommended pref browser.urlbar.suggest.searches to false
+1542284251324	Marionette	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1542284251324	Marionette	DEBUG	Setting recommended pref dom.disable_beforeunload to true
+1542284251324	Marionette	DEBUG	Setting recommended pref dom.file.createInChild to true
+1542284251325	Marionette	DEBUG	Setting recommended pref extensions.getAddons.cache.enabled to false
+1542284251325	Marionette	DEBUG	Setting recommended pref extensions.webservice.discoverURL to http://%(server)s/dummy/discoveryURL
+1542284251325	Marionette	DEBUG	Setting recommended pref network.http.prompt-temp-redirect to false
+1542284251325	Marionette	DEBUG	Setting recommended pref network.http.speculative-parallel-limit to 0
+1542284251325	Marionette	DEBUG	Setting recommended pref security.notification_enable_delay to 0
+1542284251325	Marionette	DEBUG	Setting recommended pref signon.autofillForms to false
+1542284251357	Marionette	INFO	Listening on port 4782
+1542284251357	Marionette	DEBUG	Remote service is active
+1542284251540	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:4790
+1542284251541	Marionette	TRACE	0 -> [0,1,"WebDriver:NewSession",{"acceptInsecureCerts":true,"browserName":"firefox"}]
+1542284251541	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542284251577	Marionette	DEBUG	[6442450945] Frame script loaded
+1542284251578	Marionette	DEBUG	[6442450945] Frame script registered
+1542284251580	Marionette	TRACE	0 <- [1,1,null,{"sessionId":"9baae5e1-41c1-4ef4-8040-ffc8720f0dcb","capabilities":{"browserName":"firefox","browserVersion":"63.0. ... AppData\\Local\\Temp\\rust_mozprofile.lHqIwKyrv1hn","moz:useNonSpecCompliantPointerOrigin":false,"moz:webdriverClick":true}}]
+1542284251604	Marionette	TRACE	0 -> [0,2,"WebDriver:SetTimeouts",{"script":5000}]
+1542284251605	Marionette	TRACE	0 <- [1,2,null,{"value":null}]
+1542284251609	Marionette	TRACE	0 -> [0,3,"WebDriver:SetTimeouts",{"implicit":0}]
+1542284251609	Marionette	TRACE	0 <- [1,3,null,{"value":null}]
+1542284251617	Marionette	TRACE	0 -> [0,4,"WebDriver:Navigate",{"url":"about:blank"}]
+1542284251623	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for about:blank
+1542284251624	Marionette	DEBUG	[6442450945] Received DOM event pagehide for about:blank
+1542284251628	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for about:blank
+1542284251637	Marionette	DEBUG	[6442450945] Received DOM event pageshow for about:blank
+1542284251638	Marionette	TRACE	0 <- [1,4,null,{"value":null}]
+1542284251640	Marionette	TRACE	0 -> [0,5,"WebDriver:MaximizeWindow",{}]
+1542284251644	Marionette	TRACE	0 <- [1,5,null,{"x":-8,"y":-8,"width":1936,"height":1056,"state":"maximized"}]
+1542284251669	Marionette	TRACE	0 -> [0,6,"WebDriver:Navigate",{"url":"http://vinetki.melontech.com/"}]
+1542284251671	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for about:blank
+1542284251734	Marionette	DEBUG	[6442450945] Received DOM event pagehide for about:blank
+1542284252481	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for http://vinetki.melontech.com/
+1542284252880	Marionette	DEBUG	[6442450945] Received DOM event pageshow for http://vinetki.melontech.com/
+1542284252881	Marionette	TRACE	0 <- [1,6,null,{"value":null}]
+1542284252885	Marionette	TRACE	0 -> [0,7,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"navBar\"]/ul/li[2]/a"}]
+1542284252888	Marionette	TRACE	0 <- [1,7,null,[{"element-6066-11e4-a52e-4f735466cecf":"45ff86bd-b5d3-45b9-a504-58cd19705cb8"},{"element-6066-11e4-a52e-4f735466cecf":"1cfe5cb6-33f1-4cea-940b-505146162462"}]]
+1542284252889	Marionette	TRACE	0 -> [0,8,"WebDriver:GetElementTagName",{"id":"45ff86bd-b5d3-45b9-a504-58cd19705cb8"}]
+1542284252890	Marionette	TRACE	0 <- [1,8,null,{"value":"a"}]
+1542284252891	Marionette	TRACE	0 -> [0,9,"WebDriver:GetElementTagName",{"id":"1cfe5cb6-33f1-4cea-940b-505146162462"}]
+1542284252892	Marionette	TRACE	0 <- [1,9,null,{"value":"a"}]
+1542284252894	Marionette	TRACE	0 -> [0,10,"WebDriver:ElementClick",{"id":"45ff86bd-b5d3-45b9-a504-58cd19705cb8"}]
+1542284252917	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for http://vinetki.melontech.com/
+1542284252938	Marionette	DEBUG	[6442450945] Received DOM event pagehide for http://vinetki.melontech.com/
+1542284252940	Marionette	DEBUG	[6442450945] Received DOM event unload for http://vinetki.melontech.com/
+1542284253131	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for http://vinetki.melontech.com/general-information
+1542284253138	Marionette	DEBUG	[6442450945] Received DOM event pageshow for http://vinetki.melontech.com/general-information
+1542284253139	Marionette	TRACE	0 <- [1,10,null,{"value":null}]
+1542284253144	Marionette	TRACE	0 -> [0,11,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284253153	Marionette	TRACE	0 <- [1,11,null,[]]
+1542284253356	Marionette	TRACE	0 -> [0,12,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284253358	Marionette	TRACE	0 <- [1,12,null,[]]
+1542284253560	Marionette	TRACE	0 -> [0,13,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284253561	Marionette	TRACE	0 <- [1,13,null,[]]
+1542284253763	Marionette	TRACE	0 -> [0,14,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284253765	Marionette	TRACE	0 <- [1,14,null,[]]
+1542284253966	Marionette	TRACE	0 -> [0,15,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284253968	Marionette	TRACE	0 <- [1,15,null,[]]
+1542284254170	Marionette	TRACE	0 -> [0,16,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284254171	Marionette	TRACE	0 <- [1,16,null,[]]
+1542284254373	Marionette	TRACE	0 -> [0,17,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284254374	Marionette	TRACE	0 <- [1,17,null,[]]
+1542284254577	Marionette	TRACE	0 -> [0,18,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284254578	Marionette	TRACE	0 <- [1,18,null,[]]
+1542284254780	Marionette	TRACE	0 -> [0,19,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284254781	Marionette	TRACE	0 <- [1,19,null,[]]
+1542284254982	Marionette	TRACE	0 -> [0,20,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284254984	Marionette	TRACE	0 <- [1,20,null,[]]
+1542284255185	Marionette	TRACE	0 -> [0,21,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284255186	Marionette	TRACE	0 <- [1,21,null,[]]
+1542284255387	Marionette	TRACE	0 -> [0,22,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284255388	Marionette	TRACE	0 <- [1,22,null,[]]
+1542284255589	Marionette	TRACE	0 -> [0,23,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284255591	Marionette	TRACE	0 <- [1,23,null,[]]
+1542284255792	Marionette	TRACE	0 -> [0,24,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284255793	Marionette	TRACE	0 <- [1,24,null,[]]
+1542284255995	Marionette	TRACE	0 -> [0,25,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284256003	Marionette	TRACE	0 <- [1,25,null,[]]
+1542284256205	Marionette	TRACE	0 -> [0,26,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284256206	Marionette	TRACE	0 <- [1,26,null,[]]
+1542284256407	Marionette	TRACE	0 -> [0,27,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284256408	Marionette	TRACE	0 <- [1,27,null,[]]
+1542284256610	Marionette	TRACE	0 -> [0,28,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284256611	Marionette	TRACE	0 <- [1,28,null,[]]
+1542284256813	Marionette	TRACE	0 -> [0,29,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284256814	Marionette	TRACE	0 <- [1,29,null,[]]
+1542284257015	Marionette	TRACE	0 -> [0,30,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284257016	Marionette	TRACE	0 <- [1,30,null,[]]
+1542284257217	Marionette	TRACE	0 -> [0,31,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284257219	Marionette	TRACE	0 <- [1,31,null,[]]
+1542284257434	Marionette	TRACE	0 -> [0,32,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284257436	Marionette	TRACE	0 <- [1,32,null,[]]
+1542284257652	Marionette	TRACE	0 -> [0,33,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284257653	Marionette	TRACE	0 <- [1,33,null,[]]
+1542284257857	Marionette	TRACE	0 -> [0,34,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284257858	Marionette	TRACE	0 <- [1,34,null,[]]
+1542284258078	Marionette	TRACE	0 -> [0,35,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284258079	Marionette	TRACE	0 <- [1,35,null,[]]
+1542284258280	Marionette	TRACE	0 -> [0,36,"WebDriver:TakeScreenshot",{"full":false,"highlights":[],"id":null}]
+1542284258356	Marionette	TRACE	0 <- [1,36,null,{"value":"iVBORw0KGgoAAAANSUhEUgAAB28AAAPGCAYAAADEBdFYAAAgAElEQVR4nOzde3xUhZ338XRLH/Wp7bZd3XVba91X3YW1usUu7rqt9sE+ ... AWAAAAAAAAAAAAAJoA4S0AAAAAAAAAAAAANAHCWwAAAAAAAAAAAABoAoS3AAAAAAAAAAAAANAECG8BAAAAAAAAAAAAoAn8/1lAAbZ2BW39AAAAAElFTkSuQmCC"}]
+1542284258364	Marionette	TRACE	0 -> [0,37,"Marionette:Quit",{"flags":["eForceQuit"]}]
+1542284258364	Marionette	INFO	Stopped listening on port 4782
+1542284258406	Marionette	TRACE	0 <- [1,37,null,{"cause":"shutdown"}]
+1542284258427	Marionette	TRACE	0 -> [0,38,"Marionette:Quit",{"flags":["eForceQuit"]}]
+1542284258428	Marionette	TRACE	0 <- [1,38,{"error":"invalid session id","message":"Tried to run command without establishing a connection","stacktrace":"WebDrive ... et@chrome://marionette/content/server.js:245:8\n_onJSONObjectReady/<@chrome://marionette/content/transport.js:490:9\n"},null]
+1542284258435	Marionette	DEBUG	Closed connection 0
+[Parent 2492, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1542284258605	Marionette	DEBUG	Received observer notification xpcom-will-shutdown
+1542284258605	Marionette	DEBUG	Resetting recommended pref security.turn_off_all_security_so_that_viruses_can_take_over_this_computer
+1542284258605	Marionette	DEBUG	Resetting recommended pref apz.content_response_timeout
+1542284258605	Marionette	DEBUG	Resetting recommended pref browser.download.panel.shown
+1542284258606	Marionette	DEBUG	Resetting recommended pref browser.pagethumbnails.capturing_disabled
+1542284258606	Marionette	DEBUG	Resetting recommended pref toolkit.cosmeticAnimations.enabled
+1542284258606	Marionette	DEBUG	Resetting recommended pref browser.tabs.disableBackgroundZombification
+1542284258606	Marionette	DEBUG	Resetting recommended pref browser.tabs.warnOnCloseOtherTabs
+1542284258606	Marionette	DEBUG	Resetting recommended pref browser.urlbar.suggest.searches
+1542284258606	Marionette	DEBUG	Resetting recommended pref datareporting.policy.dataSubmissionPolicyAccepted
+1542284258607	Marionette	DEBUG	Resetting recommended pref dom.disable_beforeunload
+1542284258607	Marionette	DEBUG	Resetting recommended pref dom.file.createInChild
+1542284258607	Marionette	DEBUG	Resetting recommended pref extensions.getAddons.cache.enabled
+1542284258607	Marionette	DEBUG	Resetting recommended pref extensions.webservice.discoverURL
+1542284258607	Marionette	DEBUG	Resetting recommended pref network.http.prompt-temp-redirect
+1542284258607	Marionette	DEBUG	Resetting recommended pref network.http.speculative-parallel-limit
+1542284258607	Marionette	DEBUG	Resetting recommended pref security.notification_enable_delay
+1542284258607	Marionette	DEBUG	Resetting recommended pref signon.autofillForms
+1542284258607	Marionette	DEBUG	Remote service is inactive
+[GPU 13836,
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+ 
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1542284262230	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GGJERO~1\\AppData\\Local\\Temp\\rust_mozprofile.xaytYGrogI5X"
+1542284262725	Marionette	DEBUG	Received observer notification profile-after-change
+1542284262797	Marionette	DEBUG	Received observer notification toplevel-window-ready
+1542284262821	Marionette	DEBUG	Received observer notification command-line-startup
+1542284262821	Marionette	DEBUG	Received observer notification nsPref:changed
+1542284262821	Marionette	DEBUG	Init aborted (running=false, enabled=true, finalUIStartup=false)
+1542284262967	Marionette	DEBUG	Received observer notification toplevel-window-ready
+1542284263600	Marionette	DEBUG	Received observer notification sessionstore-windows-restored
+1542284263600	Marionette	DEBUG	Waiting for delayed startup...
+1542284263675	Marionette	DEBUG	Setting recommended pref security.turn_off_all_security_so_that_viruses_can_take_over_this_computer to true
+1542284263675	Marionette	DEBUG	Setting recommended pref apz.content_response_timeout to 60000
+1542284263675	Marionette	DEBUG	Setting recommended pref browser.download.panel.shown to true
+1542284263675	Marionette	DEBUG	Setting recommended pref browser.pagethumbnails.capturing_disabled to true
+1542284263676	Marionette	DEBUG	Setting recommended pref toolkit.cosmeticAnimations.enabled to false
+1542284263676	Marionette	DEBUG	Setting recommended pref browser.tabs.disableBackgroundZombification to false
+1542284263676	Marionette	DEBUG	Setting recommended pref browser.tabs.warnOnCloseOtherTabs to false
+1542284263676	Marionette	DEBUG	Setting recommended pref browser.urlbar.suggest.searches to false
+1542284263676	Marionette	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1542284263676	Marionette	DEBUG	Setting recommended pref dom.disable_beforeunload to true
+1542284263677	Marionette	DEBUG	Setting recommended pref dom.file.createInChild to true
+1542284263677	Marionette	DEBUG	Setting recommended pref extensions.getAddons.cache.enabled to false
+1542284263677	Marionette	DEBUG	Setting recommended pref extensions.webservice.discoverURL to http://%(server)s/dummy/discoveryURL
+1542284263677	Marionette	DEBUG	Setting recommended pref network.http.prompt-temp-redirect to false
+1542284263677	Marionette	DEBUG	Setting recommended pref network.http.speculative-parallel-limit to 0
+1542284263677	Marionette	DEBUG	Setting recommended pref security.notification_enable_delay to 0
+1542284263678	Marionette	DEBUG	Setting recommended pref signon.autofillForms to false
+1542284263709	Marionette	INFO	Listening on port 4827
+1542284263709	Marionette	DEBUG	Remote service is active
+1542284263878	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:4837
+1542284263880	Marionette	TRACE	0 -> [0,1,"WebDriver:NewSession",{"acceptInsecureCerts":true,"browserName":"firefox"}]
+1542284263880	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542284263917	Marionette	DEBUG	[6442450945] Frame script loaded
+1542284263919	Marionette	DEBUG	[6442450945] Frame script registered
+1542284263922	Marionette	TRACE	0 <- [1,1,null,{"sessionId":"b4c43eae-3510-411d-b504-d5c144a98a26","capabilities":{"browserName":"firefox","browserVersion":"63.0. ... AppData\\Local\\Temp\\rust_mozprofile.xaytYGrogI5X","moz:useNonSpecCompliantPointerOrigin":false,"moz:webdriverClick":true}}]
+1542284263940	Marionette	TRACE	0 -> [0,2,"WebDriver:SetTimeouts",{"script":5000}]
+1542284263940	Marionette	TRACE	0 <- [1,2,null,{"value":null}]
+1542284263949	Marionette	TRACE	0 -> [0,3,"WebDriver:SetTimeouts",{"implicit":0}]
+1542284263949	Marionette	TRACE	0 <- [1,3,null,{"value":null}]
+1542284263951	Marionette	TRACE	0 -> [0,4,"WebDriver:Navigate",{"url":"about:blank"}]
+1542284263960	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for about:blank
+1542284263963	Marionette	DEBUG	[6442450945] Received DOM event pagehide for about:blank
+1542284263967	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for about:blank
+1542284263975	Marionette	DEBUG	[6442450945] Received DOM event pageshow for about:blank
+1542284263976	Marionette	TRACE	0 <- [1,4,null,{"value":null}]
+1542284263979	Marionette	TRACE	0 -> [0,5,"WebDriver:MaximizeWindow",{}]
+1542284263982	Marionette	TRACE	0 <- [1,5,null,{"x":-8,"y":-8,"width":1936,"height":1056,"state":"maximized"}]
+1542284264000	Marionette	TRACE	0 -> [0,6,"WebDriver:Navigate",{"url":"http://vinetki.melontech.com/"}]
+1542284264003	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for about:blank
+1542284264068	Marionette	DEBUG	[6442450945] Received DOM event pagehide for about:blank
+1542284264891	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for http://vinetki.melontech.com/
+1542284265258	Marionette	DEBUG	[6442450945] Received DOM event pageshow for http://vinetki.melontech.com/
+1542284265259	Marionette	TRACE	0 <- [1,6,null,{"value":null}]
+1542284265263	Marionette	TRACE	0 -> [0,7,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"navBar\"]/ul/li[2]/a"}]
+1542284265267	Marionette	TRACE	0 <- [1,7,null,[{"element-6066-11e4-a52e-4f735466cecf":"076100c4-821e-4ecd-82ca-7f0a38c98942"},{"element-6066-11e4-a52e-4f735466cecf":"1502c8cc-1d85-4e0c-8dfb-5cd8490bd13c"}]]
+1542284265269	Marionette	TRACE	0 -> [0,8,"WebDriver:GetElementTagName",{"id":"076100c4-821e-4ecd-82ca-7f0a38c98942"}]
+1542284265271	Marionette	TRACE	0 <- [1,8,null,{"value":"a"}]
+1542284265272	Marionette	TRACE	0 -> [0,9,"WebDriver:GetElementTagName",{"id":"1502c8cc-1d85-4e0c-8dfb-5cd8490bd13c"}]
+1542284265273	Marionette	TRACE	0 <- [1,9,null,{"value":"a"}]
+1542284265275	Marionette	TRACE	0 -> [0,10,"WebDriver:ElementClick",{"id":"076100c4-821e-4ecd-82ca-7f0a38c98942"}]
+1542284265294	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for http://vinetki.melontech.com/
+1542284265317	Marionette	DEBUG	[6442450945] Received DOM event pagehide for http://vinetki.melontech.com/
+1542284265320	Marionette	DEBUG	[6442450945] Received DOM event unload for http://vinetki.melontech.com/
+1542284265504	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for http://vinetki.melontech.com/general-information
+1542284265512	Marionette	DEBUG	[6442450945] Received DOM event pageshow for http://vinetki.melontech.com/general-information
+1542284265513	Marionette	TRACE	0 <- [1,10,null,{"value":null}]
+1542284265520	Marionette	TRACE	0 -> [0,11,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284265535	Marionette	TRACE	0 <- [1,11,null,[]]
+1542284265737	Marionette	TRACE	0 -> [0,12,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284265739	Marionette	TRACE	0 <- [1,12,null,[]]
+1542284265941	Marionette	TRACE	0 -> [0,13,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284265943	Marionette	TRACE	0 <- [1,13,null,[]]
+1542284266144	Marionette	TRACE	0 -> [0,14,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284266146	Marionette	TRACE	0 <- [1,14,null,[]]
+1542284266348	Marionette	TRACE	0 -> [0,15,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284266351	Marionette	TRACE	0 <- [1,15,null,[]]
+1542284266552	Marionette	TRACE	0 -> [0,16,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284266553	Marionette	TRACE	0 <- [1,16,null,[]]
+1542284266755	Marionette	TRACE	0 -> [0,17,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284266756	Marionette	TRACE	0 <- [1,17,null,[]]
+1542284266958	Marionette	TRACE	0 -> [0,18,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284266960	Marionette	TRACE	0 <- [1,18,null,[]]
+1542284267161	Marionette	TRACE	0 -> [0,19,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284267162	Marionette	TRACE	0 <- [1,19,null,[]]
+1542284267363	Marionette	TRACE	0 -> [0,20,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284267366	Marionette	TRACE	0 <- [1,20,null,[]]
+1542284267568	Marionette	TRACE	0 -> [0,21,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284267569	Marionette	TRACE	0 <- [1,21,null,[]]
+1542284267771	Marionette	TRACE	0 -> [0,22,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284267772	Marionette	TRACE	0 <- [1,22,null,[]]
+1542284267974	Marionette	TRACE	0 -> [0,23,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284267975	Marionette	TRACE	0 <- [1,23,null,[]]
+1542284268176	Marionette	TRACE	0 -> [0,24,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284268178	Marionette	TRACE	0 <- [1,24,null,[]]
+1542284268379	Marionette	TRACE	0 -> [0,25,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284268381	Marionette	TRACE	0 <- [1,25,null,[]]
+1542284268582	Marionette	TRACE	0 -> [0,26,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284268588	Marionette	TRACE	0 <- [1,26,null,[]]
+1542284268790	Marionette	TRACE	0 -> [0,27,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284268791	Marionette	TRACE	0 <- [1,27,null,[]]
+1542284268993	Marionette	TRACE	0 -> [0,28,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284268994	Marionette	TRACE	0 <- [1,28,null,[]]
+1542284269196	Marionette	TRACE	0 -> [0,29,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284269197	Marionette	TRACE	0 <- [1,29,null,[]]
+1542284269398	Marionette	TRACE	0 -> [0,30,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284269400	Marionette	TRACE	0 <- [1,30,null,[]]
+1542284269600	Marionette	TRACE	0 -> [0,31,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284269601	Marionette	TRACE	0 <- [1,31,null,[]]
+1542284269828	Marionette	TRACE	0 -> [0,32,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284269830	Marionette	TRACE	0 <- [1,32,null,[]]
+1542284270029	Marionette	TRACE	0 -> [0,33,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284270030	Marionette	TRACE	0 <- [1,33,null,[]]
+1542284270247	Marionette	TRACE	0 -> [0,34,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284270254	Marionette	TRACE	0 <- [1,34,null,[]]
+1542284270443	Marionette	TRACE	0 -> [0,35,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284270444	Marionette	TRACE	0 <- [1,35,null,[]]
+1542284270662	Marionette	TRACE	0 -> [0,36,"WebDriver:TakeScreenshot",{"full":false,"highlights":[],"id":null}]
+1542284270738	Marionette	TRACE	0 <- [1,36,null,{"value":"iVBORw0KGgoAAAANSUhEUgAAB28AAAPGCAYAAADEBdFYAAAgAElEQVR4nOzde3xUhZ338XRLH/Wp7bZd3XVba91X3YW1usUu7rqt9sE+ ... AWAAAAAAAAAAAAAJoA4S0AAAAAAAAAAAAANAHCWwAAAAAAAAAAAABoAoS3AAAAAAAAAAAAANAECG8BAAAAAAAAAAAAoAn8/1lAAbZ2BW39AAAAAElFTkSuQmCC"}]
+1542284270745	Marionette	TRACE	0 -> [0,37,"Marionette:Quit",{"flags":["eForceQuit"]}]
+1542284270746	Marionette	INFO	Stopped listening on port 4827
+1542284270780	Marionette	TRACE	0 <- [1,37,null,{"cause":"shutdown"}]
+1542284270804	Marionette	TRACE	0 -> [0,38,"Marionette:Quit",{"flags":["eForceQuit"]}]
+1542284270804	Marionette	TRACE	0 <- [1,38,{"error":"invalid session id","message":"Tried to run command without establishing a connection","stacktrace":"WebDrive ... et@chrome://marionette/content/server.js:245:8\n_onJSONObjectReady/<@chrome://marionette/content/transport.js:490:9\n"},null]
+[Child 13460, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 13460, Chrome_Chil1542284270811	Marionette	DEBUG	Closed connection 0
+1542284270974	Marionette	DEBUG	Received observer notification xpcom-will-shutdown
+1542284270974	Marionette	DEBUG	Resetting recommended pref security.turn_off_all_security_so_that_viruses_can_take_over_this_computer
+1542284270974	Marionette	DEBUG	Resetting recommended pref apz.content_response_timeout
+1542284270975	Marionette	DEBUG	Resetting recommended pref browser.download.panel.shown
+1542284270975	Marionette	DEBUG	Resetting recommended pref browser.pagethumbnails.capturing_disabled
+1542284270975	Marionette	DEBUG	Resetting recommended pref toolkit.cosmeticAnimations.enabled
+1542284270975	Marionette	DEBUG	Resetting recommended pref browser.tabs.disableBackgroundZombification
+1542284270975	Marionette	DEBUG	Resetting recommended pref browser.tabs.warnOnCloseOtherTabs
+1542284270975	Marionette	DEBUG	Resetting recommended pref browser.urlbar.suggest.searches
+1542284270975	Marionette	DEBUG	Resetting recommended pref datareporting.policy.dataSubmissionPolicyAccepted
+1542284270976	Marionette	DEBUG	Resetting recommended pref dom.disable_beforeunload
+1542284270976	Marionette	DEBUG	Resetting recommended pref dom.file.createInChild
+1542284270976	Marionette	DEBUG	Resetting recommended pref extensions.getAddons.cache.enabled
+1542284270976	Marionette	DEBUG	Resetting recommended pref extensions.webservice.discoverURL
+1542284270976	Marionette	DEBUG	Resetting recommended pref network.http.prompt-temp-redirect
+1542284270976	Marionette	DEBUG	Resetting recommended pref network.http.speculative-parallel-limit
+1542284270976	Marionette	DEBUG	Resetting recommended pref security.notification_enable_delay
+1542284270976	Marionette	DEBUG	Resetting recommended pref signon.autofillForms
+1542284270976	Marionette	DEBUG	Remote service is inactive
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 13688, Chrome
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1542284274445	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GGJERO~1\\AppData\\Local\\Temp\\rust_mozprofile.qm6AQjRBgBBg"
+1542284274939	Marionette	DEBUG	Received observer notification profile-after-change
+1542284275000	Marionette	DEBUG	Received observer notification toplevel-window-ready
+1542284275022	Marionette	DEBUG	Received observer notification command-line-startup
+1542284275022	Marionette	DEBUG	Received observer notification nsPref:changed
+1542284275022	Marionette	DEBUG	Init aborted (running=false, enabled=true, finalUIStartup=false)
+1542284275171	Marionette	DEBUG	Received observer notification toplevel-window-ready
+1542284275803	Marionette	DEBUG	Received observer notification sessionstore-windows-restored
+1542284275803	Marionette	DEBUG	Waiting for delayed startup...
+1542284275861	Marionette	DEBUG	Setting recommended pref security.turn_off_all_security_so_that_viruses_can_take_over_this_computer to true
+1542284275861	Marionette	DEBUG	Setting recommended pref apz.content_response_timeout to 60000
+1542284275862	Marionette	DEBUG	Setting recommended pref browser.download.panel.shown to true
+1542284275862	Marionette	DEBUG	Setting recommended pref browser.pagethumbnails.capturing_disabled to true
+1542284275863	Marionette	DEBUG	Setting recommended pref toolkit.cosmeticAnimations.enabled to false
+1542284275863	Marionette	DEBUG	Setting recommended pref browser.tabs.disableBackgroundZombification to false
+1542284275863	Marionette	DEBUG	Setting recommended pref browser.tabs.warnOnCloseOtherTabs to false
+1542284275872	Marionette	DEBUG	Setting recommended pref browser.urlbar.suggest.searches to false
+1542284275872	Marionette	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1542284275872	Marionette	DEBUG	Setting recommended pref dom.disable_beforeunload to true
+1542284275873	Marionette	DEBUG	Setting recommended pref dom.file.createInChild to true
+1542284275873	Marionette	DEBUG	Setting recommended pref extensions.getAddons.cache.enabled to false
+1542284275873	Marionette	DEBUG	Setting recommended pref extensions.webservice.discoverURL to http://%(server)s/dummy/discoveryURL
+1542284275873	Marionette	DEBUG	Setting recommended pref network.http.prompt-temp-redirect to false
+1542284275873	Marionette	DEBUG	Setting recommended pref network.http.speculative-parallel-limit to 0
+1542284275873	Marionette	DEBUG	Setting recommended pref security.notification_enable_delay to 0
+1542284275873	Marionette	DEBUG	Setting recommended pref signon.autofillForms to false
+1542284275906	Marionette	INFO	Listening on port 4870
+1542284275907	Marionette	DEBUG	Remote service is active
+1542284276086	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:4878
+1542284276086	Marionette	TRACE	0 -> [0,1,"WebDriver:NewSession",{"acceptInsecureCerts":true,"browserName":"firefox"}]
+1542284276087	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542284276122	Marionette	DEBUG	[6442450945] Frame script loaded
+1542284276123	Marionette	DEBUG	[6442450945] Frame script registered
+1542284276125	Marionette	TRACE	0 <- [1,1,null,{"sessionId":"d9cb10db-9eda-4dfe-9392-b3ec1b5499a9","capabilities":{"browserName":"firefox","browserVersion":"63.0. ... AppData\\Local\\Temp\\rust_mozprofile.qm6AQjRBgBBg","moz:useNonSpecCompliantPointerOrigin":false,"moz:webdriverClick":true}}]
+1542284276132	Marionette	TRACE	0 -> [0,2,"WebDriver:SetTimeouts",{"script":5000}]
+1542284276133	Marionette	TRACE	0 <- [1,2,null,{"value":null}]
+1542284276134	Marionette	TRACE	0 -> [0,3,"WebDriver:SetTimeouts",{"implicit":0}]
+1542284276135	Marionette	TRACE	0 <- [1,3,null,{"value":null}]
+1542284276138	Marionette	TRACE	0 -> [0,4,"WebDriver:Navigate",{"url":"about:blank"}]
+1542284276149	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for about:blank
+1542284276151	Marionette	DEBUG	[6442450945] Received DOM event pagehide for about:blank
+1542284276154	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for about:blank
+1542284276163	Marionette	DEBUG	[6442450945] Received DOM event pageshow for about:blank
+1542284276167	Marionette	TRACE	0 <- [1,4,null,{"value":null}]
+1542284276173	Marionette	TRACE	0 -> [0,5,"WebDriver:MaximizeWindow",{}]
+1542284276176	Marionette	TRACE	0 <- [1,5,null,{"x":-8,"y":-8,"width":1936,"height":1056,"state":"maximized"}]
+1542284276210	Marionette	TRACE	0 -> [0,6,"WebDriver:Navigate",{"url":"http://vinetki.melontech.com/"}]
+1542284276215	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for about:blank
+1542284276286	Marionette	DEBUG	[6442450945] Received DOM event pagehide for about:blank
+1542284277108	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for http://vinetki.melontech.com/
+1542284277414	Marionette	DEBUG	[6442450945] Received DOM event pageshow for http://vinetki.melontech.com/
+1542284277415	Marionette	TRACE	0 <- [1,6,null,{"value":null}]
+1542284277420	Marionette	TRACE	0 -> [0,7,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"navBar\"]/ul/li[2]/a"}]
+1542284277423	Marionette	TRACE	0 <- [1,7,null,[{"element-6066-11e4-a52e-4f735466cecf":"742d4804-0f14-4946-82b5-be8fd729df41"},{"element-6066-11e4-a52e-4f735466cecf":"96c4bc64-c1cb-49c1-ba3f-08dcb7419a5a"}]]
+1542284277424	Marionette	TRACE	0 -> [0,8,"WebDriver:GetElementTagName",{"id":"742d4804-0f14-4946-82b5-be8fd729df41"}]
+1542284277426	Marionette	TRACE	0 <- [1,8,null,{"value":"a"}]
+1542284277427	Marionette	TRACE	0 -> [0,9,"WebDriver:GetElementTagName",{"id":"96c4bc64-c1cb-49c1-ba3f-08dcb7419a5a"}]
+1542284277428	Marionette	TRACE	0 <- [1,9,null,{"value":"a"}]
+1542284277430	Marionette	TRACE	0 -> [0,10,"WebDriver:ElementClick",{"id":"742d4804-0f14-4946-82b5-be8fd729df41"}]
+1542284277450	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for http://vinetki.melontech.com/
+1542284277472	Marionette	DEBUG	[6442450945] Received DOM event pagehide for http://vinetki.melontech.com/
+1542284277475	Marionette	DEBUG	[6442450945] Received DOM event unload for http://vinetki.melontech.com/
+1542284277659	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for http://vinetki.melontech.com/general-information
+1542284277667	Marionette	DEBUG	[6442450945] Received DOM event pageshow for http://vinetki.melontech.com/general-information
+1542284277667	Marionette	TRACE	0 <- [1,10,null,{"value":null}]
+1542284277672	Marionette	TRACE	0 -> [0,11,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284277682	Marionette	TRACE	0 <- [1,11,null,[]]
+1542284277883	Marionette	TRACE	0 -> [0,12,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284277885	Marionette	TRACE	0 <- [1,12,null,[]]
+1542284278087	Marionette	TRACE	0 -> [0,13,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284278089	Marionette	TRACE	0 <- [1,13,null,[]]
+1542284278292	Marionette	TRACE	0 -> [0,14,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284278293	Marionette	TRACE	0 <- [1,14,null,[]]
+1542284278495	Marionette	TRACE	0 -> [0,15,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284278497	Marionette	TRACE	0 <- [1,15,null,[]]
+1542284278698	Marionette	TRACE	0 -> [0,16,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284278699	Marionette	TRACE	0 <- [1,16,null,[]]
+1542284278900	Marionette	TRACE	0 -> [0,17,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284278901	Marionette	TRACE	0 <- [1,17,null,[]]
+1542284279102	Marionette	TRACE	0 -> [0,18,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284279103	Marionette	TRACE	0 <- [1,18,null,[]]
+1542284279304	Marionette	TRACE	0 -> [0,19,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284279305	Marionette	TRACE	0 <- [1,19,null,[]]
+1542284279506	Marionette	TRACE	0 -> [0,20,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284279508	Marionette	TRACE	0 <- [1,20,null,[]]
+1542284279709	Marionette	TRACE	0 -> [0,21,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284279711	Marionette	TRACE	0 <- [1,21,null,[]]
+1542284279912	Marionette	TRACE	0 -> [0,22,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284279913	Marionette	TRACE	0 <- [1,22,null,[]]
+1542284280115	Marionette	TRACE	0 -> [0,23,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284280116	Marionette	TRACE	0 <- [1,23,null,[]]
+1542284280318	Marionette	TRACE	0 -> [0,24,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284280319	Marionette	TRACE	0 <- [1,24,null,[]]
+1542284280521	Marionette	TRACE	0 -> [0,25,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284280523	Marionette	TRACE	0 <- [1,25,null,[]]
+1542284280724	Marionette	TRACE	0 -> [0,26,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284280725	Marionette	TRACE	0 <- [1,26,null,[]]
+1542284280927	Marionette	TRACE	0 -> [0,27,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284280928	Marionette	TRACE	0 <- [1,27,null,[]]
+1542284281129	Marionette	TRACE	0 -> [0,28,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284281136	Marionette	TRACE	0 <- [1,28,null,[]]
+1542284281338	Marionette	TRACE	0 -> [0,29,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284281341	Marionette	TRACE	0 <- [1,29,null,[]]
+1542284281542	Marionette	TRACE	0 -> [0,30,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284281544	Marionette	TRACE	0 <- [1,30,null,[]]
+1542284281746	Marionette	TRACE	0 -> [0,31,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284281747	Marionette	TRACE	0 <- [1,31,null,[]]
+1542284281962	Marionette	TRACE	0 -> [0,32,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284281964	Marionette	TRACE	0 <- [1,32,null,[]]
+1542284282163	Marionette	TRACE	0 -> [0,33,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284282164	Marionette	TRACE	0 <- [1,33,null,[]]
+1542284282363	Marionette	TRACE	0 -> [0,34,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284282364	Marionette	TRACE	0 <- [1,34,null,[]]
+1542284282567	Marionette	TRACE	0 -> [0,35,"WebDriver:FindElements",{"using":"xpath","value":"//*[@id=\"Email\"]"}]
+1542284282568	Marionette	TRACE	0 <- [1,35,null,[]]
+1542284282768	Marionette	TRACE	0 -> [0,36,"WebDriver:TakeScreenshot",{"full":false,"highlights":[],"id":null}]
+1542284282846	Marionette	TRACE	0 <- [1,36,null,{"value":"iVBORw0KGgoAAAANSUhEUgAAB28AAAPGCAYAAADEBdFYAAAgAElEQVR4nOzde3xUhZ338XRLH/Wp7bZd3XVba91X3YW1usUu7rqt9sE+ ... AWAAAAAAAAAAAAAJoA4S0AAAAAAAAAAAAANAHCWwAAAAAAAAAAAABoAoS3AAAAAAAAAAAAANAECG8BAAAAAAAAAAAAoAn8/1lAAbZ2BW39AAAAAElFTkSuQmCC"}]
+1542284282853	Marionette	TRACE	0 -> [0,37,"Marionette:Quit",{"flags":["eForceQuit"]}]
+1542284282853	Marionette	INFO	Stopped listening on port 4870
+1542284282886	Marionette	TRACE	0 <- [1,37,null,{"cause":"shutdown"}]
+1542284282905	Marionette	TRACE	0 -> [0,38,"Marionette:Quit",{"flags":["eForceQuit"]}]
+1542284282906	Marionette	TRACE	0 <- [1,38,{"error":"invalid session id","message":"Tried to run command without establishing a connection","stacktrace":"WebDrive ... et@chrome://marionette/content/server.js:245:8\n_onJSONObjectReady/<@chrome://marionette/content/transport.js:490:9\n"},null]
+1542284282913	Marionette	DEBUG	Closed connection 0
+1542284283079	Marionette	DEBUG	Received observer notification xpcom-will-shutdown
+1542284283079	Marionette	DEBUG	Resetting recommended pref security.turn_off_all_security_so_that_viruses_can_take_over_this_computer
+1542284283079	Marionette	DEBUG	Resetting recommended pref apz.content_response_timeout
+1542284283079	Marionette	DEBUG	Resetting recommended pref browser.download.panel.shown
+1542284283079	Marionette	DEBUG	Resetting recommended pref browser.pagethumbnails.capturing_disabled
+1542284283079	Marionette	DEBUG	Resetting recommended pref toolkit.cosmeticAnimations.enabled
+1542284283080	Marionette	DEBUG	Resetting recommended pref browser.tabs.disableBackgroundZombification
+1542284283080	Marionette	DEBUG	Resetting recommended pref browser.tabs.warnOnCloseOtherTabs
+1542284283080	Marionette	DEBUG	Resetting recommended pref browser.urlbar.suggest.searches
+1542284283080	Marionette	DEBUG	Resetting recommended pref datareporting.policy.dataSubmissionPolicyAccepted
+1542284283080	Marionette	DEBUG	Resetting recommended pref dom.disable_beforeunload
+1542284283080	Marionette	DEBUG	Resetting recommended pref dom.file.createInChild
+1542284283080	Marionette	DEBUG	Resetting recommended pref extensions.getAddons.cache.enabled
+1542284283081	Marionette	DEBUG	Resetting recommended pref extensions.webservice.discoverURL
+1542284283081	Marionette	DEBUG	Resetting recommended pref network.http.prompt-temp-redirect
+1542284283081	Marionette	DEBUG	Resetting recommended pref network.http.speculative-parallel-limit
+1542284283081	Marionette	DEBUG	Resetting recommended pref security.notification_enable_delay
+1542284283081	Marionette	DEBUG	Resetting recommended pref signon.autofillForms
+1542284283081	Marionette	DEBUG	Remote service is inactive
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 3968, Chrom
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1542618080124	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GGJERO~1\\AppData\\Local\\Temp\\rust_mozprofile.Xx4MpwmQj8lf"
+1542618084368	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GGJERO~1\\AppData\\Local\\Temp\\rust_mozprofile.gnlhH03f9l6H"
+1542618086251	Marionette	INFO	Listening on port 47781
+1542618086568	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542618093753	Marionette	INFO	Stopped listening on port 47781
+[Child 14612, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 14612, Chrome_C
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 5184, Chrom
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1542618097420	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GGJERO~1\\AppData\\Local\\Temp\\rust_mozprofile.gxzX82wJIdke"
+1542618098877	Marionette	INFO	Listening on port 47853
+1542618099032	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542618105907	Marionette	INFO	Stopped listening on port 47853
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 16876, Chrome_Ch
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1542618109540	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GGJERO~1\\AppData\\Local\\Temp\\rust_mozprofile.ZnzCyJe9fvIv"
+1542618110833	Marionette	INFO	Listening on port 47911
+1542618111161	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542618118361	Marionette	INFO	Stopped listening on port 47911
+[GPU 10072, 
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chrom
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1542892186030	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GGJERO~1\\AppData\\Local\\Temp\\rust_mozprofile.Sl29qRs2aPw8"
+1542892187813	Marionette	INFO	Listening on port 41493
+1542892188140	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542892194891	Marionette	INFO	Stopped listening on port 41493
+[Child 12304, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 12304, Chrome_ChildT[GPU 13628, Chrome
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1542892198706	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GGJERO~1\\AppData\\Local\\Temp\\rust_mozprofile.gEqNMZdLaCRW"
+1542892200113	Marionette	INFO	Listening on port 41557
+1542892200321	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542892206803	Marionette	INFO	Stopped listening on port 41557
+[GPU 10412, Chrome_ChildT
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1542892210608	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GGJERO~1\\AppData\\Local\\Temp\\rust_mozprofile.9epyWbfazgV0"
+1542892211974	Marionette	INFO	Listening on port 41618
+1542892212217	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542892219004	Marionette	INFO	Stopped listening on port 41618
+[Child 3992, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 3992, Chrome_Child[Child 3608, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 3608, Chrome_ChildThre
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 11216, Chrome_Child
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1542892222626	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GGJERO~1\\AppData\\Local\\Temp\\rust_mozprofile.m3VeuiCuVeP2"
+1542892223992	Marionette	INFO	Listening on port 41678
+1542892224253	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542892230855	Marionette	INFO	Stopped listening on port 41678
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 16472, Chrome_Ch
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1542892580104	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GGJERO~1\\AppData\\Local\\Temp\\rust_mozprofile.bLeCKnfYjpRl"
+1542892581507	Marionette	INFO	Listening on port 42232
+1542892581717	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542892588361	Marionette	INFO	Stopped listening on port 42232
+[Parent 18732, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 11416, Chrome_Ch
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1542892663316	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GGJERO~1\\AppData\\Local\\Temp\\rust_mozprofile.gFi66wQchZGL"
+1542892664785	Marionette	INFO	Listening on port 42387
+1542892664926	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542892666078	Marionette	INFO	Stopped listening on port 42387
+[Child 13732, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 13732, Chrome_C
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 1925
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1542892743651	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GGJERO~1\\AppData\\Local\\Temp\\rust_mozprofile.IUqlIfSKBEXr"
+1542892744946	Marionette	INFO	Listening on port 42541
+1542892745262	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542892746535	Marionette	INFO	Stopped listening on port 42541
+[Parent 7128, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 11580, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 11580, Chrome_Chi[Child 17924, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 17924, Chrome_ChildThre
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 11840, Chrome_
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1542892776591	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GGJERO~1\\AppData\\Local\\Temp\\rust_mozprofile.xML1IjWyqdvu"
+1542892777899	Marionette	INFO	Listening on port 42634
+1542892778201	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542892785073	Marionette	INFO	Stopped listening on port 42634
+[Parent 13656, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 13664, Chr
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1542892845063	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GGJERO~1\\AppData\\Local\\Temp\\rust_mozprofile.r8u6fAx5Cwla"
+1542892846415	Marionette	INFO	Listening on port 42775
+1542892846674	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542892848326	Marionette	INFO	Stopped listening on port 42775
+[Parent 12476, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 1484, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 1484, Chrome_ChildThre
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 13356, Chrome_
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1542892906677	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GGJERO~1\\AppData\\Local\\Temp\\rust_mozprofile.CcrAyne1svL9"
+[GFX1-]: DoesD3D11TextureSharingWork_ColorMismatch
+[GFX1-]: GFX: D3D11 detected a device reset in Present
+[GFX1-]: D3D11 swap chain failed to present: 0x887a0005
+[GFX1-]: D3D11 swap chain failed to present: 0x887a0005
+[GFX1-]: Compositors might be mixed (3,1)
+1542892910194	Marionette	INFO	Listening on port 42914
+1542892910497	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542892915771	Marionette	INFO	Stopped listening on port 42914
+[Child 11348, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 11348, Chrome[Child 11560, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 11560, Chrome_Chil
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 8352, Chrome_ChildThread] 
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1542892930569	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GGJERO~1\\AppData\\Local\\Temp\\rust_mozprofile.6jU6HmiQCZT1"
+1542892931943	Marionette	INFO	Listening on port 42992
+1542892932178	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542892936756	Marionette	INFO	Stopped listening on port 42992
+[GPU 
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+16908, Chrome_C
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1542893310087	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GGJERO~1\\AppData\\Local\\Temp\\rust_mozprofile.krwhzKh9NnyH"
+1542893311624	Marionette	INFO	Listening on port 43608
+1542893311704	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542893313489	Marionette	INFO	Stopped listening on port 43608
+[Parent 18428, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 8452, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 8452, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GP
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1542893421830	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GGJERO~1\\AppData\\Local\\Temp\\rust_mozprofile.OXGObZCdk1fp"
+1542893423115	Marionette	INFO	Listening on port 43810
+1542893423445	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542893430170	Marionette	INFO	Stopped listening on port 43810
+[Child 11340, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 11340, Chrome_ChildThread] WA[Child 5260, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1542893450436	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GGJERO~1\\AppData\\Local\\Temp\\rust_mozprofile.A8mF5zQrvjq0"
+1542893451731	Marionette	INFO	Listening on port 43894
+1542893452047	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542893454035	Marionette	INFO	Stopped listening on port 43894
+[Child 12876, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 12876, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[GPU 2628, Ch
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1542894249606	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GGJERO~1\\AppData\\Local\\Temp\\rust_mozprofile.sU0X0rRax30T"
+1542894251123	Marionette	INFO	Listening on port 45135
+1542894251225	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542894255785	Marionette	INFO	Stopped listening on port 45135
+[Child 13596, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 13596, Chrome_ChildT[Child 12528, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 12528, Chrome_Chil
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 12492, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/sr
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1542894375607	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GGJERO~1\\AppData\\Local\\Temp\\rust_mozprofile.XXRXRJzBlHad"
+1542894376898	Marionette	INFO	Listening on port 45375
+1542894377218	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542894383880	Marionette	INFO	Stopped listening on port 45375
+[Child 12240, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 12240, Chrome_Child
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1542894437138	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GGJERO~1\\AppData\\Local\\Temp\\rust_mozprofile.qpv3iC733kZX"
+1542894438424	Marionette	INFO	Listening on port 45500
+1542894438750	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542894440288	Marionette	INFO	Stopped listening on port 45500
+[Child 11576, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 11576, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[G
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1542894560238	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GGJERO~1\\AppData\\Local\\Temp\\rust_mozprofile.iSz9JAgpdmmT"
+1542894561558	Marionette	INFO	Listening on port 45724
+1542894561851	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542894563689	Marionette	INFO	Stopped listening on port 45724
+[Child 18848, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 18848, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 6028, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 2756, Chrome_Chi
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1542894598034	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GGJERO~1\\AppData\\Local\\Temp\\rust_mozprofile.AUKoo4f9yvDh"
+1542894599322	Marionette	INFO	Listening on port 45821
+1542894599647	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542894600811	Marionette	INFO	Stopped listening on port 45821
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 18284, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/c
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1542894604453	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GGJERO~1\\AppData\\Local\\Temp\\rust_mozprofile.ULINui8uFnHc"
+1542894605762	Marionette	INFO	Listening on port 45869
+1542894606065	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542894607787	Marionette	INFO	Stopped listening on port 45869
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 18968, C
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1542894611515	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GGJERO~1\\AppData\\Local\\Temp\\rust_mozprofile.fu0HGnxaZS3P"
+[GFX1-]: DoesD3D11TextureSharingWork_ColorMismatch
+[GFX1-]: GFX: D3D11 detected a device reset in Present
+[GFX1-]: D3D11 swap chain failed to present: 0x887a0005
+[GFX1-]: D3D11 swap chain failed to present: 0x887a0005
+1542894615019	Marionette	INFO	Listening on port 45922
+[GFX1-]: Compositors might be mixed (3,1)
+1542894616217	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542894618209	Marionette	INFO	Stopped listening on port 45922
+[GPU 1660, Chrome_ChildT
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1542894621936	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GGJERO~1\\AppData\\Local\\Temp\\rust_mozprofile.NWZKk3oNDaER"
+1542894623244	Marionette	INFO	Listening on port 45979
+1542894623547	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542894625439	Marionette	INFO	Stopped listening on port 45979
+[Child 14744, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 14744, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/b[Child 18868, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 18868, Chrome_ChildThread] WARNIN
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 7860, Chr
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1542899500747	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GGJERO~1\\AppData\\Local\\Temp\\rust_mozprofile.GTxOxXbfYUbV"
+1542899502400	Marionette	INFO	Listening on port 51133
+1542899502866	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542899504335	Marionette	INFO	Stopped listening on port 51133
+[Parent 16532, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 12248, Chrome_ChildTh
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1542899507963	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GGJERO~1\\AppData\\Local\\Temp\\rust_mozprofile.CTCT8XWvG6LY"
+1542899509265	Marionette	INFO	Listening on port 51184
+1542899509574	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542899512315	Marionette	INFO	Stopped listening on port 51184
+[Parent 11508, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[GPU 3180, Chrome_
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1542899516039	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GGJERO~1\\AppData\\Local\\Temp\\rust_mozprofile.ZefheOpzOyNv"
+1542899517328	Marionette	INFO	Listening on port 51242
+1542899517651	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542899519245	Marionette	INFO	Stopped listening on port 51242
+[Child 12028, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 12028, Chrome_ChildThread] WAR[Child 17928, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 17928, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/bui[Parent 8496, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 12664, Chr
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1542899522879	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GGJERO~1\\AppData\\Local\\Temp\\rust_mozprofile.8mCUanHrqyPC"
+1542899524363	Marionette	INFO	Listening on port 51294
+1542899524491	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542899526186	Marionette	INFO	Stopped listening on port 51294
+[Child 9264, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 9264, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/c
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 140
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1542899666137	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GGJERO~1\\AppData\\Local\\Temp\\rust_mozprofile.8iPCUB7pXc32"
+1542899667469	Marionette	INFO	Listening on port 51547
+1542899667754	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542899668949	Marionette	INFO	Stopped listening on port 51547
+[Child 9924, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 9924, Chrome_ChildThread] [Parent 9012, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 14064, Chrom
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1542899672562	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GGJERO~1\\AppData\\Local\\Temp\\rust_mozprofile.SThsKtQ9pKu3"
+1542899673835	Marionette	INFO	Listening on port 51597
+1542899674169	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542899676304	Marionette	INFO	Stopped listening on port 51597
+[GPU
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+ 8084, Chro
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1542899679919	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GGJERO~1\\AppData\\Local\\Temp\\rust_mozprofile.MxysQkg6nEGi"
+1542899681157	Marionette	INFO	Listening on port 51648
+1542899681528	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542899683228	Marionette	INFO	Stopped listening on port 51648
+[GPU 1552, Chrom
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+e_ChildThread] WARNING: pipe error: 109: file z:/build/bu
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1542899686940	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GGJERO~1\\AppData\\Local\\Temp\\rust_mozprofile.7Mg1TJqwnxXO"
+1542899688231	Marionette	INFO	Listening on port 51701
+1542899688549	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542899690250	Marionette	INFO	Stopped listening on port 51701
+[Parent 16828, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 3212, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 3212, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 16828, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 13536, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 13536, Chrome_ChildThre
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 13864, Chrome_Ch
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1542981876674	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GGJERO~1\\AppData\\Local\\Temp\\rust_mozprofile.7NmgKFiJEjGi"
+1542981878207	Marionette	INFO	Listening on port 33160
+1542981878286	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542981888549	Marionette	INFO	Stopped listening on port 33160
+[Child 18604, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 18604, Chrome_ChildThr[Parent 21836, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 20300, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 20300, Chrome_ChildThre[GPU 
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+21452, Chrome_ChildTh
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1542982203743	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GGJERO~1\\AppData\\Local\\Temp\\rust_mozprofile.seB7UBvCvRK2"
+1542982204953	Marionette	INFO	Listening on port 33661
+1542982205352	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542982212436	Marionette	INFO	Stopped listening on port 33661
+[Child 22056, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 12256, Chrom
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1542982331778	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GGJERO~1\\AppData\\Local\\Temp\\rust_mozprofile.jIEXzcQSGN79"
+1542982333113	Marionette	INFO	Listening on port 33883
+1542982333387	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542982340036	Marionette	INFO	Stopped listening on port 33883
+[Parent 10612, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 20128, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 10612, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 19196, Chrome
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1542982420932	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GGJERO~1\\AppData\\Local\\Temp\\rust_mozprofile.sNxWwcSXbzvv"
+1542982422212	Marionette	INFO	Listening on port 34058
+1542982422541	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542982432346	Marionette	INFO	Stopped listening on port 34058
+[Child 20236, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 20236, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/ch
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 18372, Chrome_C
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1542982486969	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GGJERO~1\\AppData\\Local\\Temp\\rust_mozprofile.UE0YMthT8IXi"
+1542982488257	Marionette	INFO	Listening on port 34192
+1542982488576	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542982498035	Marionette	INFO	Stopped listening on port 34192
+[Child 9004, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 9004, Chrome_ChildThread] WARNING: pipe [Parent 11400, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 9752, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 9752, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 13192, Chrome_ChildThread] WARNING: pipe error: 109:
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1542984071960	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GGJERO~1\\AppData\\Local\\Temp\\rust_mozprofile.B1ywXzZTvYt8"
+1542984073273	Marionette	INFO	Listening on port 36569
+1542984073572	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542984084429	Marionette	INFO	Stopped listening on port 36569
+[Child 10764, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 10764, Chrome_ChildThr[GPU 260
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+4,
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1542984185488	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GGJERO~1\\AppData\\Local\\Temp\\rust_mozprofile.Ym1Y2osaVEL4"
+1542984186784	Marionette	INFO	Listening on port 36778
+1542984187097	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542984198271	Marionette	INFO	Stopped listening on port 36778
+[Parent 5364, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 18576, Chro
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1542984918738	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GGJERO~1\\AppData\\Local\\Temp\\rust_mozprofile.0zHnBiXW7x8x"
+1542984920016	Marionette	INFO	Listening on port 37846
+1542984920348	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542984923059	Marionette	INFO	Stopped listening on port 37846
+JavaScript error: jar:file:///C:/Program%20Files%20(x86)/Mozilla%20Firefox/omni.ja!/components/nsUrlClassifierListManager.js, line 597: TypeError: this.tablesData[table] is undefined
+[Child 9264, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 9264, Chrome_Chi[Child 6036, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 6036, Chrome_ChildThread] WARNING: pipe error: 109: file z:/
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 16072, Chro
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1542984943313	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GGJERO~1\\AppData\\Local\\Temp\\rust_mozprofile.sKc0H05dVRRi"
+1542984944635	Marionette	INFO	Listening on port 37926
+1542984944922	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542984950727	Marionette	INFO	Stopped listening on port 37926
+[Child 15716, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 15716, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/c
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 9800, Chrome_C
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1542986193580	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GGJERO~1\\AppData\\Local\\Temp\\rust_mozprofile.O0SQxWEhMJ6a"
+1542986194979	Marionette	INFO	Listening on port 39831
+1542986195194	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542986198284	Marionette	INFO	Stopped listening on port 39831
+[Parent 19644, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 21644, Chrom
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1542987350145	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GGJERO~1\\AppData\\Local\\Temp\\rust_mozprofile.iq5KurTYQmSU"
+1542987351453	Marionette	INFO	Listening on port 41860
+1542987351757	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542987354348	Marionette	INFO	Stopped listening on port 41860
+[Child 17932, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 17932, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_cha[GPU 17
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+576, Ch
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1543222582598	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GGJERO~1\\AppData\\Local\\Temp\\rust_mozprofile.LNK8hgQ1nXII"
+1543222584311	Marionette	INFO	Listening on port 41554
+1543222584723	Marionette	WARN	TLS certificate errors will be ignored for this session
+1543222591936	Marionette	INFO	Stopped listening on port 41554
+[Parent 13140, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 20392, Chrome_ChildT[Child 16248, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[GPU 20068, Ch
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1543222617762	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GGJERO~1\\AppData\\Local\\Temp\\rust_mozprofile.unJ6JjEiYOBn"
+1543222618980	Marionette	INFO	Listening on port 41645
+1543222619375	Marionette	WARN	TLS certificate errors will be ignored for this session
+1543222629279	Marionette	INFO	Stopped listening on port 41645
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 19
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1543222699837	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GGJERO~1\\AppData\\Local\\Temp\\rust_mozprofile.FbjXewAdkzmP"
+1543222701119	Marionette	INFO	Listening on port 41803
+1543222701446	Marionette	WARN	TLS certificate errors will be ignored for this session
+1543222714229	Marionette	INFO	Stopped listening on port 41803
+[Child 20052, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 20052, Chrome_ChildThread] WARNING: pipe error: 109: file
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 6804, Chrome_ChildThre
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1543222834315	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GGJERO~1\\AppData\\Local\\Temp\\rust_mozprofile.wC1BfwVcgAsn"
+1543222835572	Marionette	INFO	Listening on port 42041
+1543222835922	Marionette	WARN	TLS certificate errors will be ignored for this session
+1543222847358	Marionette	INFO	Stopped listening on port 42041
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 11084, Chro
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1543226113639	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GGJERO~1\\AppData\\Local\\Temp\\rust_mozprofile.CMvHYsMjj3Jd"
+1543226115040	Marionette	INFO	Listening on port 45869
+1543226115248	Marionette	WARN	TLS certificate errors will be ignored for this session
+1543226118426	Marionette	INFO	Stopped listening on port 45869
+[Child 9668, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 9668, Chrome_ChildThread] WARNING: pipe err[Child 17896, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 17896, Chrome_ChildThread] WARNING: pipe error: 109:[GPU 12780, Chrome_ChildThre
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1543226133696	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GGJERO~1\\AppData\\Local\\Temp\\rust_mozprofile.ovRa1qBAcTBL"
+1543226135025	Marionette	INFO	Listening on port 45942
+1543226135308	Marionette	WARN	TLS certificate errors will be ignored for this session
+1543226141622	Marionette	INFO	Stopped listening on port 45942
+[GPU 20776, Ch
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1543227471458	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GGJERO~1\\AppData\\Local\\Temp\\rust_mozprofile.FYlBGW3nKui6"
+1543227472967	Marionette	INFO	Listening on port 48547
+1543227473079	Marionette	WARN	TLS certificate errors will be ignored for this session
+1543227479402	Marionette	INFO	Stopped listening on port 48547
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1543233977931	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\GGJERO~1\\AppData\\Local\\Temp\\rust_mozprofile.OSTctq1Axaqe"
+1543233979468	Marionette	INFO	Listening on port 53648
+1543233979539	Marionette	WARN	TLS certificate errors will be ignored for this session
+1543233982443	Marionette	INFO	Stopped listening on port 53648
+JavaScript error: jar:file:///C:/Program%20Files%20(x86)/Mozilla%20Firefox/omni.ja!/components/nsUrlClassifierListManager.js, line 597: TypeError: this.tablesData[table] is undefined
+[Parent 14316, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 12868, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 12868, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 20400, Chro
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+

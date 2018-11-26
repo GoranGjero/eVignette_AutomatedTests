@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.0.4 (Python 3.7.0 on win32)" generated="20181108 12:30:26.554">
+<robot generator="Robot 3.0.4 (Python 3.7.0 on win32)" generated="20181126 17:31:21.878">
 <suite id="s1" name="General Tests" source="D:\projects\eVignette\automated_tests\tests\General_Tests.robot">
-<test id="s1-t1" name="Customer - Attempt to login with incorrect email address">
+<test id="s1-t1" name="The landing page loads fully">
 <kw name="Begin test" library="CommonMethods" type="setup">
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the given ``url``.</doc>
@@ -9,34 +9,197 @@
 <arg>about:blank</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20181108 12:30:26.696" level="INFO">Opening browser 'ff' to base url 'about:blank'.</msg>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20181108 12:30:29.737" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<status status="PASS" starttime="20181108 12:30:29.736" endtime="20181108 12:30:29.737"></status>
+<msg timestamp="20181126 17:31:22.022" level="INFO">Opening browser 'ie' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20181126 17:31:22.022" endtime="20181126 17:31:23.132"></status>
 </kw>
-<msg timestamp="20181108 12:30:29.739" level="FAIL">SessionNotCreatedException: Message: Unable to find a matching set of capabilities
-</msg>
-<status status="FAIL" starttime="20181108 12:30:26.696" endtime="20181108 12:30:29.739"></status>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20181126 17:31:23.132" endtime="20181126 17:31:23.144"></status>
 </kw>
-<status status="FAIL" starttime="20181108 12:30:26.696" endtime="20181108 12:30:29.739"></status>
+<status status="PASS" starttime="20181126 17:31:22.021" endtime="20181126 17:31:23.144"></status>
+</kw>
+<kw name="Navigate to the home page" library="VignetteApp">
+<kw name="Navigate to" library="LandingPage">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>${INITIAL_URL}</arg>
+</arguments>
+<msg timestamp="20181126 17:31:23.146" level="INFO">Opening url 'http://vinetki.melontech.com/'</msg>
+<status status="PASS" starttime="20181126 17:31:23.145" endtime="20181126 17:31:23.603"></status>
+</kw>
+<status status="PASS" starttime="20181126 17:31:23.145" endtime="20181126 17:31:23.603"></status>
+</kw>
+<status status="PASS" starttime="20181126 17:31:23.145" endtime="20181126 17:31:23.603"></status>
+</kw>
+<kw name="Verify that the &quot;Vehicle Category&quot; options are present" library="VignetteApp">
+<kw name="Verify that an element is present on the page" library="CommonMethods">
+<arguments>
+<arg>${LANDING_CAR_OPTION}</arg>
+<arg>${LANDING_TRAILER_OPTION}</arg>
+<arg>${LANDING_HGV_OPTION}</arg>
+</arguments>
+<kw name="${element_to_be_verified} IN [ @{list_of_elements_to_be_verified} ]" type="for">
+<kw name="${element_to_be_verified} = xpath=//div[@class='row no-gutters g-mx-minus-10 step-1']//div[2]//div[1]//a[1]" type="foritem">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${element_to_be_verified}</arg>
+</arguments>
+<status status="PASS" starttime="20181126 17:31:23.604" endtime="20181126 17:31:23.673"></status>
+</kw>
+<status status="PASS" starttime="20181126 17:31:23.604" endtime="20181126 17:31:23.673"></status>
+</kw>
+<kw name="${element_to_be_verified} = xpath=//div[@class='row no-gutters g-mx-minus-10 step-1']//div[4]//div[1]//a[1]" type="foritem">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${element_to_be_verified}</arg>
+</arguments>
+<status status="PASS" starttime="20181126 17:31:23.673" endtime="20181126 17:31:23.731"></status>
+</kw>
+<status status="PASS" starttime="20181126 17:31:23.673" endtime="20181126 17:31:23.731"></status>
+</kw>
+<kw name="${element_to_be_verified} = xpath=//div[@class='row no-gutters g-mx-minus-10 step-1']//div[3]//div[1]//a[1]" type="foritem">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${element_to_be_verified}</arg>
+</arguments>
+<status status="PASS" starttime="20181126 17:31:23.731" endtime="20181126 17:31:23.779"></status>
+</kw>
+<status status="PASS" starttime="20181126 17:31:23.731" endtime="20181126 17:31:23.779"></status>
+</kw>
+<status status="PASS" starttime="20181126 17:31:23.604" endtime="20181126 17:31:23.779"></status>
+</kw>
+<status status="PASS" starttime="20181126 17:31:23.604" endtime="20181126 17:31:23.779"></status>
+</kw>
+<status status="PASS" starttime="20181126 17:31:23.604" endtime="20181126 17:31:23.779"></status>
+</kw>
+<kw name="Verify that the &quot;FAQ&quot; section is present" library="VignetteApp">
+<kw name="Validate the &quot;FAQ&quot; section of the page" library="LandingPage">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${LANDING_FAQ_SECTION}</arg>
+</arguments>
+<status status="PASS" starttime="20181126 17:31:23.780" endtime="20181126 17:31:23.829"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${LANDING_FAQ_SECTION}</arg>
+</arguments>
+<assign>
+<var>${faq_text}</var>
+</assign>
+<msg timestamp="20181126 17:31:24.014" level="INFO">${faq_text} = Често задавани въпроси</msg>
+<status status="PASS" starttime="20181126 17:31:23.829" endtime="20181126 17:31:24.014"></status>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${faq_text}</arg>
+<arg>Често задавани въпроси</arg>
+<arg>ignore_case=true</arg>
+</arguments>
+<status status="PASS" starttime="20181126 17:31:24.015" endtime="20181126 17:31:24.015"></status>
+</kw>
+<status status="PASS" starttime="20181126 17:31:23.780" endtime="20181126 17:31:24.015"></status>
+</kw>
+<status status="PASS" starttime="20181126 17:31:23.780" endtime="20181126 17:31:24.015"></status>
+</kw>
+<kw name="Verify that the footer is present" library="VignetteApp">
+<kw name="Validate the whole footer of the page" library="LandingPage">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${LANDING_WHOLE_FOOTER}</arg>
+</arguments>
+<status status="PASS" starttime="20181126 17:31:24.023" endtime="20181126 17:31:24.111"></status>
+</kw>
+<status status="PASS" starttime="20181126 17:31:24.023" endtime="20181126 17:31:24.111"></status>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<arguments>
+<arg>${FOOTER_VIGNETTE_PURCHASE}</arg>
+<arg>${FOOTER_VINETKI_BG}</arg>
+<arg>${FOOTER_CONTACT_US}</arg>
+</arguments>
+<assign>
+<var>@{footer_sections_list}</var>
+</assign>
+<msg timestamp="20181126 17:31:24.112" level="INFO">@{footer_sections_list} = [ Покупка на еВинетка | vinetki.bg | Връзка с нас ]</msg>
+<status status="PASS" starttime="20181126 17:31:24.112" endtime="20181126 17:31:24.112"></status>
+</kw>
+<kw name="${footer_section} IN [ @{footer_sections_list} ]" type="for">
+<kw name="${footer_section} = Покупка на еВинетка" type="foritem">
+<kw name="Validate the section of the footer" library="LandingPage">
+<arguments>
+<arg>${footer_section}</arg>
+</arguments>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>${footer_section}</arg>
+</arguments>
+<status status="PASS" starttime="20181126 17:31:24.113" endtime="20181126 17:31:24.210"></status>
+</kw>
+<status status="PASS" starttime="20181126 17:31:24.112" endtime="20181126 17:31:24.210"></status>
+</kw>
+<status status="PASS" starttime="20181126 17:31:24.112" endtime="20181126 17:31:24.210"></status>
+</kw>
+<kw name="${footer_section} = vinetki.bg" type="foritem">
+<kw name="Validate the section of the footer" library="LandingPage">
+<arguments>
+<arg>${footer_section}</arg>
+</arguments>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>${footer_section}</arg>
+</arguments>
+<status status="PASS" starttime="20181126 17:31:24.211" endtime="20181126 17:31:24.347"></status>
+</kw>
+<status status="PASS" starttime="20181126 17:31:24.210" endtime="20181126 17:31:24.348"></status>
+</kw>
+<status status="PASS" starttime="20181126 17:31:24.210" endtime="20181126 17:31:24.348"></status>
+</kw>
+<kw name="${footer_section} = Връзка с нас" type="foritem">
+<kw name="Validate the section of the footer" library="LandingPage">
+<arguments>
+<arg>${footer_section}</arg>
+</arguments>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>${footer_section}</arg>
+</arguments>
+<status status="PASS" starttime="20181126 17:31:24.348" endtime="20181126 17:31:24.417"></status>
+</kw>
+<status status="PASS" starttime="20181126 17:31:24.348" endtime="20181126 17:31:24.418"></status>
+</kw>
+<status status="PASS" starttime="20181126 17:31:24.348" endtime="20181126 17:31:24.418"></status>
+</kw>
+<status status="PASS" starttime="20181126 17:31:24.112" endtime="20181126 17:31:24.418"></status>
+</kw>
+<status status="PASS" starttime="20181126 17:31:24.022" endtime="20181126 17:31:24.418"></status>
 </kw>
 <kw name="End test" library="CommonMethods" type="teardown">
 <kw name="Close All Browsers" library="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20181108 12:30:29.740" endtime="20181108 12:30:29.740"></status>
+<status status="PASS" starttime="20181126 17:31:24.419" endtime="20181126 17:31:27.436"></status>
 </kw>
-<status status="PASS" starttime="20181108 12:30:29.740" endtime="20181108 12:30:29.740"></status>
+<status status="PASS" starttime="20181126 17:31:24.418" endtime="20181126 17:31:27.436"></status>
 </kw>
-<doc>The customer cannot login with incorrect credentials</doc>
+<doc>The landing page opens fully, and all its elements are loaded</doc>
 <tags>
-<tag>current</tag>
+<tag>skip</tag>
 </tags>
-<status status="FAIL" starttime="20181108 12:30:26.695" endtime="20181108 12:30:29.740" critical="yes">Setup failed:
-SessionNotCreatedException: Message: Unable to find a matching set of capabilities
-</status>
+<status status="PASS" starttime="20181126 17:31:22.021" endtime="20181126 17:31:27.436" critical="yes"></status>
 </test>
-<test id="s1-t2" name="Customer - Attempt to login with incorrect password">
+<test id="s1-t2" name="Customer - Login existing user">
 <kw name="Begin test" library="CommonMethods" type="setup">
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the given ``url``.</doc>
@@ -44,46 +207,443 @@ SessionNotCreatedException: Message: Unable to find a matching set of capabiliti
 <arg>about:blank</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20181108 12:30:29.742" level="INFO">Opening browser 'ff' to base url 'about:blank'.</msg>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20181108 12:30:32.787" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<status status="PASS" starttime="20181108 12:30:32.786" endtime="20181108 12:30:32.787"></status>
+<msg timestamp="20181126 17:31:27.438" level="INFO">Opening browser 'ie' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20181126 17:31:27.438" endtime="20181126 17:31:28.511"></status>
 </kw>
-<msg timestamp="20181108 12:30:32.788" level="FAIL">SessionNotCreatedException: Message: Unable to find a matching set of capabilities
-</msg>
-<status status="FAIL" starttime="20181108 12:30:29.742" endtime="20181108 12:30:32.788"></status>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20181126 17:31:28.511" endtime="20181126 17:31:28.523"></status>
 </kw>
-<status status="FAIL" starttime="20181108 12:30:29.742" endtime="20181108 12:30:32.788"></status>
+<status status="PASS" starttime="20181126 17:31:27.438" endtime="20181126 17:31:28.523"></status>
+</kw>
+<kw name="Navigate to the home page" library="VignetteApp">
+<kw name="Navigate to" library="LandingPage">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>${INITIAL_URL}</arg>
+</arguments>
+<msg timestamp="20181126 17:31:28.524" level="INFO">Opening url 'http://vinetki.melontech.com/'</msg>
+<status status="PASS" starttime="20181126 17:31:28.524" endtime="20181126 17:31:28.955"></status>
+</kw>
+<status status="PASS" starttime="20181126 17:31:28.524" endtime="20181126 17:31:28.955"></status>
+</kw>
+<status status="PASS" starttime="20181126 17:31:28.524" endtime="20181126 17:31:28.955"></status>
+</kw>
+<kw name="Navigate to the &quot;Log in&quot; page" library="VignetteApp">
+<kw name="Click the &quot;Log in&quot; button" library="LandingPage">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>${LANDING_LOGIN_BUTTON}</arg>
+</arguments>
+<msg timestamp="20181126 17:31:28.956" level="INFO">Clicking link 'xpath=//a[contains(text(),'Вход')]'.</msg>
+<status status="PASS" starttime="20181126 17:31:28.956" endtime="20181126 17:31:29.655"></status>
+</kw>
+<status status="PASS" starttime="20181126 17:31:28.956" endtime="20181126 17:31:29.655"></status>
+</kw>
+<status status="PASS" starttime="20181126 17:31:28.956" endtime="20181126 17:31:29.655"></status>
+</kw>
+<kw name="Populate the &quot;Email Address&quot; field" library="VignetteApp">
+<kw name="Focus a text field and populate it" library="LoginPage">
+<arguments>
+<arg>${LOGIN_EMAIL_FIELD}</arg>
+<arg>${CUSTOMER_EMAIL_ADDRESS}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${text_field_to_be_focused}</arg>
+</arguments>
+<status status="PASS" starttime="20181126 17:31:29.656" endtime="20181126 17:31:29.713"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${text_field_to_be_focused}</arg>
+<arg>${value_to_be_entered_into_the_text_field}</arg>
+</arguments>
+<msg timestamp="20181126 17:31:29.714" level="INFO">Typing text 'ggjeroski@melontech.com' into text field 'xpath=//input[@id='Email']'.</msg>
+<status status="PASS" starttime="20181126 17:31:29.714" endtime="20181126 17:31:30.254"></status>
+</kw>
+<status status="PASS" starttime="20181126 17:31:29.656" endtime="20181126 17:31:30.254"></status>
+</kw>
+<status status="PASS" starttime="20181126 17:31:29.656" endtime="20181126 17:31:30.254"></status>
+</kw>
+<kw name="Populate the &quot;Password&quot; field" library="VignetteApp">
+<kw name="Focus a text field and populate it" library="LoginPage">
+<arguments>
+<arg>${LOGIN_PASSWORD_FIELD}</arg>
+<arg>${CUSTOMER_PASSWORD}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${text_field_to_be_focused}</arg>
+</arguments>
+<status status="PASS" starttime="20181126 17:31:30.255" endtime="20181126 17:31:30.313"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${text_field_to_be_focused}</arg>
+<arg>${value_to_be_entered_into_the_text_field}</arg>
+</arguments>
+<msg timestamp="20181126 17:31:30.313" level="INFO">Typing text 'test123' into text field 'xpath=//input[@id='Password']'.</msg>
+<status status="PASS" starttime="20181126 17:31:30.313" endtime="20181126 17:31:30.731"></status>
+</kw>
+<status status="PASS" starttime="20181126 17:31:30.255" endtime="20181126 17:31:30.731"></status>
+</kw>
+<status status="PASS" starttime="20181126 17:31:30.255" endtime="20181126 17:31:30.731"></status>
+</kw>
+<kw name="Click the &quot;Log in&quot; button" library="VignetteApp">
+<kw name="Find and click the &quot;Log in&quot; button" library="LoginPage">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>Вход</arg>
+</arguments>
+<msg timestamp="20181126 17:31:30.732" level="INFO">Clicking button 'Вход'.</msg>
+<status status="PASS" starttime="20181126 17:31:30.732" endtime="20181126 17:31:31.863"></status>
+</kw>
+<status status="PASS" starttime="20181126 17:31:30.732" endtime="20181126 17:31:31.863"></status>
+</kw>
+<status status="PASS" starttime="20181126 17:31:30.731" endtime="20181126 17:31:31.863"></status>
+</kw>
+<kw name="Verify that the user is redirected to their profile" library="VignetteApp">
+<kw name="Verify that an element is present on the page" library="CommonMethods">
+<arguments>
+<arg>${CUSTOMER_PROFILE}</arg>
+<arg>${SHOPPING_CART}</arg>
+</arguments>
+<kw name="${element_to_be_verified} IN [ @{list_of_elements_to_be_verified} ]" type="for">
+<kw name="${element_to_be_verified} = xpath=//*[@id=&quot;profile-dropdown-invoker-2&quot;]" type="foritem">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${element_to_be_verified}</arg>
+</arguments>
+<status status="PASS" starttime="20181126 17:31:31.865" endtime="20181126 17:31:31.933"></status>
+</kw>
+<status status="PASS" starttime="20181126 17:31:31.864" endtime="20181126 17:31:31.933"></status>
+</kw>
+<kw name="${element_to_be_verified} = id=shopping-cart" type="foritem">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${element_to_be_verified}</arg>
+</arguments>
+<status status="PASS" starttime="20181126 17:31:31.933" endtime="20181126 17:31:32.000"></status>
+</kw>
+<status status="PASS" starttime="20181126 17:31:31.933" endtime="20181126 17:31:32.000"></status>
+</kw>
+<status status="PASS" starttime="20181126 17:31:31.864" endtime="20181126 17:31:32.000"></status>
+</kw>
+<status status="PASS" starttime="20181126 17:31:31.864" endtime="20181126 17:31:32.000"></status>
+</kw>
+<status status="PASS" starttime="20181126 17:31:31.864" endtime="20181126 17:31:32.001"></status>
 </kw>
 <kw name="End test" library="CommonMethods" type="teardown">
 <kw name="Close All Browsers" library="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20181108 12:30:32.789" endtime="20181108 12:30:32.789"></status>
+<status status="PASS" starttime="20181126 17:31:32.001" endtime="20181126 17:31:35.017"></status>
 </kw>
-<status status="PASS" starttime="20181108 12:30:32.788" endtime="20181108 12:30:32.789"></status>
+<status status="PASS" starttime="20181126 17:31:32.001" endtime="20181126 17:31:35.017"></status>
+</kw>
+<doc>Registered user can login successfully</doc>
+<tags>
+<tag>skip</tag>
+</tags>
+<status status="PASS" starttime="20181126 17:31:27.437" endtime="20181126 17:31:35.017" critical="yes"></status>
+</test>
+<test id="s1-t3" name="Customer - Attempt to login with incorrect email address">
+<kw name="Begin test" library="CommonMethods" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20181126 17:31:35.019" level="INFO">Opening browser 'ie' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20181126 17:31:35.019" endtime="20181126 17:31:36.126"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20181126 17:31:36.126" endtime="20181126 17:31:36.138"></status>
+</kw>
+<status status="PASS" starttime="20181126 17:31:35.019" endtime="20181126 17:31:36.138"></status>
+</kw>
+<kw name="Navigate to the home page" library="VignetteApp">
+<kw name="Navigate to" library="LandingPage">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>${INITIAL_URL}</arg>
+</arguments>
+<msg timestamp="20181126 17:31:36.139" level="INFO">Opening url 'http://vinetki.melontech.com/'</msg>
+<status status="PASS" starttime="20181126 17:31:36.139" endtime="20181126 17:31:36.582"></status>
+</kw>
+<status status="PASS" starttime="20181126 17:31:36.139" endtime="20181126 17:31:36.583"></status>
+</kw>
+<status status="PASS" starttime="20181126 17:31:36.139" endtime="20181126 17:31:36.583"></status>
+</kw>
+<kw name="Navigate to the &quot;Log in&quot; page" library="VignetteApp">
+<kw name="Click the &quot;Log in&quot; button" library="LandingPage">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>${LANDING_LOGIN_BUTTON}</arg>
+</arguments>
+<msg timestamp="20181126 17:31:36.584" level="INFO">Clicking link 'xpath=//a[contains(text(),'Вход')]'.</msg>
+<status status="PASS" starttime="20181126 17:31:36.584" endtime="20181126 17:31:37.297"></status>
+</kw>
+<status status="PASS" starttime="20181126 17:31:36.583" endtime="20181126 17:31:37.298"></status>
+</kw>
+<status status="PASS" starttime="20181126 17:31:36.583" endtime="20181126 17:31:37.298"></status>
+</kw>
+<kw name="Populate the &quot;Email Address&quot; field with incorrect address" library="VignetteApp">
+<kw name="Focus a text field and populate it" library="LoginPage">
+<arguments>
+<arg>${LOGIN_EMAIL_FIELD}</arg>
+<arg>${CUSTOMER_INCORRECT_EMAIL}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${text_field_to_be_focused}</arg>
+</arguments>
+<status status="PASS" starttime="20181126 17:31:37.299" endtime="20181126 17:31:37.359"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${text_field_to_be_focused}</arg>
+<arg>${value_to_be_entered_into_the_text_field}</arg>
+</arguments>
+<msg timestamp="20181126 17:31:37.359" level="INFO">Typing text 'test@test.com' into text field 'xpath=//input[@id='Email']'.</msg>
+<status status="PASS" starttime="20181126 17:31:37.359" endtime="20181126 17:31:37.910"></status>
+</kw>
+<status status="PASS" starttime="20181126 17:31:37.298" endtime="20181126 17:31:37.910"></status>
+</kw>
+<status status="PASS" starttime="20181126 17:31:37.298" endtime="20181126 17:31:37.910"></status>
+</kw>
+<kw name="Populate the &quot;Password&quot; field" library="VignetteApp">
+<kw name="Focus a text field and populate it" library="LoginPage">
+<arguments>
+<arg>${LOGIN_PASSWORD_FIELD}</arg>
+<arg>${CUSTOMER_PASSWORD}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${text_field_to_be_focused}</arg>
+</arguments>
+<status status="PASS" starttime="20181126 17:31:37.912" endtime="20181126 17:31:37.969"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${text_field_to_be_focused}</arg>
+<arg>${value_to_be_entered_into_the_text_field}</arg>
+</arguments>
+<msg timestamp="20181126 17:31:37.970" level="INFO">Typing text 'test123' into text field 'xpath=//input[@id='Password']'.</msg>
+<status status="PASS" starttime="20181126 17:31:37.970" endtime="20181126 17:31:38.426"></status>
+</kw>
+<status status="PASS" starttime="20181126 17:31:37.911" endtime="20181126 17:31:38.426"></status>
+</kw>
+<status status="PASS" starttime="20181126 17:31:37.911" endtime="20181126 17:31:38.426"></status>
+</kw>
+<kw name="Click the &quot;Log in&quot; button" library="VignetteApp">
+<kw name="Find and click the &quot;Log in&quot; button" library="LoginPage">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>Вход</arg>
+</arguments>
+<msg timestamp="20181126 17:31:38.427" level="INFO">Clicking button 'Вход'.</msg>
+<status status="PASS" starttime="20181126 17:31:38.427" endtime="20181126 17:31:39.411"></status>
+</kw>
+<status status="PASS" starttime="20181126 17:31:38.427" endtime="20181126 17:31:39.411"></status>
+</kw>
+<status status="PASS" starttime="20181126 17:31:38.427" endtime="20181126 17:31:39.412"></status>
+</kw>
+<kw name="Verify unsuccessful login" library="VignetteApp">
+<kw name="Detect and verify the error notification" library="LoginPage">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${LOGIN_ERROR_NOTIFICATION}</arg>
+</arguments>
+<status status="PASS" starttime="20181126 17:31:39.412" endtime="20181126 17:31:39.466"></status>
+</kw>
+<status status="PASS" starttime="20181126 17:31:39.412" endtime="20181126 17:31:39.466"></status>
+</kw>
+<status status="PASS" starttime="20181126 17:31:39.412" endtime="20181126 17:31:39.466"></status>
+</kw>
+<kw name="End test" library="CommonMethods" type="teardown">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20181126 17:31:39.467" endtime="20181126 17:31:42.494"></status>
+</kw>
+<status status="PASS" starttime="20181126 17:31:39.467" endtime="20181126 17:31:42.494"></status>
+</kw>
+<doc>The customer cannot login with incorrect credentials</doc>
+<tags>
+<tag>skip</tag>
+</tags>
+<status status="PASS" starttime="20181126 17:31:35.018" endtime="20181126 17:31:42.494" critical="yes"></status>
+</test>
+<test id="s1-t4" name="Customer - Attempt to login with incorrect password">
+<kw name="Begin test" library="CommonMethods" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20181126 17:31:42.497" level="INFO">Opening browser 'ie' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20181126 17:31:42.496" endtime="20181126 17:31:43.582"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20181126 17:31:43.582" endtime="20181126 17:31:43.594"></status>
+</kw>
+<status status="PASS" starttime="20181126 17:31:42.496" endtime="20181126 17:31:43.595"></status>
+</kw>
+<kw name="Navigate to the home page" library="VignetteApp">
+<kw name="Navigate to" library="LandingPage">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>${INITIAL_URL}</arg>
+</arguments>
+<msg timestamp="20181126 17:31:43.596" level="INFO">Opening url 'http://vinetki.melontech.com/'</msg>
+<status status="PASS" starttime="20181126 17:31:43.595" endtime="20181126 17:31:44.077"></status>
+</kw>
+<status status="PASS" starttime="20181126 17:31:43.595" endtime="20181126 17:31:44.077"></status>
+</kw>
+<status status="PASS" starttime="20181126 17:31:43.595" endtime="20181126 17:31:44.078"></status>
+</kw>
+<kw name="Navigate to the &quot;Log in&quot; page" library="VignetteApp">
+<kw name="Click the &quot;Log in&quot; button" library="LandingPage">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>${LANDING_LOGIN_BUTTON}</arg>
+</arguments>
+<msg timestamp="20181126 17:31:44.079" level="INFO">Clicking link 'xpath=//a[contains(text(),'Вход')]'.</msg>
+<status status="PASS" starttime="20181126 17:31:44.078" endtime="20181126 17:31:44.799"></status>
+</kw>
+<status status="PASS" starttime="20181126 17:31:44.078" endtime="20181126 17:31:44.799"></status>
+</kw>
+<status status="PASS" starttime="20181126 17:31:44.078" endtime="20181126 17:31:44.800"></status>
+</kw>
+<kw name="Populate the &quot;Email Address&quot; field" library="VignetteApp">
+<kw name="Focus a text field and populate it" library="LoginPage">
+<arguments>
+<arg>${LOGIN_EMAIL_FIELD}</arg>
+<arg>${CUSTOMER_EMAIL_ADDRESS}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${text_field_to_be_focused}</arg>
+</arguments>
+<status status="PASS" starttime="20181126 17:31:44.800" endtime="20181126 17:31:44.857"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${text_field_to_be_focused}</arg>
+<arg>${value_to_be_entered_into_the_text_field}</arg>
+</arguments>
+<msg timestamp="20181126 17:31:44.858" level="INFO">Typing text 'ggjeroski@melontech.com' into text field 'xpath=//input[@id='Email']'.</msg>
+<status status="PASS" starttime="20181126 17:31:44.858" endtime="20181126 17:31:45.398"></status>
+</kw>
+<status status="PASS" starttime="20181126 17:31:44.800" endtime="20181126 17:31:45.398"></status>
+</kw>
+<status status="PASS" starttime="20181126 17:31:44.800" endtime="20181126 17:31:45.398"></status>
+</kw>
+<kw name="Populate the &quot;Password&quot; field with incorrect password" library="VignetteApp">
+<kw name="Focus a text field and populate it" library="LoginPage">
+<arguments>
+<arg>${LOGIN_PASSWORD_FIELD}</arg>
+<arg>${CUSTOMER_INCORRECT_PASSWORD}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${text_field_to_be_focused}</arg>
+</arguments>
+<status status="PASS" starttime="20181126 17:31:45.399" endtime="20181126 17:31:45.444"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${text_field_to_be_focused}</arg>
+<arg>${value_to_be_entered_into_the_text_field}</arg>
+</arguments>
+<msg timestamp="20181126 17:31:45.445" level="INFO">Typing text 'testPassword' into text field 'xpath=//input[@id='Password']'.</msg>
+<status status="PASS" starttime="20181126 17:31:45.445" endtime="20181126 17:31:45.893"></status>
+</kw>
+<status status="PASS" starttime="20181126 17:31:45.398" endtime="20181126 17:31:45.893"></status>
+</kw>
+<status status="PASS" starttime="20181126 17:31:45.398" endtime="20181126 17:31:45.893"></status>
+</kw>
+<kw name="Click the &quot;Log in&quot; button" library="VignetteApp">
+<kw name="Find and click the &quot;Log in&quot; button" library="LoginPage">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>Вход</arg>
+</arguments>
+<msg timestamp="20181126 17:31:45.894" level="INFO">Clicking button 'Вход'.</msg>
+<status status="PASS" starttime="20181126 17:31:45.894" endtime="20181126 17:31:46.844"></status>
+</kw>
+<status status="PASS" starttime="20181126 17:31:45.893" endtime="20181126 17:31:46.844"></status>
+</kw>
+<status status="PASS" starttime="20181126 17:31:45.893" endtime="20181126 17:31:46.845"></status>
+</kw>
+<kw name="Verify unsuccessful login" library="VignetteApp">
+<kw name="Detect and verify the error notification" library="LoginPage">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${LOGIN_ERROR_NOTIFICATION}</arg>
+</arguments>
+<status status="PASS" starttime="20181126 17:31:46.846" endtime="20181126 17:31:46.891"></status>
+</kw>
+<status status="PASS" starttime="20181126 17:31:46.846" endtime="20181126 17:31:46.892"></status>
+</kw>
+<status status="PASS" starttime="20181126 17:31:46.846" endtime="20181126 17:31:46.892"></status>
+</kw>
+<kw name="End test" library="CommonMethods" type="teardown">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20181126 17:31:46.893" endtime="20181126 17:31:49.919"></status>
+</kw>
+<status status="PASS" starttime="20181126 17:31:46.892" endtime="20181126 17:31:49.919"></status>
 </kw>
 <doc>The customer cannot login with incorrect credentials</doc>
 <tags>
 <tag>current</tag>
 </tags>
-<status status="FAIL" starttime="20181108 12:30:29.741" endtime="20181108 12:30:32.789" critical="yes">Setup failed:
-SessionNotCreatedException: Message: Unable to find a matching set of capabilities
-</status>
+<status status="PASS" starttime="20181126 17:31:42.496" endtime="20181126 17:31:49.919" critical="yes"></status>
 </test>
 <doc>The suite contains the general tests</doc>
-<status status="FAIL" starttime="20181108 12:30:26.555" endtime="20181108 12:30:32.790"></status>
+<status status="PASS" starttime="20181126 17:31:21.880" endtime="20181126 17:31:49.921"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="2">Critical Tests</stat>
-<stat pass="0" fail="2">All Tests</stat>
+<stat pass="4" fail="0">Critical Tests</stat>
+<stat pass="4" fail="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="0" fail="2">current</stat>
+<stat pass="1" fail="0">current</stat>
+<stat pass="3" fail="0">skip</stat>
 </tag>
 <suite>
-<stat pass="0" fail="2" id="s1" name="General Tests">General Tests</stat>
+<stat pass="4" fail="0" id="s1" name="General Tests">General Tests</stat>
 </suite>
 </statistics>
 <errors>
