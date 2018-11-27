@@ -90,7 +90,7 @@ Verify that the shopping cart contains the configured vignette
     ...  ${BUY_VIGNETTE_CONFIGURED_VEHICLE_PRICE}
     ...  ${BUY_VIGNETTE_CART_TOTAL_PRICE}
 
-Select "HGV or bus" type
+Select "HGV or bus" type from the landing page
     CommonMethods.Find and click an element
     ...  ${LANDING_HGV_OPTION}
 
@@ -106,6 +106,19 @@ Choose the vignette valid period
     CommonMethods.Find and click an element
     ...  ${LANDING_VIGNETTE_VALID_PERIOD}
 
-Select the "Trailer or caravan" type
+Select the "Trailer or caravan" type from the landing page
     CommonMethods.Find and click an element
     ...  ${LANDING_TRAILER_OPTION}
+
+Select "Light vehicle and light truck" type from the "Buy Vignette" page
+    CommonMethods.Find and click an element
+    ...  ${BUY_VIGNETTE_LIGHT_VEHICLE_BUTTON}
+
+Verify that the shopping cart contains multiple vignettes
+    BuyVignettePage.Count the number of configured vignettes in the shopping cart
+
+Empty the shopping cart
+    CommonMethods.Find and click an element
+    ...  ${BUY_VIGNETTE_CLEAR_CART}
+    CommonMethods.Find and click an element
+    ...  ${GENERAL_CLEAR_CART_CONFIRMATION}

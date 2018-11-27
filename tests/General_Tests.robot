@@ -38,7 +38,7 @@ Customer - Attempt to login with incorrect email address
 
 Customer - Attempt to login with incorrect password
     [Documentation]  The customer cannot login with incorrect credentials
-    [Tags]  current
+    [Tags]  skip
     VignetteApp.Navigate to the home page
     VignetteApp.Navigate to the "Log in" page
     VignetteApp.Populate the "Email Address" field

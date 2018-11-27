@@ -3,16 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="8b55ce75-8822-47b6-815d-d4ec1f3034dc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/CommonMethods.robot" beforeDir="false" afterPath="$PROJECT_DIR$/resources/CommonMethods.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/Variables.robot" beforeDir="false" afterPath="$PROJECT_DIR$/resources/Variables.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/VignetteApp.robot" beforeDir="false" afterPath="$PROJECT_DIR$/resources/VignetteApp.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/po/CustomerProfile.robot" beforeDir="false" afterPath="$PROJECT_DIR$/resources/po/CustomerProfile.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/po/BuyVignettePage.robot" beforeDir="false" afterPath="$PROJECT_DIR$/resources/po/BuyVignettePage.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/po/LandingPage.robot" beforeDir="false" afterPath="$PROJECT_DIR$/resources/po/LandingPage.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/po/LoginPage.robot" beforeDir="false" afterPath="$PROJECT_DIR$/resources/po/LoginPage.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/results/geckodriver.log" beforeDir="false" afterPath="$PROJECT_DIR$/results/geckodriver.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/results/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/results/log.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/results/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/results/output.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/results/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/results/report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/General_Tests.robot" beforeDir="false" afterPath="$PROJECT_DIR$/tests/General_Tests.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Vignette_Purchase_Process.robot" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Vignette_Purchase_Process.robot" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,19 +23,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/General_Tests.robot">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/Vignette_Purchase_Process.robot">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="490">
-              <caret line="65" column="30" lean-forward="true" selection-start-line="65" selection-start-column="30" selection-end-line="65" selection-end-column="30" />
+            <state relative-caret-position="965">
+              <caret line="96" column="13" selection-start-line="96" selection-start-column="13" selection-end-line="96" selection-end-column="13" />
               <folding>
                 <element signature="e#0#200#0" expanded="true" />
               </folding>
@@ -44,43 +35,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/po/BuyVignettePage.robot">
+        <entry file="file://$PROJECT_DIR$/resources/VignetteApp.robot">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+            <state relative-caret-position="854">
+              <caret line="115" selection-start-line="115" selection-end-line="115" />
               <folding>
-                <element signature="e#0#70#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/Variables.robot">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1300">
-              <caret line="52" column="46" lean-forward="true" selection-start-line="52" selection-start-column="46" selection-end-line="52" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/po/LandingPage.robot">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#70#0" expanded="true" />
+                <element signature="e#0#186#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/Variables.robot">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-635">
+              <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/CommonMethods.robot">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+            <state relative-caret-position="325">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
               <folding>
                 <element signature="e#0#154#0" expanded="true" />
               </folding>
@@ -89,34 +68,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/VignetteApp.robot">
+        <entry file="file://$PROJECT_DIR$/resources/po/BuyVignettePage.robot">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-              <folding>
-                <element signature="e#0#186#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/po/LoginPage.robot">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-              <folding>
-                <element signature="e#0#70#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/po/CustomerProfile.robot">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="7" column="39" lean-forward="true" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+            <state relative-caret-position="475">
+              <caret line="21" column="82" selection-start-line="21" selection-start-column="82" selection-end-line="21" selection-end-column="82" />
               <folding>
                 <element signature="e#0#70#0" expanded="true" />
               </folding>
@@ -129,8 +84,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>//div[@class='row no-gutters g-mx-minus-10 step-1']//div[2]//div[1]//a[1]</find>
-      <find>//div[contains(@class,'row justify-content-center text-center')]//div[2]//button[1]</find>
       <find>CommonMethods</find>
+      <find>//div[contains(@class,'row justify-content-center text-center')]//div[2]//button[1]</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -139,15 +94,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/po/CustomerProfile.robot" />
-        <option value="$PROJECT_DIR$/resources/Variables.robot" />
-        <option value="$PROJECT_DIR$/tests/General_Tests.robot" />
         <option value="$PROJECT_DIR$/resources/po/LoginPage.robot" />
-        <option value="$PROJECT_DIR$/tests/Vignette_Purchase_Process.robot" />
         <option value="$PROJECT_DIR$/resources/CommonMethods.robot" />
-        <option value="$PROJECT_DIR$/resources/po/BuyVignettePage.robot" />
+        <option value="$PROJECT_DIR$/resources/po/CustomerProfile.robot" />
+        <option value="$PROJECT_DIR$/tests/General_Tests.robot" />
         <option value="$PROJECT_DIR$/resources/po/LandingPage.robot" />
+        <option value="$PROJECT_DIR$/resources/po/BuyVignettePage.robot" />
         <option value="$PROJECT_DIR$/resources/VignetteApp.robot" />
+        <option value="$PROJECT_DIR$/tests/Vignette_Purchase_Process.robot" />
+        <option value="$PROJECT_DIR$/resources/Variables.robot" />
       </list>
     </option>
   </component>
@@ -268,41 +223,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/results/selenium-screenshot-8.png" />
     <entry file="file://$PROJECT_DIR$/results/selenium-screenshot-7.png" />
-    <entry file="file://$PROJECT_DIR$/results/selenium-screenshot-1.png" />
     <entry file="file://$PROJECT_DIR$/results/report.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/po/BuyVignettePage.robot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#70#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Vignette_Purchase_Process.robot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="65" column="30" lean-forward="true" selection-start-line="65" selection-start-column="30" selection-end-line="65" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#200#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/General_Tests.robot">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/Variables.robot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1300">
-          <caret line="52" column="46" lean-forward="true" selection-start-line="52" selection-start-column="46" selection-end-line="52" selection-end-column="46" />
+        <state relative-caret-position="-421">
+          <caret lean-forward="true" />
+          <folding>
+            <element signature="e#0#239#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -316,43 +246,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/po/CustomerProfile.robot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="39" lean-forward="true" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#70#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/po/LandingPage.robot">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        <state relative-caret-position="325">
+          <caret line="16" column="65" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="65" />
           <folding>
             <element signature="e#0#70#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/VignetteApp.robot">
+    <entry file="file://$PROJECT_DIR$/resources/po/CustomerProfile.robot">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+        <state relative-caret-position="100">
+          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
           <folding>
-            <element signature="e#0#186#0" expanded="true" />
+            <element signature="e#0#70#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/CommonMethods.robot">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+        <state relative-caret-position="325">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="e#0#154#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/po/BuyVignettePage.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="21" column="82" selection-start-line="21" selection-start-column="82" selection-end-line="21" selection-end-column="82" />
+          <folding>
+            <element signature="e#0#70#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Vignette_Purchase_Process.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="965">
+          <caret line="96" column="13" selection-start-line="96" selection-start-column="13" selection-end-line="96" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#200#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/VignetteApp.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="854">
+          <caret line="115" selection-start-line="115" selection-end-line="115" />
+          <folding>
+            <element signature="e#0#186#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/selenium-screenshot-1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/Variables.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-635">
+          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
         </state>
       </provider>
     </entry>

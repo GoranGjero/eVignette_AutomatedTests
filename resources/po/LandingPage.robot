@@ -14,7 +14,7 @@ Click the "Log in" button
 Validate the "FAQ" section of the page
     wait until page contains element  ${LANDING_FAQ_SECTION}
     ${faq_text} =  get text  ${LANDING_FAQ_SECTION}
-    should be equal as strings  ${faq_text}  Често задавани въпроси  ignore_case=true
+    should be equal as strings  ${faq_text}  ${LANDING_FAQ_VALUE}  ignore_case=true
 
 ### Footer section
 Validate the whole footer of the page
