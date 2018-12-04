@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation  The suite contains the general tests
+Documentation  The suite contains the tests that are supposed to verify the eVignette Purchase process, by a unregistered customer
 Resource  ../resources/VignetteApp.robot
 Resource  ../resources/CommonMethods.robot
 
@@ -70,7 +70,7 @@ The customer is able to buy "Trailer or caravan" vignette without register
 
 The customer is able to add multiple vehicles during the purchase process
     [Documentation]  An unregistered user is able to add multiple vignettes to the cart
-    [Tags]  current
+    [Tags]  skip
     VignetteApp.Navigate to the home page
     VignetteApp.Verify that the "Vehicle Category" options are present
     VignetteApp.Select "Light vehicle and light truck" type from the landing page
@@ -94,4 +94,3 @@ The customer is able to add multiple vehicles during the purchase process
     sleep  2s
     VignetteApp.Verify that the shopping cart contains multiple vignettes
     VignetteApp.Empty the shopping cart
-    sleep  3s

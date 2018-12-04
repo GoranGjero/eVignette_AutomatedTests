@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.0.4 (Python 3.7.0 on win32)" generated="20181127 16:27:13.745">
+<robot generator="Robot 3.0.4 (Python 3.7.0 on win32)" generated="20181204 16:03:15.182">
 <suite id="s1" name="Tests" source="D:\projects\eVignette\automated_tests\tests">
-<suite id="s1-s1" name="General Tests" source="D:\projects\eVignette\automated_tests\tests\General_Tests.robot">
-<test id="s1-s1-t1" name="The landing page loads fully">
+<suite id="s1-s1" name="Registered Customer Options" source="D:\projects\eVignette\automated_tests\tests\Registered_Customer_Options.robot">
+<test id="s1-s1-t1" name="A registered customer is able to add and remove &quot;Trailer / Caravan&quot; vehicle">
 <kw name="Begin test" library="CommonMethods" type="setup">
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the given ``url``.</doc>
@@ -10,15 +10,16 @@
 <arg>about:blank</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20181127 16:27:13.899" level="INFO">Opening browser 'gc' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20181127 16:27:13.899" endtime="20181127 16:27:16.006"></status>
+<msg timestamp="20181204 16:03:15.347" level="INFO">Opening browser 'ff' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20181204 16:03:15.347" endtime="20181204 16:03:20.104"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20181127 16:27:16.006" endtime="20181127 16:27:17.119"></status>
+<status status="PASS" starttime="20181204 16:03:20.105" endtime="20181204 16:03:20.110"></status>
 </kw>
-<status status="PASS" starttime="20181127 16:27:13.899" endtime="20181127 16:27:17.119"></status>
+<status status="PASS" starttime="20181204 16:03:15.346" endtime="20181204 16:03:20.110"></status>
 </kw>
+<kw name="Login an existing user to their profile" library="CommonMethods">
 <kw name="Navigate to the home page" library="VignetteApp">
 <kw name="Navigate to" library="LandingPage">
 <kw name="Go To" library="SeleniumLibrary">
@@ -26,86 +27,12 @@
 <arguments>
 <arg>${INITIAL_URL}</arg>
 </arguments>
-<msg timestamp="20181127 16:27:17.121" level="INFO">Opening url 'http://vinetki.melontech.com/'</msg>
-<status status="PASS" starttime="20181127 16:27:17.120" endtime="20181127 16:27:17.494"></status>
+<msg timestamp="20181204 16:03:20.122" level="INFO">Opening url 'http://vinetki.melontech.com/'</msg>
+<status status="PASS" starttime="20181204 16:03:20.122" endtime="20181204 16:03:21.239"></status>
 </kw>
-<status status="PASS" starttime="20181127 16:27:17.120" endtime="20181127 16:27:17.494"></status>
+<status status="PASS" starttime="20181204 16:03:20.122" endtime="20181204 16:03:21.239"></status>
 </kw>
-<status status="PASS" starttime="20181127 16:27:17.120" endtime="20181127 16:27:17.494"></status>
-</kw>
-<kw name="Verify that the &quot;Vehicle Category&quot; options are present" library="VignetteApp">
-<kw name="Verify that an element is present on the page" library="CommonMethods">
-<arguments>
-<arg>${LANDING_CAR_OPTION}</arg>
-<arg>${LANDING_TRAILER_OPTION}</arg>
-<arg>${LANDING_HGV_OPTION}</arg>
-</arguments>
-<kw name="${element_to_be_verified} IN [ @{list_of_elements_to_be_verified} ]" type="for">
-<kw name="${element_to_be_verified} = xpath=//div[@class='row no-gutters g-mx-minus-10 step-1']//div[2]//div[1]//a[1]" type="foritem">
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<doc>Waits until element ``locator`` appears on current page.</doc>
-<arguments>
-<arg>${element_to_be_verified}</arg>
-</arguments>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20181127 16:27:23.016" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20181127 16:27:22.687" endtime="20181127 16:27:23.016"></status>
-</kw>
-<msg timestamp="20181127 16:27:23.017" level="FAIL">Element 'xpath=//div[@class='row no-gutters g-mx-minus-10 step-1']//div[2]//div[1]//a[1]' did not appear in 5 seconds.</msg>
-<status status="FAIL" starttime="20181127 16:27:17.496" endtime="20181127 16:27:23.018"></status>
-</kw>
-<status status="FAIL" starttime="20181127 16:27:17.496" endtime="20181127 16:27:23.018"></status>
-</kw>
-<status status="FAIL" starttime="20181127 16:27:17.495" endtime="20181127 16:27:23.018"></status>
-</kw>
-<status status="FAIL" starttime="20181127 16:27:17.495" endtime="20181127 16:27:23.018"></status>
-</kw>
-<status status="FAIL" starttime="20181127 16:27:17.495" endtime="20181127 16:27:23.018"></status>
-</kw>
-<kw name="End test" library="CommonMethods" type="teardown">
-<kw name="Close All Browsers" library="SeleniumLibrary">
-<doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20181127 16:27:23.019" endtime="20181127 16:27:25.175"></status>
-</kw>
-<status status="PASS" starttime="20181127 16:27:23.019" endtime="20181127 16:27:25.175"></status>
-</kw>
-<doc>The landing page opens fully, and all its elements are loaded</doc>
-<tags>
-<tag>skip</tag>
-</tags>
-<status status="FAIL" starttime="20181127 16:27:13.898" endtime="20181127 16:27:25.175" critical="yes">Element 'xpath=//div[@class='row no-gutters g-mx-minus-10 step-1']//div[2]//div[1]//a[1]' did not appear in 5 seconds.</status>
-</test>
-<test id="s1-s1-t2" name="Customer - Login existing user">
-<kw name="Begin test" library="CommonMethods" type="setup">
-<kw name="Open Browser" library="SeleniumLibrary">
-<doc>Opens a new browser instance to the given ``url``.</doc>
-<arguments>
-<arg>about:blank</arg>
-<arg>${BROWSER}</arg>
-</arguments>
-<msg timestamp="20181127 16:27:25.179" level="INFO">Opening browser 'gc' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20181127 16:27:25.179" endtime="20181127 16:27:27.764"></status>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20181127 16:27:27.764" endtime="20181127 16:27:28.881"></status>
-</kw>
-<status status="PASS" starttime="20181127 16:27:25.179" endtime="20181127 16:27:28.881"></status>
-</kw>
-<kw name="Navigate to the home page" library="VignetteApp">
-<kw name="Navigate to" library="LandingPage">
-<kw name="Go To" library="SeleniumLibrary">
-<doc>Navigates the active browser instance to the provided ``url``.</doc>
-<arguments>
-<arg>${INITIAL_URL}</arg>
-</arguments>
-<msg timestamp="20181127 16:27:28.882" level="INFO">Opening url 'http://vinetki.melontech.com/'</msg>
-<status status="PASS" starttime="20181127 16:27:28.882" endtime="20181127 16:27:29.074"></status>
-</kw>
-<status status="PASS" starttime="20181127 16:27:28.882" endtime="20181127 16:27:29.074"></status>
-</kw>
-<status status="PASS" starttime="20181127 16:27:28.881" endtime="20181127 16:27:29.074"></status>
+<status status="PASS" starttime="20181204 16:03:20.121" endtime="20181204 16:03:21.239"></status>
 </kw>
 <kw name="Navigate to the &quot;Log in&quot; page" library="VignetteApp">
 <kw name="Click the &quot;Log in&quot; button" library="LandingPage">
@@ -114,478 +41,502 @@
 <arguments>
 <arg>${LANDING_LOGIN_BUTTON}</arg>
 </arguments>
-<msg timestamp="20181127 16:27:29.076" level="INFO">Clicking link 'xpath=//a[contains(text(),'Вход')]'.</msg>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20181127 16:27:29.437" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20181127 16:27:29.095" endtime="20181127 16:27:29.438"></status>
+<msg timestamp="20181204 16:03:21.240" level="INFO">Clicking link 'xpath=//a[contains(text(),'Вход')]'.</msg>
+<status status="PASS" starttime="20181204 16:03:21.239" endtime="20181204 16:03:21.437"></status>
 </kw>
-<msg timestamp="20181127 16:27:29.464" level="FAIL">Link with locator 'xpath=//a[contains(text(),'Вход')]' not found.</msg>
-<status status="FAIL" starttime="20181127 16:27:29.076" endtime="20181127 16:27:29.464"></status>
+<status status="PASS" starttime="20181204 16:03:21.239" endtime="20181204 16:03:21.437"></status>
 </kw>
-<status status="FAIL" starttime="20181127 16:27:29.075" endtime="20181127 16:27:29.464"></status>
+<status status="PASS" starttime="20181204 16:03:21.239" endtime="20181204 16:03:21.437"></status>
 </kw>
-<status status="FAIL" starttime="20181127 16:27:29.075" endtime="20181127 16:27:29.465"></status>
-</kw>
-<kw name="End test" library="CommonMethods" type="teardown">
-<kw name="Close All Browsers" library="SeleniumLibrary">
-<doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20181127 16:27:29.465" endtime="20181127 16:27:31.600"></status>
-</kw>
-<status status="PASS" starttime="20181127 16:27:29.465" endtime="20181127 16:27:31.600"></status>
-</kw>
-<doc>Registered user can login successfully</doc>
-<tags>
-<tag>skip</tag>
-</tags>
-<status status="FAIL" starttime="20181127 16:27:25.178" endtime="20181127 16:27:31.600" critical="yes">Link with locator 'xpath=//a[contains(text(),'Вход')]' not found.</status>
-</test>
-<test id="s1-s1-t3" name="Customer - Attempt to login with incorrect email address">
-<kw name="Begin test" library="CommonMethods" type="setup">
-<kw name="Open Browser" library="SeleniumLibrary">
-<doc>Opens a new browser instance to the given ``url``.</doc>
+<kw name="Populate the &quot;Email Address&quot; field" library="VignetteApp">
+<kw name="Focus a text field and populate it" library="CommonMethods">
 <arguments>
-<arg>about:blank</arg>
-<arg>${BROWSER}</arg>
+<arg>${LOGIN_EMAIL_FIELD}</arg>
+<arg>${CUSTOMER_EMAIL_ADDRESS}</arg>
 </arguments>
-<msg timestamp="20181127 16:27:31.606" level="INFO">Opening browser 'gc' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20181127 16:27:31.606" endtime="20181127 16:27:33.648"></status>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20181127 16:27:33.649" endtime="20181127 16:27:34.760"></status>
-</kw>
-<status status="PASS" starttime="20181127 16:27:31.606" endtime="20181127 16:27:34.760"></status>
-</kw>
-<kw name="Navigate to the home page" library="VignetteApp">
-<kw name="Navigate to" library="LandingPage">
-<kw name="Go To" library="SeleniumLibrary">
-<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
 <arguments>
-<arg>${INITIAL_URL}</arg>
+<arg>${text_field_to_be_focused}</arg>
 </arguments>
-<msg timestamp="20181127 16:27:34.761" level="INFO">Opening url 'http://vinetki.melontech.com/'</msg>
-<status status="PASS" starttime="20181127 16:27:34.761" endtime="20181127 16:27:35.222"></status>
+<status status="PASS" starttime="20181204 16:03:21.438" endtime="20181204 16:03:21.460"></status>
 </kw>
-<status status="PASS" starttime="20181127 16:27:34.761" endtime="20181127 16:27:35.223"></status>
-</kw>
-<status status="PASS" starttime="20181127 16:27:34.761" endtime="20181127 16:27:35.223"></status>
-</kw>
-<kw name="Navigate to the &quot;Log in&quot; page" library="VignetteApp">
-<kw name="Click the &quot;Log in&quot; button" library="LandingPage">
-<kw name="Click Link" library="SeleniumLibrary">
-<doc>Clicks a link identified by ``locator``.</doc>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
 <arguments>
-<arg>${LANDING_LOGIN_BUTTON}</arg>
+<arg>${text_field_to_be_focused}</arg>
+<arg>${value_to_be_entered_into_the_text_field}</arg>
 </arguments>
-<msg timestamp="20181127 16:27:35.224" level="INFO">Clicking link 'xpath=//a[contains(text(),'Вход')]'.</msg>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20181127 16:27:35.582" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20181127 16:27:35.242" endtime="20181127 16:27:35.582"></status>
+<msg timestamp="20181204 16:03:21.460" level="INFO">Typing text 'ggjeroski@melontech.com' into text field 'xpath=//input[@id='Email']'.</msg>
+<status status="PASS" starttime="20181204 16:03:21.460" endtime="20181204 16:03:21.555"></status>
 </kw>
-<msg timestamp="20181127 16:27:35.582" level="FAIL">Link with locator 'xpath=//a[contains(text(),'Вход')]' not found.</msg>
-<status status="FAIL" starttime="20181127 16:27:35.224" endtime="20181127 16:27:35.582"></status>
+<status status="PASS" starttime="20181204 16:03:21.438" endtime="20181204 16:03:21.555"></status>
 </kw>
-<status status="FAIL" starttime="20181127 16:27:35.223" endtime="20181127 16:27:35.582"></status>
+<status status="PASS" starttime="20181204 16:03:21.438" endtime="20181204 16:03:21.555"></status>
 </kw>
-<status status="FAIL" starttime="20181127 16:27:35.223" endtime="20181127 16:27:35.583"></status>
-</kw>
-<kw name="End test" library="CommonMethods" type="teardown">
-<kw name="Close All Browsers" library="SeleniumLibrary">
-<doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20181127 16:27:35.583" endtime="20181127 16:27:37.733"></status>
-</kw>
-<status status="PASS" starttime="20181127 16:27:35.583" endtime="20181127 16:27:37.733"></status>
-</kw>
-<doc>The customer cannot login with incorrect credentials</doc>
-<tags>
-<tag>skip</tag>
-</tags>
-<status status="FAIL" starttime="20181127 16:27:31.605" endtime="20181127 16:27:37.736" critical="yes">Link with locator 'xpath=//a[contains(text(),'Вход')]' not found.</status>
-</test>
-<test id="s1-s1-t4" name="Customer - Attempt to login with incorrect password">
-<kw name="Begin test" library="CommonMethods" type="setup">
-<kw name="Open Browser" library="SeleniumLibrary">
-<doc>Opens a new browser instance to the given ``url``.</doc>
+<kw name="Populate the &quot;Password&quot; field" library="VignetteApp">
+<kw name="Focus a text field and populate it" library="CommonMethods">
 <arguments>
-<arg>about:blank</arg>
-<arg>${BROWSER}</arg>
+<arg>${LOGIN_PASSWORD_FIELD}</arg>
+<arg>${CUSTOMER_PASSWORD}</arg>
 </arguments>
-<msg timestamp="20181127 16:27:37.742" level="INFO">Opening browser 'gc' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20181127 16:27:37.741" endtime="20181127 16:27:39.830"></status>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20181127 16:27:39.830" endtime="20181127 16:27:40.943"></status>
-</kw>
-<status status="PASS" starttime="20181127 16:27:37.741" endtime="20181127 16:27:40.943"></status>
-</kw>
-<kw name="Navigate to the home page" library="VignetteApp">
-<kw name="Navigate to" library="LandingPage">
-<kw name="Go To" library="SeleniumLibrary">
-<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
 <arguments>
-<arg>${INITIAL_URL}</arg>
+<arg>${text_field_to_be_focused}</arg>
 </arguments>
-<msg timestamp="20181127 16:27:40.945" level="INFO">Opening url 'http://vinetki.melontech.com/'</msg>
-<status status="PASS" starttime="20181127 16:27:40.944" endtime="20181127 16:27:41.327"></status>
+<status status="PASS" starttime="20181204 16:03:21.556" endtime="20181204 16:03:21.561"></status>
 </kw>
-<status status="PASS" starttime="20181127 16:27:40.944" endtime="20181127 16:27:41.327"></status>
-</kw>
-<status status="PASS" starttime="20181127 16:27:40.944" endtime="20181127 16:27:41.327"></status>
-</kw>
-<kw name="Navigate to the &quot;Log in&quot; page" library="VignetteApp">
-<kw name="Click the &quot;Log in&quot; button" library="LandingPage">
-<kw name="Click Link" library="SeleniumLibrary">
-<doc>Clicks a link identified by ``locator``.</doc>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
 <arguments>
-<arg>${LANDING_LOGIN_BUTTON}</arg>
+<arg>${text_field_to_be_focused}</arg>
+<arg>${value_to_be_entered_into_the_text_field}</arg>
 </arguments>
-<msg timestamp="20181127 16:27:41.328" level="INFO">Clicking link 'xpath=//a[contains(text(),'Вход')]'.</msg>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20181127 16:27:41.695" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20181127 16:27:41.349" endtime="20181127 16:27:41.696"></status>
+<msg timestamp="20181204 16:03:21.562" level="INFO">Typing text 'test123' into text field 'xpath=//input[@id='Password']'.</msg>
+<status status="PASS" starttime="20181204 16:03:21.561" endtime="20181204 16:03:21.594"></status>
 </kw>
-<msg timestamp="20181127 16:27:41.696" level="FAIL">Link with locator 'xpath=//a[contains(text(),'Вход')]' not found.</msg>
-<status status="FAIL" starttime="20181127 16:27:41.328" endtime="20181127 16:27:41.696"></status>
+<status status="PASS" starttime="20181204 16:03:21.556" endtime="20181204 16:03:21.594"></status>
 </kw>
-<status status="FAIL" starttime="20181127 16:27:41.328" endtime="20181127 16:27:41.697"></status>
+<status status="PASS" starttime="20181204 16:03:21.555" endtime="20181204 16:03:21.595"></status>
 </kw>
-<status status="FAIL" starttime="20181127 16:27:41.328" endtime="20181127 16:27:41.697"></status>
-</kw>
-<kw name="End test" library="CommonMethods" type="teardown">
-<kw name="Close All Browsers" library="SeleniumLibrary">
-<doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20181127 16:27:41.697" endtime="20181127 16:27:43.829"></status>
-</kw>
-<status status="PASS" starttime="20181127 16:27:41.697" endtime="20181127 16:27:43.829"></status>
-</kw>
-<doc>The customer cannot login with incorrect credentials</doc>
-<tags>
-<tag>skip</tag>
-</tags>
-<status status="FAIL" starttime="20181127 16:27:37.738" endtime="20181127 16:27:43.830" critical="yes">Link with locator 'xpath=//a[contains(text(),'Вход')]' not found.</status>
-</test>
-<doc>The suite contains the general tests</doc>
-<status status="FAIL" starttime="20181127 16:27:13.765" endtime="20181127 16:27:43.832"></status>
-</suite>
-<suite id="s1-s2" name="Vignette Purchase Process" source="D:\projects\eVignette\automated_tests\tests\Vignette_Purchase_Process.robot">
-<test id="s1-s2-t1" name="The customer is able to buy &quot;Light vehicle and light truck&quot; vignette without register">
-<kw name="Begin test" library="CommonMethods" type="setup">
-<kw name="Open Browser" library="SeleniumLibrary">
-<doc>Opens a new browser instance to the given ``url``.</doc>
+<kw name="Click the &quot;Log in&quot; button" library="VignetteApp">
+<kw name="Find and click the &quot;Log in&quot; button" library="LoginPage">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
 <arguments>
-<arg>about:blank</arg>
-<arg>${BROWSER}</arg>
+<arg>Вход</arg>
 </arguments>
-<msg timestamp="20181127 16:27:43.846" level="INFO">Opening browser 'gc' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20181127 16:27:43.846" endtime="20181127 16:27:46.416"></status>
+<msg timestamp="20181204 16:03:21.595" level="INFO">Clicking button 'Вход'.</msg>
+<status status="PASS" starttime="20181204 16:03:21.595" endtime="20181204 16:03:21.942"></status>
 </kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20181127 16:27:46.416" endtime="20181127 16:27:47.529"></status>
+<status status="PASS" starttime="20181204 16:03:21.595" endtime="20181204 16:03:21.943"></status>
 </kw>
-<status status="PASS" starttime="20181127 16:27:43.846" endtime="20181127 16:27:47.530"></status>
+<status status="PASS" starttime="20181204 16:03:21.595" endtime="20181204 16:03:21.943"></status>
 </kw>
-<kw name="Navigate to the home page" library="VignetteApp">
-<kw name="Navigate to" library="LandingPage">
-<kw name="Go To" library="SeleniumLibrary">
-<doc>Navigates the active browser instance to the provided ``url``.</doc>
-<arguments>
-<arg>${INITIAL_URL}</arg>
-</arguments>
-<msg timestamp="20181127 16:27:47.531" level="INFO">Opening url 'http://vinetki.melontech.com/'</msg>
-<status status="PASS" starttime="20181127 16:27:47.530" endtime="20181127 16:27:47.879"></status>
-</kw>
-<status status="PASS" starttime="20181127 16:27:47.530" endtime="20181127 16:27:47.879"></status>
-</kw>
-<status status="PASS" starttime="20181127 16:27:47.530" endtime="20181127 16:27:47.879"></status>
-</kw>
-<kw name="Verify that the &quot;Vehicle Category&quot; options are present" library="VignetteApp">
+<kw name="Verify that the user is redirected to their profile" library="VignetteApp">
 <kw name="Verify that an element is present on the page" library="CommonMethods">
 <arguments>
-<arg>${LANDING_CAR_OPTION}</arg>
-<arg>${LANDING_TRAILER_OPTION}</arg>
-<arg>${LANDING_HGV_OPTION}</arg>
+<arg>${CUSTOMER_PROFILE}</arg>
+<arg>${SHOPPING_CART}</arg>
 </arguments>
 <kw name="${element_to_be_verified} IN [ @{list_of_elements_to_be_verified} ]" type="for">
-<kw name="${element_to_be_verified} = xpath=//div[@class='row no-gutters g-mx-minus-10 step-1']//div[2]//div[1]//a[1]" type="foritem">
+<kw name="${element_to_be_verified} = xpath=//*[@id=&quot;profile-dropdown-invoker-2&quot;]" type="foritem">
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <doc>Waits until element ``locator`` appears on current page.</doc>
 <arguments>
 <arg>${element_to_be_verified}</arg>
 </arguments>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20181127 16:27:53.380" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20181127 16:27:53.075" endtime="20181127 16:27:53.380"></status>
+<status status="PASS" starttime="20181204 16:03:21.944" endtime="20181204 16:03:21.962"></status>
 </kw>
-<msg timestamp="20181127 16:27:53.381" level="FAIL">Element 'xpath=//div[@class='row no-gutters g-mx-minus-10 step-1']//div[2]//div[1]//a[1]' did not appear in 5 seconds.</msg>
-<status status="FAIL" starttime="20181127 16:27:47.881" endtime="20181127 16:27:53.381"></status>
+<status status="PASS" starttime="20181204 16:03:21.943" endtime="20181204 16:03:21.962"></status>
 </kw>
-<status status="FAIL" starttime="20181127 16:27:47.881" endtime="20181127 16:27:53.381"></status>
-</kw>
-<status status="FAIL" starttime="20181127 16:27:47.881" endtime="20181127 16:27:53.381"></status>
-</kw>
-<status status="FAIL" starttime="20181127 16:27:47.880" endtime="20181127 16:27:53.381"></status>
-</kw>
-<status status="FAIL" starttime="20181127 16:27:47.880" endtime="20181127 16:27:53.381"></status>
-</kw>
-<kw name="End test" library="CommonMethods" type="teardown">
-<kw name="Close All Browsers" library="SeleniumLibrary">
-<doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20181127 16:27:53.382" endtime="20181127 16:27:55.531"></status>
-</kw>
-<status status="PASS" starttime="20181127 16:27:53.382" endtime="20181127 16:27:55.531"></status>
-</kw>
-<doc>An unregistered user is able to configure "Light vehicle and light truck" vignette and add it to the cart</doc>
-<tags>
-<tag>skip</tag>
-</tags>
-<status status="FAIL" starttime="20181127 16:27:43.845" endtime="20181127 16:27:55.531" critical="yes">Element 'xpath=//div[@class='row no-gutters g-mx-minus-10 step-1']//div[2]//div[1]//a[1]' did not appear in 5 seconds.</status>
-</test>
-<test id="s1-s2-t2" name="The customer is able to buy &quot;HGV or bus&quot; vignette without register">
-<kw name="Begin test" library="CommonMethods" type="setup">
-<kw name="Open Browser" library="SeleniumLibrary">
-<doc>Opens a new browser instance to the given ``url``.</doc>
-<arguments>
-<arg>about:blank</arg>
-<arg>${BROWSER}</arg>
-</arguments>
-<msg timestamp="20181127 16:27:55.535" level="INFO">Opening browser 'gc' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20181127 16:27:55.534" endtime="20181127 16:27:57.640"></status>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20181127 16:27:57.640" endtime="20181127 16:27:58.754"></status>
-</kw>
-<status status="PASS" starttime="20181127 16:27:55.534" endtime="20181127 16:27:58.754"></status>
-</kw>
-<kw name="Navigate to the home page" library="VignetteApp">
-<kw name="Navigate to" library="LandingPage">
-<kw name="Go To" library="SeleniumLibrary">
-<doc>Navigates the active browser instance to the provided ``url``.</doc>
-<arguments>
-<arg>${INITIAL_URL}</arg>
-</arguments>
-<msg timestamp="20181127 16:27:58.755" level="INFO">Opening url 'http://vinetki.melontech.com/'</msg>
-<status status="PASS" starttime="20181127 16:27:58.755" endtime="20181127 16:27:59.274"></status>
-</kw>
-<status status="PASS" starttime="20181127 16:27:58.755" endtime="20181127 16:27:59.274"></status>
-</kw>
-<status status="PASS" starttime="20181127 16:27:58.754" endtime="20181127 16:27:59.274"></status>
-</kw>
-<kw name="Verify that the &quot;Vehicle Category&quot; options are present" library="VignetteApp">
-<kw name="Verify that an element is present on the page" library="CommonMethods">
-<arguments>
-<arg>${LANDING_CAR_OPTION}</arg>
-<arg>${LANDING_TRAILER_OPTION}</arg>
-<arg>${LANDING_HGV_OPTION}</arg>
-</arguments>
-<kw name="${element_to_be_verified} IN [ @{list_of_elements_to_be_verified} ]" type="for">
-<kw name="${element_to_be_verified} = xpath=//div[@class='row no-gutters g-mx-minus-10 step-1']//div[2]//div[1]//a[1]" type="foritem">
+<kw name="${element_to_be_verified} = id=shopping-cart" type="foritem">
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <doc>Waits until element ``locator`` appears on current page.</doc>
 <arguments>
 <arg>${element_to_be_verified}</arg>
 </arguments>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20181127 16:28:04.776" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20181127 16:28:04.470" endtime="20181127 16:28:04.776"></status>
+<status status="PASS" starttime="20181204 16:03:21.962" endtime="20181204 16:03:21.974"></status>
 </kw>
-<msg timestamp="20181127 16:28:04.776" level="FAIL">Element 'xpath=//div[@class='row no-gutters g-mx-minus-10 step-1']//div[2]//div[1]//a[1]' did not appear in 5 seconds.</msg>
-<status status="FAIL" starttime="20181127 16:27:59.275" endtime="20181127 16:28:04.776"></status>
+<status status="PASS" starttime="20181204 16:03:21.962" endtime="20181204 16:03:21.974"></status>
 </kw>
-<status status="FAIL" starttime="20181127 16:27:59.275" endtime="20181127 16:28:04.777"></status>
+<status status="PASS" starttime="20181204 16:03:21.943" endtime="20181204 16:03:21.975"></status>
 </kw>
-<status status="FAIL" starttime="20181127 16:27:59.275" endtime="20181127 16:28:04.777"></status>
+<status status="PASS" starttime="20181204 16:03:21.943" endtime="20181204 16:03:21.975"></status>
 </kw>
-<status status="FAIL" starttime="20181127 16:27:59.275" endtime="20181127 16:28:04.777"></status>
+<status status="PASS" starttime="20181204 16:03:21.943" endtime="20181204 16:03:21.975"></status>
 </kw>
-<status status="FAIL" starttime="20181127 16:27:59.274" endtime="20181127 16:28:04.777"></status>
+<status status="PASS" starttime="20181204 16:03:20.121" endtime="20181204 16:03:21.975"></status>
 </kw>
-<kw name="End test" library="CommonMethods" type="teardown">
-<kw name="Close All Browsers" library="SeleniumLibrary">
-<doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20181127 16:28:04.778" endtime="20181127 16:28:06.923"></status>
-</kw>
-<status status="PASS" starttime="20181127 16:28:04.777" endtime="20181127 16:28:06.923"></status>
-</kw>
-<doc>An unregistered user is able to configure "HGV or bus" vignette and add it to the cart</doc>
-<tags>
-<tag>skip</tag>
-</tags>
-<status status="FAIL" starttime="20181127 16:27:55.533" endtime="20181127 16:28:06.923" critical="yes">Element 'xpath=//div[@class='row no-gutters g-mx-minus-10 step-1']//div[2]//div[1]//a[1]' did not appear in 5 seconds.</status>
-</test>
-<test id="s1-s2-t3" name="The customer is able to buy &quot;Trailer or caravan&quot; vignette without register">
-<kw name="Begin test" library="CommonMethods" type="setup">
-<kw name="Open Browser" library="SeleniumLibrary">
-<doc>Opens a new browser instance to the given ``url``.</doc>
+<kw name="Click the &quot;My Vehicles&quot; tab" library="VignetteApp">
+<kw name="Find and click an element" library="CommonMethods">
 <arguments>
-<arg>about:blank</arg>
-<arg>${BROWSER}</arg>
+<arg>${CUSTOMER_MY_VEHICLES_TAB}</arg>
 </arguments>
-<msg timestamp="20181127 16:28:06.927" level="INFO">Opening browser 'gc' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20181127 16:28:06.927" endtime="20181127 16:28:09.005"></status>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20181127 16:28:09.005" endtime="20181127 16:28:10.119"></status>
-</kw>
-<status status="PASS" starttime="20181127 16:28:06.926" endtime="20181127 16:28:10.119"></status>
-</kw>
-<kw name="Navigate to the home page" library="VignetteApp">
-<kw name="Navigate to" library="LandingPage">
-<kw name="Go To" library="SeleniumLibrary">
-<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
 <arguments>
-<arg>${INITIAL_URL}</arg>
+<arg>${element_to_be_found_and_clicked}</arg>
 </arguments>
-<msg timestamp="20181127 16:28:10.121" level="INFO">Opening url 'http://vinetki.melontech.com/'</msg>
-<status status="PASS" starttime="20181127 16:28:10.121" endtime="20181127 16:28:10.367"></status>
+<status status="PASS" starttime="20181204 16:03:21.976" endtime="20181204 16:03:21.980"></status>
 </kw>
-<status status="PASS" starttime="20181127 16:28:10.120" endtime="20181127 16:28:10.367"></status>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${element_to_be_found_and_clicked}</arg>
+</arguments>
+<msg timestamp="20181204 16:03:21.980" level="INFO">Clicking element 'xpath=//ul[@class='nav u-nav-v1-1 g-mb-20']//a[contains(@class,'nav-link')][contains(text(),'Моите превозни средства')]'.</msg>
+<status status="PASS" starttime="20181204 16:03:21.980" endtime="20181204 16:03:22.201"></status>
 </kw>
-<status status="PASS" starttime="20181127 16:28:10.120" endtime="20181127 16:28:10.367"></status>
+<status status="PASS" starttime="20181204 16:03:21.976" endtime="20181204 16:03:22.201"></status>
 </kw>
-<kw name="Verify that the &quot;Vehicle Category&quot; options are present" library="VignetteApp">
+<status status="PASS" starttime="20181204 16:03:21.975" endtime="20181204 16:03:22.202"></status>
+</kw>
+<kw name="Click the &quot;Add Vehicle&quot; button" library="VignetteApp">
+<kw name="Find and click an element" library="CommonMethods">
+<arguments>
+<arg>${CUSTOMER_ADD_VEHICLE_BUTTON}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${element_to_be_found_and_clicked}</arg>
+</arguments>
+<status status="PASS" starttime="20181204 16:03:22.215" endtime="20181204 16:03:22.227"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${element_to_be_found_and_clicked}</arg>
+</arguments>
+<msg timestamp="20181204 16:03:22.227" level="INFO">Clicking element 'xpath=//a[contains(text(),'Добави превозно средство')]'.</msg>
+<status status="PASS" starttime="20181204 16:03:22.227" endtime="20181204 16:03:22.585"></status>
+</kw>
+<status status="PASS" starttime="20181204 16:03:22.214" endtime="20181204 16:03:22.585"></status>
+</kw>
+<status status="PASS" starttime="20181204 16:03:22.214" endtime="20181204 16:03:22.586"></status>
+</kw>
+<kw name="Set the &quot;Friendly Name&quot; value" library="VignetteApp">
+<kw name="Focus a text field and populate it" library="CommonMethods">
+<arguments>
+<arg>${CUSTOMER_FRIENDLY_NAME_TEXT_FIELD}</arg>
+<arg>${CUSTOMER_VEHICLE_FRIENDLY_NAME}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${text_field_to_be_focused}</arg>
+</arguments>
+<status status="PASS" starttime="20181204 16:03:22.588" endtime="20181204 16:03:22.609"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${text_field_to_be_focused}</arg>
+<arg>${value_to_be_entered_into_the_text_field}</arg>
+</arguments>
+<msg timestamp="20181204 16:03:22.609" level="INFO">Typing text 'Car Friendly Name' into text field 'xpath=//input[@id='Name']'.</msg>
+<status status="PASS" starttime="20181204 16:03:22.609" endtime="20181204 16:03:22.709"></status>
+</kw>
+<status status="PASS" starttime="20181204 16:03:22.587" endtime="20181204 16:03:22.709"></status>
+</kw>
+<status status="PASS" starttime="20181204 16:03:22.587" endtime="20181204 16:03:22.709"></status>
+</kw>
+<kw name="Select the &quot;Trailer / Caravan&quot; vehicle type" library="VignetteApp">
+<kw name="Locate a drop-down menu and select an option" library="CommonMethods">
+<arguments>
+<arg>${CUSTOMER_TYPE_DROPDOWN_MENU}</arg>
+<arg>${CUSTOMER_TYPE_TRAILER_CARAVAN_SELECTION}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${drop_down_menu_to_be_found}</arg>
+</arguments>
+<status status="PASS" starttime="20181204 16:03:22.716" endtime="20181204 16:03:22.721"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${drop_down_menu_to_be_found}</arg>
+</arguments>
+<msg timestamp="20181204 16:03:22.722" level="INFO">Clicking element 'xpath=//select[@id='TypeID']'.</msg>
+<status status="PASS" starttime="20181204 16:03:22.721" endtime="20181204 16:03:22.950"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${option_from_the_menu_to_be_selected}</arg>
+</arguments>
+<msg timestamp="20181204 16:03:22.951" level="INFO">Clicking element 'xpath=//select[@id='TypeID']/option[3]'.</msg>
+<status status="PASS" starttime="20181204 16:03:22.950" endtime="20181204 16:03:23.171"></status>
+</kw>
+<status status="PASS" starttime="20181204 16:03:22.716" endtime="20181204 16:03:23.171"></status>
+</kw>
+<status status="PASS" starttime="20181204 16:03:22.715" endtime="20181204 16:03:23.171"></status>
+</kw>
+<kw name="Populate the &quot;Plate Number&quot; field" library="VignetteApp">
+<kw name="Focus and populate the &quot;Plate Number&quot; field with the plate string" library="BuyVignettePage">
+<kw name="Generate a plate number" library="CustomerProfile">
+<assign>
+<var>${randomly_generated_plate}</var>
+</assign>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>9</arg>
+<arg>[NUMBERS][UPPER]</arg>
+</arguments>
+<assign>
+<var>${random_plate_number}</var>
+</assign>
+<msg timestamp="20181204 16:03:23.172" level="INFO">${random_plate_number} = 91ZO35M5Z</msg>
+<status status="PASS" starttime="20181204 16:03:23.172" endtime="20181204 16:03:23.172"></status>
+</kw>
+<msg timestamp="20181204 16:03:23.172" level="INFO">${randomly_generated_plate} = 91ZO35M5Z</msg>
+<status status="PASS" starttime="20181204 16:03:23.172" endtime="20181204 16:03:23.172"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${BUY_VIGNETTE_PLATE_NUMBER_FIELD}</arg>
+</arguments>
+<status status="PASS" starttime="20181204 16:03:23.172" endtime="20181204 16:03:23.175"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${BUY_VIGNETTE_PLATE_NUMBER_FIELD}</arg>
+</arguments>
+<msg timestamp="20181204 16:03:23.175" level="INFO">Clicking element 'xpath=//input[@id='PlateNumber']'.</msg>
+<status status="PASS" starttime="20181204 16:03:23.175" endtime="20181204 16:03:23.396"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${BUY_VIGNETTE_PLATE_NUMBER_FIELD}</arg>
+<arg>${randomly_generated_plate}</arg>
+</arguments>
+<msg timestamp="20181204 16:03:23.396" level="INFO">Typing text '91ZO35M5Z' into text field 'xpath=//input[@id='PlateNumber']'.</msg>
+<status status="PASS" starttime="20181204 16:03:23.396" endtime="20181204 16:03:23.425"></status>
+</kw>
+<status status="PASS" starttime="20181204 16:03:23.171" endtime="20181204 16:03:23.426"></status>
+</kw>
+<status status="PASS" starttime="20181204 16:03:23.171" endtime="20181204 16:03:23.426"></status>
+</kw>
+<kw name="Click the &quot;Save&quot; button" library="VignetteApp">
+<kw name="Find and click an element" library="CommonMethods">
+<arguments>
+<arg>${CUSTOMER_SAVE_BUTTON}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${element_to_be_found_and_clicked}</arg>
+</arguments>
+<status status="PASS" starttime="20181204 16:03:23.427" endtime="20181204 16:03:23.430"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${element_to_be_found_and_clicked}</arg>
+</arguments>
+<msg timestamp="20181204 16:03:23.430" level="INFO">Clicking element 'xpath=//button[@type='submit']'.</msg>
+<status status="PASS" starttime="20181204 16:03:23.430" endtime="20181204 16:03:23.715"></status>
+</kw>
+<status status="PASS" starttime="20181204 16:03:23.426" endtime="20181204 16:03:23.715"></status>
+</kw>
+<status status="PASS" starttime="20181204 16:03:23.426" endtime="20181204 16:03:23.715"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20181204 16:03:26.715" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20181204 16:03:23.715" endtime="20181204 16:03:26.715"></status>
+</kw>
+<kw name="Verify the newly added vehicle" library="VignetteApp">
+<kw name="Locate a notification message and verify its content" library="CommonMethods">
+<arguments>
+<arg>${CUSTOMER_VEHICLE_ADDED_NOTIFICATION_SELECTOR}</arg>
+<arg>${CUSTOMER_VEHICLE_ADDED_NOTIFICATION_CONTENT}</arg>
+</arguments>
 <kw name="Verify that an element is present on the page" library="CommonMethods">
 <arguments>
-<arg>${LANDING_CAR_OPTION}</arg>
-<arg>${LANDING_TRAILER_OPTION}</arg>
-<arg>${LANDING_HGV_OPTION}</arg>
+<arg>${notification_selector}</arg>
 </arguments>
 <kw name="${element_to_be_verified} IN [ @{list_of_elements_to_be_verified} ]" type="for">
-<kw name="${element_to_be_verified} = xpath=//div[@class='row no-gutters g-mx-minus-10 step-1']//div[2]//div[1]//a[1]" type="foritem">
+<kw name="${element_to_be_verified} = xpath=//div[@class='media']" type="foritem">
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <doc>Waits until element ``locator`` appears on current page.</doc>
 <arguments>
 <arg>${element_to_be_verified}</arg>
 </arguments>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20181127 16:28:15.880" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20181127 16:28:15.565" endtime="20181127 16:28:15.880"></status>
+<status status="PASS" starttime="20181204 16:03:26.717" endtime="20181204 16:03:26.720"></status>
 </kw>
-<msg timestamp="20181127 16:28:15.880" level="FAIL">Element 'xpath=//div[@class='row no-gutters g-mx-minus-10 step-1']//div[2]//div[1]//a[1]' did not appear in 5 seconds.</msg>
-<status status="FAIL" starttime="20181127 16:28:10.370" endtime="20181127 16:28:15.880"></status>
+<status status="PASS" starttime="20181204 16:03:26.717" endtime="20181204 16:03:26.720"></status>
 </kw>
-<status status="FAIL" starttime="20181127 16:28:10.369" endtime="20181127 16:28:15.880"></status>
+<status status="PASS" starttime="20181204 16:03:26.717" endtime="20181204 16:03:26.720"></status>
 </kw>
-<status status="FAIL" starttime="20181127 16:28:10.369" endtime="20181127 16:28:15.880"></status>
+<status status="PASS" starttime="20181204 16:03:26.716" endtime="20181204 16:03:26.720"></status>
 </kw>
-<status status="FAIL" starttime="20181127 16:28:10.369" endtime="20181127 16:28:15.880"></status>
-</kw>
-<status status="FAIL" starttime="20181127 16:28:10.368" endtime="20181127 16:28:15.881"></status>
-</kw>
-<kw name="End test" library="CommonMethods" type="teardown">
-<kw name="Close All Browsers" library="SeleniumLibrary">
-<doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20181127 16:28:15.881" endtime="20181127 16:28:18.009"></status>
-</kw>
-<status status="PASS" starttime="20181127 16:28:15.881" endtime="20181127 16:28:18.009"></status>
-</kw>
-<doc>An unregistered user is able to configure "Trailer or caravan" vignette and add it to the cart</doc>
-<tags>
-<tag>skip</tag>
-</tags>
-<status status="FAIL" starttime="20181127 16:28:06.926" endtime="20181127 16:28:18.009" critical="yes">Element 'xpath=//div[@class='row no-gutters g-mx-minus-10 step-1']//div[2]//div[1]//a[1]' did not appear in 5 seconds.</status>
-</test>
-<test id="s1-s2-t4" name="The customer is able to add multiple vehicles during the purchase process">
-<kw name="Begin test" library="CommonMethods" type="setup">
-<kw name="Open Browser" library="SeleniumLibrary">
-<doc>Opens a new browser instance to the given ``url``.</doc>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
 <arguments>
-<arg>about:blank</arg>
-<arg>${BROWSER}</arg>
+<arg>${notification_selector}</arg>
 </arguments>
-<msg timestamp="20181127 16:28:18.011" level="INFO">Opening browser 'gc' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20181127 16:28:18.011" endtime="20181127 16:28:20.100"></status>
+<assign>
+<var>${notification_content}</var>
+</assign>
+<msg timestamp="20181204 16:03:26.732" level="INFO">${notification_content} = Превозното средство беше успешно запазено.</msg>
+<status status="PASS" starttime="20181204 16:03:26.720" endtime="20181204 16:03:26.732"></status>
 </kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20181127 16:28:20.100" endtime="20181127 16:28:21.213"></status>
-</kw>
-<status status="PASS" starttime="20181127 16:28:18.010" endtime="20181127 16:28:21.214"></status>
-</kw>
-<kw name="Navigate to the home page" library="VignetteApp">
-<kw name="Navigate to" library="LandingPage">
-<kw name="Go To" library="SeleniumLibrary">
-<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
 <arguments>
-<arg>${INITIAL_URL}</arg>
+<arg>${notification_content}</arg>
+<arg>${notification_content_to_be_verified}</arg>
 </arguments>
-<msg timestamp="20181127 16:28:21.215" level="INFO">Opening url 'http://vinetki.melontech.com/'</msg>
-<status status="PASS" starttime="20181127 16:28:21.214" endtime="20181127 16:28:21.484"></status>
+<status status="PASS" starttime="20181204 16:03:26.732" endtime="20181204 16:03:26.732"></status>
 </kw>
-<status status="PASS" starttime="20181127 16:28:21.214" endtime="20181127 16:28:21.484"></status>
+<status status="PASS" starttime="20181204 16:03:26.716" endtime="20181204 16:03:26.732"></status>
 </kw>
-<status status="PASS" starttime="20181127 16:28:21.214" endtime="20181127 16:28:21.485"></status>
+<status status="PASS" starttime="20181204 16:03:26.716" endtime="20181204 16:03:26.732"></status>
 </kw>
-<kw name="Verify that the &quot;Vehicle Category&quot; options are present" library="VignetteApp">
+<kw name="Remove a vehicle from the table of vehicles" library="CommonMethods">
+<kw name="Select the check-box of the first vehicle in the table" library="VignetteApp">
+<kw name="Find and click an element" library="CommonMethods">
+<arguments>
+<arg>${CUSTOMER_FIRST_VEHICLE_CHECKBOX}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${element_to_be_found_and_clicked}</arg>
+</arguments>
+<status status="PASS" starttime="20181204 16:03:26.734" endtime="20181204 16:03:26.737"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${element_to_be_found_and_clicked}</arg>
+</arguments>
+<msg timestamp="20181204 16:03:26.738" level="INFO">Clicking element 'css=div.container div.row.cart-profile div.col-lg-8.cust-col div.g-brd-around.g-brd-gray-light-v4.g-pa-25.g-mb-30 div.table-responsive.g-my-20.g-font-size-12:nth-child(2) table.table:nth-child(3) tbody:nth-child(2) tr:nth-child(1) td.g-valign-middle:nth-child(1) label.u-check.g-pl-10:nth-child(2) &gt; div.u-check-icon-checkbox-v4.g-absolute-centered--y.g-left-0'.</msg>
+<status status="PASS" starttime="20181204 16:03:26.737" endtime="20181204 16:03:26.985"></status>
+</kw>
+<status status="PASS" starttime="20181204 16:03:26.733" endtime="20181204 16:03:26.985"></status>
+</kw>
+<status status="PASS" starttime="20181204 16:03:26.733" endtime="20181204 16:03:26.986"></status>
+</kw>
+<kw name="Click &quot;Remove Selected&quot; button" library="VignetteApp">
+<kw name="Find and click an element" library="CommonMethods">
+<arguments>
+<arg>${CUSTOMER_REMOVE_SELECTED_VEHICLES}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${element_to_be_found_and_clicked}</arg>
+</arguments>
+<status status="PASS" starttime="20181204 16:03:26.986" endtime="20181204 16:03:26.994"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${element_to_be_found_and_clicked}</arg>
+</arguments>
+<msg timestamp="20181204 16:03:26.994" level="INFO">Clicking element 'xpath=//button[contains(text(),'Изтриване на избраните')]'.</msg>
+<status status="PASS" starttime="20181204 16:03:26.994" endtime="20181204 16:03:27.243"></status>
+</kw>
+<status status="PASS" starttime="20181204 16:03:26.986" endtime="20181204 16:03:27.243"></status>
+</kw>
+<status status="PASS" starttime="20181204 16:03:26.986" endtime="20181204 16:03:27.243"></status>
+</kw>
+<kw name="Confirm the action from the popup message" library="VignetteApp">
+<kw name="Find and click an element" library="CommonMethods">
+<arguments>
+<arg>${CUSTOMER_CONFIRM_VEHICLE_REMOVAL}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${element_to_be_found_and_clicked}</arg>
+</arguments>
+<status status="PASS" starttime="20181204 16:03:27.244" endtime="20181204 16:03:27.247"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${element_to_be_found_and_clicked}</arg>
+</arguments>
+<msg timestamp="20181204 16:03:27.247" level="INFO">Clicking element 'xpath=//button[contains(text(),'Потвърждение')]'.</msg>
+<status status="PASS" starttime="20181204 16:03:27.247" endtime="20181204 16:03:27.479"></status>
+</kw>
+<status status="PASS" starttime="20181204 16:03:27.244" endtime="20181204 16:03:27.479"></status>
+</kw>
+<status status="PASS" starttime="20181204 16:03:27.243" endtime="20181204 16:03:27.479"></status>
+</kw>
+<kw name="Verify that the vehicle has been removed" library="VignetteApp">
+<kw name="Locate a notification message and verify its content" library="CommonMethods">
+<arguments>
+<arg>${CUSTOMER_NOTIFICATION_SELECTOR}</arg>
+<arg>${CUSTOMER_VEHICLE_REMOVED_NOTIFICATION_CONTENT}</arg>
+</arguments>
 <kw name="Verify that an element is present on the page" library="CommonMethods">
 <arguments>
-<arg>${LANDING_CAR_OPTION}</arg>
-<arg>${LANDING_TRAILER_OPTION}</arg>
-<arg>${LANDING_HGV_OPTION}</arg>
+<arg>${notification_selector}</arg>
 </arguments>
 <kw name="${element_to_be_verified} IN [ @{list_of_elements_to_be_verified} ]" type="for">
-<kw name="${element_to_be_verified} = xpath=//div[@class='row no-gutters g-mx-minus-10 step-1']//div[2]//div[1]//a[1]" type="foritem">
+<kw name="${element_to_be_verified} = xpath=//span[@class='media-body align-self-center white-space-pre-line']" type="foritem">
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <doc>Waits until element ``locator`` appears on current page.</doc>
 <arguments>
 <arg>${element_to_be_verified}</arg>
 </arguments>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20181127 16:28:26.978" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20181127 16:28:26.674" endtime="20181127 16:28:26.978"></status>
+<status status="PASS" starttime="20181204 16:03:27.480" endtime="20181204 16:03:27.483"></status>
 </kw>
-<msg timestamp="20181127 16:28:26.979" level="FAIL">Element 'xpath=//div[@class='row no-gutters g-mx-minus-10 step-1']//div[2]//div[1]//a[1]' did not appear in 5 seconds.</msg>
-<status status="FAIL" starttime="20181127 16:28:21.486" endtime="20181127 16:28:26.979"></status>
+<status status="PASS" starttime="20181204 16:03:27.480" endtime="20181204 16:03:27.483"></status>
 </kw>
-<status status="FAIL" starttime="20181127 16:28:21.486" endtime="20181127 16:28:26.979"></status>
+<status status="PASS" starttime="20181204 16:03:27.480" endtime="20181204 16:03:27.483"></status>
 </kw>
-<status status="FAIL" starttime="20181127 16:28:21.486" endtime="20181127 16:28:26.979"></status>
+<status status="PASS" starttime="20181204 16:03:27.480" endtime="20181204 16:03:27.483"></status>
 </kw>
-<status status="FAIL" starttime="20181127 16:28:21.486" endtime="20181127 16:28:26.979"></status>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of element identified by ``locator``.</doc>
+<arguments>
+<arg>${notification_selector}</arg>
+</arguments>
+<assign>
+<var>${notification_content}</var>
+</assign>
+<msg timestamp="20181204 16:03:27.492" level="INFO">${notification_content} = 1 превозни средства бяха изтрити.</msg>
+<status status="PASS" starttime="20181204 16:03:27.483" endtime="20181204 16:03:27.492"></status>
 </kw>
-<status status="FAIL" starttime="20181127 16:28:21.485" endtime="20181127 16:28:26.979"></status>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${notification_content}</arg>
+<arg>${notification_content_to_be_verified}</arg>
+</arguments>
+<status status="PASS" starttime="20181204 16:03:27.492" endtime="20181204 16:03:27.492"></status>
+</kw>
+<status status="PASS" starttime="20181204 16:03:27.480" endtime="20181204 16:03:27.492"></status>
+</kw>
+<status status="PASS" starttime="20181204 16:03:27.479" endtime="20181204 16:03:27.492"></status>
+</kw>
+<status status="PASS" starttime="20181204 16:03:26.733" endtime="20181204 16:03:27.492"></status>
 </kw>
 <kw name="End test" library="CommonMethods" type="teardown">
 <kw name="Close All Browsers" library="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20181127 16:28:26.980" endtime="20181127 16:28:29.113"></status>
+<status status="PASS" starttime="20181204 16:03:27.493" endtime="20181204 16:03:28.070"></status>
 </kw>
-<status status="PASS" starttime="20181127 16:28:26.980" endtime="20181127 16:28:29.113"></status>
+<status status="PASS" starttime="20181204 16:03:27.493" endtime="20181204 16:03:28.070"></status>
 </kw>
-<doc>An unregistered user is able to add multiple vignettes to the cart</doc>
+<doc>A customer that has logged to their profile can add and remove "Trailer / Caravan" vehicles to and from the list</doc>
 <tags>
 <tag>current</tag>
 </tags>
-<status status="FAIL" starttime="20181127 16:28:18.010" endtime="20181127 16:28:29.113" critical="yes">Element 'xpath=//div[@class='row no-gutters g-mx-minus-10 step-1']//div[2]//div[1]//a[1]' did not appear in 5 seconds.</status>
+<status status="PASS" starttime="20181204 16:03:15.346" endtime="20181204 16:03:28.070" critical="yes"></status>
 </test>
-<doc>The suite contains the general tests</doc>
-<status status="FAIL" starttime="20181127 16:27:43.835" endtime="20181127 16:28:29.115"></status>
+<doc>The suite contains the tests, that are supposed to verify the registered customer options</doc>
+<status status="PASS" starttime="20181204 16:03:15.202" endtime="20181204 16:03:28.072"></status>
 </suite>
-<status status="FAIL" starttime="20181127 16:27:13.746" endtime="20181127 16:28:29.118"></status>
+<status status="PASS" starttime="20181204 16:03:15.184" endtime="20181204 16:03:28.073"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="8">Critical Tests</stat>
-<stat pass="0" fail="8">All Tests</stat>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="0" fail="1">current</stat>
-<stat pass="0" fail="7">skip</stat>
+<stat pass="1" fail="0">current</stat>
 </tag>
 <suite>
-<stat pass="0" fail="8" id="s1" name="Tests">Tests</stat>
-<stat pass="0" fail="4" id="s1-s1" name="General Tests">Tests.General Tests</stat>
-<stat pass="0" fail="4" id="s1-s2" name="Vignette Purchase Process">Tests.Vignette Purchase Process</stat>
+<stat pass="1" fail="0" id="s1" name="Tests">Tests</stat>
+<stat pass="1" fail="0" id="s1-s1" name="Registered Customer Options">Tests.Registered Customer Options</stat>
 </suite>
 </statistics>
 <errors>

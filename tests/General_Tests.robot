@@ -19,12 +19,7 @@ The landing page loads fully
 Customer - Login existing user
     [Documentation]  Registered user can login successfully
     [Tags]  skip
-    VignetteApp.Navigate to the home page
-    VignetteApp.Navigate to the "Log in" page
-    VignetteApp.Populate the "Email Address" field
-    VignetteApp.Populate the "Password" field
-    VignetteApp.Click the "Log in" button
-    VignetteApp.Verify that the user is redirected to their profile
+    CommonMethods.Login an existing user to their profile
 
 Customer - Attempt to login with incorrect email address
     [Documentation]  The customer cannot login with incorrect credentials
